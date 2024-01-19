@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarif assurances</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container bg-secondary">
+      <div class="row d-flex flex-column justify-content-center align-items-center">
+        <h1 class="text-center text-light">Votre tarif:</h1>
+        <label for="age" class="text-center text-light"
+          >Quel est votre âge?</label
+        >
+        <input type="number" name="age" id="age" value="null" style="width: 150px" />
+        <label for="permis" class="text-center text-light"
+          >Depuis combien d'années avez-vous le permis?</label
+        >
+        <input type="number" name="permis" id="permis" value="null" style="width: 150px" />
+        <label for="acc" class="text-center text-light"
+          >Combien avez-vous eu d'accidents?</label
+        >
+        <input
+          type="number"
+          name="accident"
+          id="acc"
+          value="null"
+          style="width: 150px"
+        />
+        <label for="fid" class="text-center text-light"
+          >Depuis combien d'années êtes-vous client chez nous?</label
+        >
+        <input type="number" name="fid" id="fid" value="null" style="width: 150px" />
+        <button type="button" class="btn btn-primary text-light rounded col-2 m-4">
+          Soumettre vos réponses
+        </button>
+        <div id="message"  ></div>
+        <div id="couleur"  style="width: 80px; height: 80px;"> </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

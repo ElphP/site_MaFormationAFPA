@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Les bases CSS - Ciblage des éléments</title>
+        <style>
+            /* h1 et h2 sont ciblés et prennent les propriétés CSS entre {}*/
+            h1,
+            h2 {
+                text-align: center;
+                text-transform: uppercase;
+            }
+            /* propriété CSS qui n'est appliquée qu'à l'élément h2 */
+            h2 {
+                font-style: italic;
+            }
+            /* ciblage de l'élément "a" adjacent (celui qui suit immédiatement les paragraphes)*/
+            p + a {
+                text-decoration: none;
+                background-color: red;
+                color: yellow;
+            }
+            /* ciblage des liens adjacents de tous les paragraphes avec ajout de la pseudo-classe hover (ces propriétés CSS seront appliquées au survol de l'élément seulement) */
+            p + a:hover {
+                background-color: yellow;
+                color: red;
+            }
+            /* ciblage des enfants : (les enfants (directs) li de ul enfants (directs) de nav) */
+            nav > ul > li {
+                list-style-type: none;
+                display: inline;
+            }
+            nav {
+                background-color: green;
+                color: white;
+            }
+            /* espace => ciblage de tous les descendants <a> (directs et indirects)  de l'élément nav */
+            nav a {
+                text-decoration: none;
+                color: white;
+            }
+            /* ciblage des div */
+            div {
+                background-color: red;
+            }
+            /* ciblage des classes option1 */
+            .option1 {
+                background-color: #b10f2f;
+                color: blue;
+                font-style: italic;
+            }
+            /* ciblage des classes option2 */
+            .option2 {
+                background-color: RGB(183, 236, 25);
+                color: blueviolet;
+            }
+            /* ciblage de l'ID paraph */
+            #parap {
+                color: black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="">a enfant de li -</a></li>
+                <li><a href="">a enfant de li -</a></li>
+                <li><a href="">a enfant de li</a></li>
+            </ul>
+        </nav>
+        <h1>Titre niveau 1</h1>
+        <h2>Titre niveau 2</h2>
+        <div>
+            <p>Paragraphe + lien</p>
+            <a href="#">Lien</a>
+        </div>
+        <div>
+            <p>Pas de définition particulière</p>
+            <p class="option1">Affecté par option1</p>
+            <div class="option1 option2">
+                <p>Affecté option1 et option2</p>
+                <p id="parap">Affecté par le style associé à son id</p>
+            </div>
+        </div>
+    </body>
+</html>

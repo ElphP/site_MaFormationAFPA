@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(27, 139, 143);
+}
+p {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 1.4rem;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+nav {
+    background-color: rgb(96, 59, 50);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    background-color: rgb(96, 59, 50);
+    color: white;
+    padding: 10px 0px 10px 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+nav a {
+    font-family: "PT Sans Narrow", sans-serif;
+    height: 100%;
+    font-size: 1.6rem;
+    color: white;
+    padding: 0 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 60px;
+    transition: 0.6s ease;
+}
+
+nav a:hover {
+    background-color: #a79189;
+}
+
+header.container img {
+    display: block;
+    margin: auto;
+}
+
+main.container img,
+h2 {
+    border-radius: 10px;
+}
+
+main.container img {
+    width: 85%;
+}
+
+main.container {
+    display: flex;
+    flex-direction: row;
+}
+
+section {
+    width: 70%;
+    color: black;
+    padding: 15px;
+}
+
+aside {
+    background-color: white;
+    width: 30%;
+}
+
+main {
+    display: flex;
+}
+section p {
+    color: white;
+}
+
+aside p {
+    line-height: 25px;
+}
+
+p {
+    padding: 10px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 960px) and (min-width: 560px) {
+   
+
+    main.container {
+        display: flex;
+        flex-direction: column;
+    }
+    main.container img {
+        width: 100%;
+    }
+    section,
+    aside {
+        width: 100%;
+    }
+    nav a {
+        padding: 0 15px;
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    aside {
+        display: none;
+    }
+    .container {
+        width: 100%;
+    }
+    main.container img {
+        width: 100%;
+    }
+    section {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+        height: 180px;
+    }
+
+    nav a {
+        width: 100%;
+    }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les bases CSS - Position Flux normal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1,h2
+        {
+            background-color: darkgray;
+        }
+        #zoneTexte {
+           background-color: green;
+        }
+        #zoneImages {
+            background-color: violet ;
+        }
+        p {
+            background-color: yellow;
+        }
+        img {
+            background-color: aqua;
+        }
+        span {
+            background-color: orange;         
+        }     
+    </style>
+</head>
+
+<body>
+    <!--  Ce code mets en évidence le positionnement des divers types d'éléments: 
+        positionnement "block":  h1 h2, div et p prennent tout la largeur du conteneur ( le "body" dans ce cas), 
+        positionnement "inline":  img et span s'adapte au contenu! 
+        (ici j'ai transformé les span en "inline-block" ce qui m'a permis de leur donner une taille plus grande, mais ça n'est pas la valeur par défaut!)  -->
+    <h1>Mes images</h1>
+    <h2>En position normal</h2>
+    <div id="zoneTexte">
+        <p>Ce sont des images <span id="span1">libres</span><span id="span2">de droit</span> de nourriture</p>
+        <p>Deuxième paragraphe</p>
+        <p>Troisième paragraphe</p>
+    </div>
+    <div id="zoneImages">
+        <img src="images/img3.jpg" />
+        <img src="images/img1.jpg" />
+        <img src="images/img2.jpg" />
+        
+    </div>
+</body>
+
+</html>

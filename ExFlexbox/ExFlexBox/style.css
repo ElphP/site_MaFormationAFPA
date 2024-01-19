@@ -1,0 +1,39 @@
+body {
+  border: 4px solid black;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 40px;
+  justify-content: space-between;
+}
+
+main {
+  border: 4px solid orangered;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+section {
+  border: 4px solid blue;
+  width: 53%;
+}
+
+header {
+  border: 4px solid violet;
+}
+
+footer {
+  border: 4px solid greenyellow;
+}
+
+aside {
+  border: 4px solid green;
+  width: 22%;
+}
+
+nav {
+  border: 4px solid red;
+  order: -1;
+  width: 25%;
+}

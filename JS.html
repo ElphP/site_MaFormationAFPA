@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow">
+    <title>Site MaFormationAFPA</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="typo.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="./js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header class="bg-violet2 sticky-top">
+      <nav class="navbar navbar-expand-lg fs-4 p-3">
+        <div class="container-fluid">
+          <a class="navbar-brand text-gainsboro fs-2 px-4" href="./index.html"
+            >MaFormationAFPA</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-gainsboro text-black-50-hover"
+                  aria-current="page"
+                  href="./index.html"
+                  >Accueil</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-gainsboro text-black-50-hover"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Bases
+                </a>
+                <ul class="dropdown-menu border-violet2 border-3 bg-gainsboro">
+                  <li>
+                    <a class="dropdown-item" href="./bases.html">Algorithmes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./bases.html#maquettage"
+                      >Maquettage</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="./bases.html#html">HTML</a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="./bases.html#css"
+                      >HTML+CSS</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">SASS/SCSS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Bootstrap</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-gainsboro text-black-50-hover"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Javascript
+                </a>
+                <ul class="dropdown-menu border-violet2 border-3 bg-gainsboro">
+                  <li>
+                    <a class="dropdown-item" href="./js.html">Natif</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./js.html">Libraries/Framework</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-gainsboro text-black-50-hover"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  PHP
+                </a>
+                <ul class="dropdown-menu border-violet2 border-3 bg-gainsboro">
+                  <li>
+                    <a class="dropdown-item" href="#">Natif</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Framework</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="bg-gainsboro">
+      <div class="container">
+        <div class="row" id="JS">
+          <h1 class="text-center m-3">Exercices JavaScript</h1>
+          <section>
+            <div class="row justify-content-center">
+              <h3>Série d'exercices en JS</h3>
+              <p>Quelques exercices pour avoir des bases...</p>
+              <p>
+                Par où commencer? Il faut tout d'abord connaître et comprendre
+                les
+                <a
+                  href="https://developer.mozilla.org/fr/docs/Glossary/Primitive"
+                  target="_blank"
+                  >primitives</a
+                >
+                et
+                <a
+                  href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Data_structures"
+                  target="_blank"
+                  >types de donnée</a
+                >
+                en JavaScript.
+              </p>
+              <p>
+                Dans les exercices qui suivent j'utilise parfois la
+                concaténation <br />
+                Exemple:
+                <span class="codeJS">"texte " + variable + " autre texte"</span>
+                (avec les guillemets simple ou doubles). Si la variable vaut 6,
+                cela donne: "texte 6 autre texte" <br />
+                Mais j'utilise aussi souvent les littéraux de gabarit (écriture
+                plus récente) avec les accents graves `` . <br />
+                Dans cet exemple cela donnerait:
+                <span class="codeJS">`texte ${variable} autre texte`</span>. Ce
+                qui revient au même que la version précédente.
+              </p>
+              <div
+                class="card col-12 col-md-4 col-lg-5 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title">Exercice 1 Question1</h5>
+                  <h6 class="card-subtitle text-body-secondary">
+                    Calcul du taux de participation de l'entreprise
+                  </h6>
+                  <p class="card-text mt-4">
+                    <br />
+                    Le directeur de l'AFPA a redéfini les règles du calcul du
+                    montant de la participation employeur au prix du repas des
+                    employés dans les restaurants collectifs des établissements
+                    AFPA de la façon suivante : <br />
+
+                    -Si l'employé(e) est célibataire le taux de participation
+                    s'élève à 20%. <br />
+
+                    -Dans les autres cas le taux de participation est porté à
+                    25% <br />
+
+                    -La participation est majorée de 15 % supplémentaires par
+                    enfant <br />
+
+                    -Si le salaire mensuel de l'employé(e) est inférieur à 1 800
+                    €, le montant de la participation est majoré de 10%
+                    <br />
+
+                    -Le taux de participation est plafonné à 50% <br />
+                    Calculez le taux de participation.
+                  </p>
+                  <a
+                    href="./ExJS/Chap1/Ex1Q1/index.html"
+                    target="_blank"
+                    class="card-link"
+                    >Page HTML</a
+                  >
+                  <a
+                    href="../img/codes/codesJS/codeJS1.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card col-12 col-md-4 col-lg-5 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title">Ex1 Q1 Version2</h5>
+                  <h6 class="card-subtitle text-body-secondary">
+                    Même calcul mais avec un code légèrement différent...
+                  </h6>
+                  <p class="card-text mt-4">
+                    Codes utilisés pour cet exercice: <br />
+                    Plusieurs méthodes: <br /><span class="codeJS"
+                      >.prompt("text")</span
+                    >
+                    demande à l'utilsateur d'entrer une valeur pour l'affecter à
+                    une variable,
+                    <br />
+                    <span class="codeJS">.alert("text")</span>
+                    affiche une message "text", <br /><span class="codeJS"
+                      >parseInt()</span
+                    >
+                    force la valeur à une valeur entière,
+                    <br /><span class="codeJS">parseFloat()</span>
+                    force la valeur à une valeur décimale,
+                    <br /><span class="codeJS">Number()</span> caste la valeur
+                    en un nombre (entier ou décimal),<br />
+                    <span class="codeJS">.toFixed(n)</span>
+                    ne conserve que "n" chiffres après la virgule... <br />
+                    Cette dernière méthode est indispensable, essayez
+                    d'additionner 0.7 + 0.2 en JavasCript..., et vous
+                    comprendrez!!
+                  </p>
+                  <a
+                    href="./ExJS/Chap1/ExQ1V2/index.html"
+                    target="_blank"
+                    class="card-link"
+                    >Page HTML</a
+                  >
+                  <a
+                    href="../img/codes/codesJS/codeJS2.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card col-12 col-md-4 col-lg-4 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title">Exercice 1 Question2</h5>
+                  <h6 class="card-subtitle text-body-secondary">
+                    Suite du premier exercice
+                  </h6>
+                  <p class="card-text mt-4">
+                    Enoncé: Vous allez reprendre le résultat de l'exercice
+                    précédent et apporter de la robustesse à votre programme en
+                    implémentant les contrôles de validité des données entrant
+                    dans le calcul du taux de participation. Tant que
+                    l'acquisition d'une valeur n'est pas correcte ou manquante,
+                    affichage message d'erreur et nouvelle demande. Vous
+                    permettrez aussi de calculer plusieurs taux sans relancer le
+                    programme. Traitez ainsi la réponse de l'utilisateur à la
+                    question « Autre taux à calculer ? O pour Oui, N pour Non »
+                    Si la réponse est non, fin normale du programme, sinon,
+                    reprise du processus d'acquisition de données et de calcul
+                    de la subvention.
+                    <br />
+                    <br />
+                    La boucle
+                    <span class="codeJS">while(condition) {...}</span>
+                    se répète tant que la condition est
+                    <span class="codeJS">true</span>, il faut que la condition
+                    passe à <span class="codeJS">false</span> à un moment,
+                    sinon, attention ça devient une boucle infinie! <br />
+                    La boucle
+                    <span class="codeJS">do{...} while(condition)</span>
+                    s'éxécute au moins 1 fois et puis, tant que la condition est
+                    égale à
+                    <span class="codeJS">true</span>.
+                    <br />
+
+                    La méthode
+                    <span class="codeJS">isNan(X)</span>
+                    renvoie
+                    <span class="codeJS">true</span> si X n'est pas un nombre,
+                    <span class="codeJS">false</span> si c'est un nombre! <br />
+                  </p>
+                  <a
+                    href="./ExJS/Chap1/Ex1Q2/index.html"
+                    target="_blank"
+                    class="card-link"
+                    >Page HTML</a
+                  >
+                  <a
+                    href="../img/codes/codesJS/codeJS4.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title">Ex1 Q2 Version2</h5>
+                  <h6 class="card-subtitle text-body-secondary">
+                    2nde version qui factorise le code en utilisant des
+                    fonctions
+                  </h6>
+                  <p class="card-text mt-4">
+                    Ici les vérifications sont faites à l'aide des 2 fonctions :
+                    "verifyEntry" et "verifyIsNumber" qui ont chacune 2
+                    paramètres. <br />
+                    <br />(plus de détails sur les fonctions ici:
+                    <a
+                      href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Functions"
+                      target="_blank"
+                      ><span class="codeJS">Functions</span></a
+                    >)
+                  </p>
+                  <a
+                    href="./ExJS/Chap1/Ex1Q2V2/index.html"
+                    target="_blank"
+                    class="card-link"
+                    >Page HTML</a
+                  >
+                  <a
+                    href="../img/codes/codesJS/codeJS3.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card col-12 col-md-4 col-lg-4 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title">Exercice "Grains de riz"</h5>
+                  <h6 class="card-subtitle text-body-secondary">----</h6>
+                  <p class="card-text mt-4">
+                    <strong>
+                      Le roi, le jeu d'échec et les grains de riz.
+                    </strong>
+                    La légende raconte que l'inventeur du jeu d'échec présenta
+                    le jeu à son roi qui, enthousiaste, lui demanda ce qu'il
+                    désirait en récompense. L'inventeur demanda simplement un
+                    grain de riz sur la première case, deux sur la deuxième,
+                    quatre sur la troisième, huit sur la quatrième, et ainsi de
+                    suite en multipliant à chaque fois le nombre de grains de la
+                    case précédente par deux. Sachant qu'un échiquier comporte
+                    64 cases, écrivez l'algorithme qui donne le nombre de grains
+                    de riz total sur l'échiquier. Cela fait beaucoup de grains
+                    de riz ! <br />
+                    La boucle
+                    <span class="codeJS">for</span> permet de répéter un code un
+                    certain nombre de fois (ici de i=1 jusqu'à i=64 compris)
+                    <br />
+                    <span class="codeJS">i++</span> est équivalent à i= i+1 (i
+                    est incrémenté de 1 à chaque tour de boucle...) <br />
+                    <span class="codeJS">X += Y</span> est équivalent à X = X+Y
+                  </p>
+                  <a
+                    href="./ExJS/Chap1/GrainsdeRiz/index.html"
+                    target="_blank"
+                    class="card-link"
+                    >Page HTML</a
+                  >
+                  <a
+                    href="../img/codes/codesJS/codeJS5.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card col-12 col-md-4 col-lg-3 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title">PGCD</h5>
+                  <h6 class="card-subtitle text-body-secondary">
+                    Calcul du plus grand commun diviseur
+                  </h6>
+                  <p class="card-text mt-4">
+                    La méthode
+                    <span class="codeJS">isInteger(X)</span>
+                    renvoie
+                    <span class="codeJS">true</span> si X est un entier , sinon
+                    elle renvoie <span class="codeJS">false</span>.
+                    <br />
+
+                    <span class="codeJS">!</span> est l'opérateur "NON logique"
+                    il renvoie le contraire du booléen auquel il est appliqué.
+                    <br />
+                    <span class="codeJS">&&</span> est l'opérateur "ET logique"
+                    , <span class="codeJS">||</span> est l'opérateur "OU
+                    logique" <br />
+                    Voir
+                    <a
+                      href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Expressions_and_Operators"
+                      target="_blank"
+                      >ICI</a
+                    >
+                    pour toutes les explications sur les expressions et les
+                    différents opérateurs...
+                  </p>
+                  <a
+                    href="./ExJS/Chap1/PGDC/index.html"
+                    target="_blank"
+                    class="card-link"
+                    >Page HTML</a
+                  >
+                  <a
+                    href="../img/codes/codesJS/codeJS6.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card col-12 col-md-4 col-lg-3 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title">PGCD2</h5>
+                  <h6 class="card-subtitle text-body-secondary">----</h6>
+                  <p class="card-text mt-4">
+                    Même calcul mais cette fois j'utilise 2 fonctions pour
+                    factoriser (un peu) le code....
+                  </p>
+                  <a
+                    href="./ExJS/Chap1/PGDC2/index.html"
+                    target="_blank"
+                    class="card-link"
+                    >Page HTML</a
+                  >
+                  <a
+                    href="../img/codes/codesJS/codeJS7.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card col-12 col-md-4 col-lg-3 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title">PGCD2 Version2</h5>
+                  <h6 class="card-subtitle text-body-secondary">----</h6>
+                  <p class="card-text mt-4">
+                    Dans cette nouvelle version, j'ai gardé l'utilisation des
+                    fonctions, mais cette fois c'est l'algorithme de caclcul qui
+                    change: <br />
+                    j'utilise cette fois une fonction récursive pour le calcul:
+                    la fonction "euclide" s'appelle elle-même! <br />
+                    <span class="codeJS"
+                      ><a
+                        href="https://developer.mozilla.org/fr/docs/Glossary/Recursion"
+                        >Récursion</a
+                      ></span
+                    >
+                  </p>
+                  <a
+                    href="./ExJS/Chap1/PGDC2V2/index.html"
+                    target="_blank"
+                    class="card-link"
+                    >Page HTML</a
+                  >
+                  <a
+                    href="../img/codes/codesJS/codeJS8.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card col-12 col-md-4 col-lg-3 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title">Tests Unitaires</h5>
+                  <h6 class="card-subtitle text-body-secondary">----</h6>
+                  <p class="card-text mt-4">
+                    Ce petit programme est une page de tests unitaires qui
+                    permet de s'assurer que mon programme PGCD fonctionne bien!
+                    <br />
+                    Vous pouvez l'essayer : chaque fois que vous testerez avec
+                    le bon résultat attendu, ce programme indiquera "true",
+                    sinon le message indiquera "false". Les tests unitaires
+                    servent en général à vérifier la cohérence d'un algorithme,
+                    d'une fonction sur un grand nombre de données...
+                  </p>
+                  <a
+                    href="./ExJS/Chap1/PGDCTestUnit/pageTestUnit.html"
+                    target="_blank"
+                    class="card-link"
+                    >Page HTML</a
+                  >
+                  <a
+                    href="../img/codes/codesJS/codeJS9.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card col-12 col-md-4 col-lg-3 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title">Exercice Polygônes</h5>
+                  <h6 class="card-subtitle text-body-secondary">
+                    Passage d'arguments à une fonction-
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments"
+                      >MDN</a
+                    >
+                  </h6>
+                  <p class="card-text mt-4">
+                    <span style="text-decoration: underline">Enoncé:</span>
+                    Réalisez une fonction sans paramètre déclaré qui permet de
+                    calculer le périmètre d'un polygone. En fonction du nombre
+                    d'arguments reçus en paramètre par la fonction : Pas de
+                    paramètre : erreur 1 seul paramètre = carré (périmètre = 4 *
+                    côté) 2 paramètres = rectangle (périmètre = 2 * longueur + 2
+                    * largeur) 3 paramètres = triangle (périmètre = somme des 3
+                    côtés) Supérieur à 3 = le nombre d'arguments correspond au
+                    nombre de côtés du polygone (périmètre = somme des côtés)
+                    Les résultats peuvent être affichés en console ou dans le
+                    document HTML à l'aide de la méthode ad hoc. Vous devrez
+                    afficher : Le type de forme (carré, rectangle, ....)& La
+                    valeur du périmètre calculé . <br />
+                    <span style="text-decoration: underline">Résultat:</span>
+                    Ce code fonctionne , il suffit de mettre un certain nombre
+                    de valeurs séparées par une virgule dans l'appel à la
+                    fonction. La fonction crée alors avec ces valeurs un tableau
+                    appelé "arguments" qui est ensuite traité par le programme!
+                    (en fonction de sa taille
+                    <span class="codeJS">arguments.length</span>
+                    et de son contenu
+                    <span class="codeJS">arguments[X]</span>, X représentant
+                    chaque occurence du tableau)
+                  </p>
+                  <!-- <a
+                              href="./ExJS/Chap1/Q4Polygones/perimetrPolygon.html"
+                              target="_blank"
+                              class="card-link"
+                              >Page HTML</a
+                          > -->
+                  <a
+                    href="../img/codes/codesJS/codeJS10.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="row justify-content-center g-3">
+              <h3 class="mt-5">Nouvelle série d'exercices de base en JS</h3>
+              <p>
+                Exercices que vous pouvez trouver sur le site:
+                <a
+                  href="https://aymeric-auberton.fr/academie/js/exercices"
+                  target="_blank"
+                  >aymeric-auberton.fr/academie/js/exercices</a
+                >
+              </p>
+              <div
+                class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <h6 class="card-subtitle text-body-secondary">----</h6>
+                  <p class="card-text mt-4"></p>
+                  <a
+                    href="./ExJS/exercices_js/Ex0/index.html"
+                    target="_blank"
+                    class="card-link"
+                    >Page HTML</a
+                  >
+                  <a
+                    href="./img/codes/codesJS/codeJS15.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <h6 class="card-subtitle text-body-secondary">----</h6>
+                  <p class="card-text mt-4"></p>
+                  <a
+                    href="./ExJS/exercices_js/Ex1/index.html"
+                    target="_blank"
+                    class="card-link"
+                    >Page HTML</a
+                  >
+                  <a
+                    href="./img/codes/codesJS/codeJS35.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <h6 class="card-subtitle text-body-secondary">----</h6>
+                  <p class="card-text mt-4"></p>
+                  <a
+                    href="./ExJS/exercices_js/Ex2/index.html"
+                    target="_blank"
+                    class="card-link"
+                    >Page HTML</a
+                  >
+                  <a
+                    href="./img/codes/codesJS/codeJS16.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <h6 class="card-subtitle text-body-secondary">----</h6>
+                  <p class="card-text mt-4"></p>
+                  <a
+                    href="./ExJS/exercices_js/Ex3/index.html"
+                    target="_blank"
+                    class="card-link"
+                    >Page HTML</a
+                  >
+                  <a
+                    href="./img/codes/codesJS/codeJS17.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <h6 class="card-subtitle text-body-secondary">----</h6>
+                  <p class="card-text mt-4"></p>
+                  <a
+                    href="./ExJS/exercices_js/Ex4/index.html"
+                    target="_blank"
+                    class="card-link"
+                    >Page HTML</a
+                  >
+                  <a
+                    href="./img/codes/codesJS/codeJS18.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <h6 class="card-subtitle text-body-secondary">----</h6>
+                  <p class="card-text mt-4"></p>
+                  <a
+                    href="./ExJS/exercices_js/Ex5/index.html"
+                    target="_blank"
+                    class="card-link"
+                    >Page HTML</a
+                  >
+                  <a
+                    href="./img/codes/codesJS/codeJS19.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <h6 class="card-subtitle text-body-secondary">----</h6>
+                  <p class="card-text mt-4"></p>
+                  <a
+                    href="./ExJS/exercices_js/Ex6/index.html"
+                    target="_blank"
+                    class="card-link"
+                    >Page HTML</a
+                  >
+                  <a
+                    href="./img/codes/codesJS/codeJS20.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <h6 class="card-subtitle text-body-secondary">----</h6>
+                  <p class="card-text mt-4"></p>
+                  <a
+                    href="./ExJS/exercices_js/Ex7/index.html"
+                    target="_blank"
+                    class="card-link"
+                    >Page HTML</a
+                  >
+                  <a
+                    href="./img/codes/codesJS/codeJS21.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <h6 class="card-subtitle text-body-secondary">----</h6>
+                  <p class="card-text mt-4"></p>
+                  <a
+                    href="./ExJS/exercices_js/Ex8/index.html"
+                    target="_blank"
+                    class="card-link"
+                    >Page HTML</a
+                  >
+                  <a
+                    href="./img/codes/codesJS/codeJS22.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <h6 class="card-subtitle text-body-secondary">----</h6>
+                  <p class="card-text mt-4"></p>
+                  <a
+                    href="./ExJS/exercices_js/Ex9/index.html"
+                    target="_blank"
+                    class="card-link"
+                    >Page HTML</a
+                  >
+                  <a
+                    href="./img/codes/codesJS/codeJS23.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <h6 class="card-subtitle text-body-secondary">----</h6>
+                  <p class="card-text mt-4"></p>
+                  <a
+                    href="./ExJS/exercices_js/Ex10/index.html"
+                    target="_blank"
+                    class="card-link"
+                    >Page HTML</a
+                  >
+                  <a
+                    href="./img/codes/codesJS/codeJS24.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <h6 class="card-subtitle text-body-secondary">----</h6>
+                  <p class="card-text mt-4"></p>
+                  <a
+                    href="./ExJS/exercices_js/Ex11/index.html"
+                    target="_blank"
+                    class="card-link"
+                    >Page HTML</a
+                  >
+                  <a
+                    href="./img/codes/codesJS/codeJS25.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <h6 class="card-subtitle text-body-secondary">----</h6>
+                  <p class="card-text mt-4"></p>
+                  <a
+                    href="./ExJS/exercices_js/Ex12/index.html"
+                    target="_blank"
+                    class="card-link"
+                    >Page HTML</a
+                  >
+                  <a
+                    href="./img/codes/codesJS/codeJS26.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <h6 class="card-subtitle text-body-secondary">----</h6>
+                  <p class="card-text mt-4"></p>
+                  <a
+                    href="./ExJS/exercices_js/Ex13/index.html"
+                    target="_blank"
+                    class="card-link"
+                    >Page HTML</a
+                  >
+                  <a
+                    href="./img/codes/codesJS/codeJS27.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <h6 class="card-subtitle text-body-secondary">----</h6>
+                  <p class="card-text mt-4"></p>
+                  <a
+                    href="./ExJS/exercices_js/Ex14/index.html"
+                    target="_blank"
+                    class="card-link"
+                    >Page HTML</a
+                  >
+                  <a
+                    href="./img/codes/codesJS/codeJS28.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <h6 class="card-subtitle text-body-secondary">----</h6>
+                  <p class="card-text mt-4"></p>
+                  <a
+                    href="./ExJS/exercices_js/Ex15/index.html"
+                    target="_blank"
+                    class="card-link"
+                    >Page HTML</a
+                  >
+                  <a
+                    href="./img/codes/codesJS/codeJS29.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <h6 class="card-subtitle text-body-secondary">----</h6>
+                  <p class="card-text mt-4"></p>
+                  <a
+                    href="./ExJS/exercices_js/Ex16/index.html"
+                    target="_blank"
+                    class="card-link"
+                    >Page HTML</a
+                  >
+                  <a
+                    href="./img/codes/codesJS/codeJS30.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <h6 class="card-subtitle text-body-secondary">----</h6>
+                  <p class="card-text mt-4"></p>
+                  <a
+                    href="./ExJS/exercices_js/Ex17/index.html"
+                    target="_blank"
+                    class="card-link"
+                    >Page HTML</a
+                  >
+                  <a
+                    href="./img/codes/codesJS/codeJS31.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <h6 class="card-subtitle text-body-secondary">----</h6>
+                  <p class="card-text mt-4"></p>
+                  <a
+                    href="./ExJS/exercices_js/Ex18/index.html"
+                    target="_blank"
+                    class="card-link"
+                    >Page HTML</a
+                  >
+                  <a
+                    href="./img/codes/codesJS/codeJS32.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <h6 class="card-subtitle text-body-secondary">----</h6>
+                  <p class="card-text mt-4"></p>
+                  <a
+                    href="./ExJS/exercices_js/Ex19/index.html"
+                    target="_blank"
+                    class="card-link"
+                    >Page HTML</a
+                  >
+                  <a
+                    href="./img/codes/codesJS/codeJS33.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="row justify-content-center g-3">
+              <h3 class="mt-5">Exercices sur les tableaux</h3>
+              <p>Les tableaux en JavaScript</p>
+              <div
+                class="card col-12 col-md-4 col-lg-3 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title">Tri de valeurs</h5>
+                  <h6 class="card-subtitle text-body-secondary">
+                    Différents algorithmes de tri pour les tableaux...
+                  </h6>
+                  <p class="card-text mt-4">
+                    Dans ce code, quelques méthodes et propriétés intéressantes:
+                    <br />
+                    <span class="codeJS">.checked</span>
+                    :l'élément est-il coché? <br />
+
+                    <span class="codeJS">.slice()</span>
+                    Dans ce cas la méthode transmets une copie superficielle du
+                    tableau d'origine en paramètre de la fonction...
+                    <br /><span style="font-weight: bold"
+                      >et, un peu de DOM... ! </span
+                    >(Document Object Model)<br />
+                    <span class="codeJS">document.getElementById("id")</span>
+                    pour accéder à un élément du DOM (ici c'est l'id "result"
+                    qui est passé en paramètre de la fonction) et
+                    <span class="codeJS">.innerHTML</span>
+                    me permet d'insérer dans l'élément sélectionné le texte qui
+                    contient toutes les valeurs triées! A noter que cette
+                    méthode permet de passer bien plus que du texte, c'est à
+                    dire aussi du code HTML qui sera interprété . Ici j'aurais
+                    pu me contenter d'un
+                    <span class="codeJS">.textContent</span>
+                  </p>
+                  <a
+                    href="../ExJS/Chap2/Q2.html"
+                    target="_blank"
+                    class="card-link"
+                    >Page HTML</a
+                  >
+                  <a
+                    href="../img/codes/codesJS/codeJS11.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title">Date</h5>
+                  <h6 class="card-subtitle text-body-secondary">
+                    Utilsation de l'objet "Date" pour affcicher la date du jour
+                    en Français.
+                  </h6>
+                  <p class="card-text mt-4">
+                    Instance (actuelle) de l'objet Date =
+                    <span class="codeJS">new Date()</span>
+                    <br />
+                    Les méthodes
+                    <span class="codeJS">.getDay()</span>,
+                    <span class="codeJS">.getDate()</span>,
+                    <span class="codeJS">.getMonth()</span>,
+                    <span class="codeJS">.getFullYear()</span>
+                    appliquées à cette instance permettent de récupérer
+                    respectivement : le jour de la semaine (sous la forme d'un
+                    chiffre qui commence à 0 avec dimanche ), le numéro du jour,
+                    le mois (chiffre qui commence par 0), et l'année . il existe
+                    bien d'autres méthodes associées à l'objet
+                    <span class="codeJS">Date</span>:
+                    <a
+                      href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Date"
+                      >MDN</a
+                    >
+                  </p>
+
+                  <a
+                    href="./ExJS/tableaux2/Q1/index.html"
+                    target="_blank"
+                    class="card-link"
+                    >Page HTML</a
+                  >
+                  <a
+                    href="../img/codes/codesJS/codeJS12.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card col-12 col-md-4 col-lg-1 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title">Méthodes associées aux tableaux</h5>
+                  <h6 class="card-subtitle text-body-secondary">-----</h6>
+                  <p class="card-text mt-4">
+                    Voir les commentaires dans le code...
+                  </p>
+                  <!-- <a
+                        href="./ExJS/tableaux2/"
+                        target="_blank"
+                        class="card-link"
+                        >Page HTML</a
+                      > -->
+                  <a
+                    href="../img/codes/codesJS/codeJS13.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card col-12 col-md-4 col-lg-4 m-2 border-3 border-blue2"
+                style="min-width: 18rem"
+              >
+                <div class="card-body">
+                  <h5 class="card-title">Nombre maximum</h5>
+                  <h6 class="card-subtitle text-body-secondary">
+                    Affiche la valeur maximum d'un tableau de nombres défini par
+                    l'utilisateur
+                  </h6>
+                  <p class="card-text mt-4">
+                    Ici de nombreuses interactions avec le DOM, ces méthodes
+                    s'affichent en vert dans le code. <br />
+                    <span class="codeJS">.addEventListener</span>: écouteur
+                    d'évènement (ici pour le click du bouton) <br />
+                    <span class="codeJS"
+                      >document.querySelector("sélecteurCSS")</span
+                    >: sélection d'un élément du DOM à l'aide d'un sélecteur
+                    CSS: <br />
+                    <span class="codeJS">.createElement("type_d'élément")</span
+                    >, <span class="codeJS">.innerHTML</span> ,
+                    <span class="codeJS"
+                      >ElementParent.appendChild("element")</span
+                    >
+                    permettent de 1- créer un élément HTMl, 2- lui insérer un
+                    contenu, 3- le faire apparaitre au bon endroit (dans un
+                    élément Parent) dans le DOM
+                    <span class="codeJS">.append()</span>
+                    peut remplacer .appendChild() mais attention! il y a des
+                    différences subtiles...
+                  </p>
+                  <a
+                    href="./ExJS/tableaux2/Q3/index.html"
+                    target="_blank"
+                    class="card-link"
+                    >Page HTML</a
+                  >
+                  <a
+                    href="../img/codes/codesJS/codeJS14.png"
+                    target="_blank"
+                    class="card-link"
+                    title="Cliquez pour afficher l'image"
+                    >Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="jeux">
+            <div class="row justify-content-center g-4">
+              <h3 class="mt-5">Série d'Exercices - Jeux</h3>
+              <p>Utilistation du DOM</p>
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./img/imgEx/impots.png"
+                  class="card-img-top"
+                  alt="calculImpots"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Calcul de l'impôt Zorglub</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+                <div class="card-body">
+                  <a
+                    href="./ExJS/Chap3/impots_Zorglub/"
+                    class="card-link"
+                    target="_blank"
+                    >Page</a
+                  >
+                  <a href="#" class="card-link" target="_blank">Code</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./img/imgEx/photocopie.png"
+                  class="card-img-top"
+                  alt="photocopies"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Calcul Prix des photocopies</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+                <div class="card-body">
+                  <a
+                    href="./ExJS/Chap3/Photocopies/index.html"
+                    class="card-link"
+                    target="_blank"
+                    >Page</a
+                  >
+                  <a href="#" class="card-link" target="_blank">Code</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./img/imgEx/clock.png"
+                  class="card-img-top"
+                  alt="calculImpots"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">La seconde d'après</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+                <div class="card-body">
+                  <a
+                    href="./ExJS/Chap3/Seconde+1/index.html"
+                    class="card-link"
+                    target="_blank"
+                    >Page</a
+                  >
+                  <a href="#" class="card-link" target="_blank">Code</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./img/imgEx/money.png"
+                  class="card-img-top"
+                  alt="calculImpots"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Calcul du rendu de monnaie</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+                <div class="card-body">
+                  <a
+                    href="./ExJS/Chap3/rendu_monnaie/index.html"
+                    class="card-link"
+                    target="_blank"
+                    >Page</a
+                  >
+                  <a href="#" class="card-link" target="_blank">Code</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./img/imgEx/emailAdresse.png"
+                  class="card-img-top"
+                  alt="calculImpots"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Email</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+                <div class="card-body">
+                  <a
+                    href="./ExJS/Chap3/verif_email/index.html"
+                    class="card-link"
+                    target="_blank"
+                    >Page</a
+                  >
+                  <a href="#" class="card-link" target="_blank">Code</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./img/imgEx/assurance.png"
+                  class="card-img-top"
+                  alt="calculImpots"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Assurance</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+                <div class="card-body">
+                  <a
+                    href="./ExJS/Chap3/assurances/index.html"
+                    class="card-link"
+                    target="_blank"
+                    >Page</a
+                  >
+                  <a href="#" class="card-link" target="_blank">Code</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./img/imgEx/cadenas.png"
+                  class="card-img-top"
+                  alt="calculImpots"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Mot de passe</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+                <div class="card-body">
+                  <a
+                    href="./ExJS/Chap3/control_mdp/index.html"
+                    class="card-link"
+                    target="_blank"
+                    >Page</a
+                  >
+                  <a href="#" class="card-link" target="_blank">Code</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./img/imgEx/justeprix.png"
+                  class="card-img-top"
+                  alt="calculImpots"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Le juste prix</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+                <div class="card-body">
+                  <a
+                    href="./ExJS/Chap3/juste_prix/index.html"
+                    class="card-link"
+                    target="_blank"
+                    >Page</a
+                  >
+                  <a href="#" class="card-link" target="_blank">Code</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./img/imgEx/penduJeu.png"
+                  class="card-img-top"
+                  alt="calculImpots"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Jeu du pendu</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+                <div class="card-body">
+                  <a
+                    href="./ExJS/Chap3/Pendu/index.html"
+                    class="card-link"
+                    target="_blank"
+                    >Page</a
+                  >
+                  <a href="#" class="card-link" target="_blank">Code</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./img/imgEx/mastermind.png"
+                  class="card-img-top"
+                  alt="calculImpots"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Mastermind</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+                <div class="card-body">
+                  <a
+                    href="./ExJS/Chap3/Mastermind/index.html"
+                    class="card-link"
+                    target="_blank"
+                    >Page</a
+                  >
+                  <a href="#" class="card-link" target="_blank">Code</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="row justify-content-center">
+              <h3 class="mt-5">Jeu Memory + site "Les Artistes peintres"</h3>
+              <p>
+                Pour terminer cette première section Javascript, je vous
+                présente ces 2 derniers TP
+              </p>
+              <div class="card" style="width: 24rem">
+                <img
+                  src="./img/imgEx/memory-570742_1280.jpg"
+                  class="card-img-top"
+                  alt="Jeu_Memory"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Jeu Memory</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+                <div class="card-body">
+                  <a
+                    href="./ExJS/Jeu_memory/index.html"
+                    class="card-link"
+                    target="_blank"
+                    >Page</a
+                  >
+                  <a href="#" class="card-link" target="_blank">Code</a>
+                </div>
+              </div>
+              <div class="card" style="width: 24rem">
+                <img
+                  src="./img/imgEx/Artistes_peintres.png"
+                  class="card-img-top"
+                  alt="calculImpots"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Site "Artistes-peintres"</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+                <div class="card-body">
+                  <a
+                    href="./ExJS/Artistes_peintresVBootstrap/index.html"
+                    class="card-link"
+                    target="_blank"
+                    >Page</a
+                  >
+                  <a href="#" class="card-link" target="_blank">Code</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

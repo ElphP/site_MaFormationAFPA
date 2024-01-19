@@ -1,0 +1,94 @@
+@import "couleurs";
+@import "mixins";
+@import "typo";
+
+body {
+  background-color: #dddddd;
+  font-family: "ASO", sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+body > span {
+  float: right;
+  color: $white;
+  background-color: $black;
+  margin-right: 5px;
+  padding: 0 5px;
+}
+
+body > hr {
+  clear: right;
+}
+#logo  {
+    margin:10px 70px 0 0;
+}
+
+#logo > img {
+ min-width: 100px;
+ max-width: 250px;
+ width: 10vw;
+}
+
+.containerTitle {
+  display: flex;
+  justify-content: center;
+  @include MobFlex();
+}
+
+.container {
+  font-weight: lighter;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  @include Flex();
+  @include Flex(680px)
+}
+  
+  
+  .card {
+    width: 30%;
+    min-width: 270px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px $grey solid; 
+  }
+
+
+
+
+.card> button  {
+    float: right;
+    margin: 10px;
+    background-color: $black;
+    border-radius: 15px;
+    color: $white;
+   padding: 10px 40px 0px 20px;
+    &:hover  {background-color: $red;}
+    @include triangle("down",$white,0.8rem, relative)
+}
+
+h2,h3  {
+    @extend %cadrNoir;
+}
+
+h3  {
+    width: 80%;
+    margin: 10px auto ;
+    text-align: center;
+}
+
+.box {
+  float: left;
+  margin-right: 5px;
+}
+
+.text-box  {
+  background-color: $red;
+  color: $white;
+  text-align: center;
+}
+
+p  {
+  text-align: justify;
+  letter-spacing: normal;
+}

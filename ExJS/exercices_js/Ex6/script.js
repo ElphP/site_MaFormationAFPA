@@ -1,0 +1,1 @@
+document.getElementById("cocktail").innerHTML = "Long Island Iced Tea";

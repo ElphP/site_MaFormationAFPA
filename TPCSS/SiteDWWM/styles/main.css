@@ -1,0 +1,298 @@
+:root {
+  --bg--op: rgba(151, 165, 190, 0.9);
+  --vert: #78be20;
+  --violet: #409;
+  --blanc: #fff;
+  --noir: #000;
+  --rouge: #d22630;
+  --rose: #ef4a81;
+  --vertFonce: #42a43a;
+}
+
+/* barre de navigation */
+nav {
+  background-color: var(--vertFonce);
+  float: right;
+  width: calc(100% - 230px);
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  margin-left: -40px;
+}
+
+nav > ul > li {
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+nav > ul > li:not(:last-child) {
+  border-right: 2px solid var(--blanc);
+}
+
+nav > ul > li a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  background-color: var(--vert);
+}
+
+header > img {
+  float: left;
+}
+
+/* corps principal */
+main {
+  clear: both;
+  min-height: 100vh;
+  background-image: url(../Images/A2-1920.jpg);
+  background-size: cover;
+  /* background-repeat: repeat-y; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container , form {
+  background-color: var(--bg--op);
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.container.accueil {
+  width: 60%;
+  height: auto;
+  margin-top: 60px;
+}
+
+h1.titre, h2.titre2 {background-color: #42a43a;}
+
+h1.titre {
+  margin: 50px auto 30px;
+  text-transform: uppercase;
+  font-size: 2rem;
+  width: 70%;
+  border-radius: 50px;
+  
+}
+
+h2.titre2 {
+  margin: 30px auto 30px;
+  width: 55%;
+  font-size: 1.5rem;
+}
+
+h1,
+h2,
+.container > a {
+  padding: 10px 40px;
+  border-radius: 15px;
+  color: var(--blanc);
+  text-align: center;
+}
+
+.container > a {
+  display: block;
+  margin: 80px auto 20px;
+  background-color: var(--rouge);
+  text-decoration: none;
+  width: 55%;
+  font-size: 1.5rem;
+}
+
+
+
+/* CSS page Formation  + badge vert 50%* */
+.rubriqueFormation-Titre,
+.carte-temoignage-nom {
+  margin: 10px auto 30px;
+  padding: 5px 0;
+  border-radius: 50px;
+  background-color: var(--vertFonce);
+  color: var(--blanc);
+  text-align: center;
+  font-size: 1.2rem;
+  width: 50%;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.colFormation {
+  background-color: var(--bg--op);
+  width: 40%;
+  min-width: 450px;
+  margin: 20px 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.rubriqueFormation {
+  border: 2px solid var(--rose);
+  margin: 10px 0;
+  border-radius: 15px;
+  padding: 20px;
+  color: var(--blanc);
+}
+
+/* témoignages */
+.temoignages {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.carte-temoignage {
+  background-color: var(--bg--op);
+  width: 25%;
+  min-width: 320px;
+  border-radius: 10px;
+  margin: 10px 20px;
+}
+
+.carte-temoignage-photo {
+  width: 160px;
+  margin: 30px auto;
+  background-color: var(--blanc);
+  border: 3px solid var(--violet);
+}
+
+.carte-temoignage-photo > img {
+  margin: 10px;
+  width: 140px;
+  height: 140px;
+}
+
+.carte-temoignage-fonction,
+.carte-temoignage-entreprise {
+  color: var(--violet);
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.carte-temoignage-message {
+  padding: 15px;
+  color: var(--blanc);
+}
+
+/* Galeries */
+.gallery  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #78be20;
+    margin: 50px;
+}
+
+
+.gallery img  {
+    width: 200px;
+    height: 200px;
+    margin: 35px;
+}
+
+/* formulaire */
+
+form  {
+ background-color: var(--bg--op);
+ padding: 40px;
+ border-radius: 10px;
+ width: 75%;
+}
+
+form label  {
+    color: var(--blanc);
+    display: inline-block;
+}
+
+form input  {
+    display: inline-block;
+}
+
+form>div label+input  {
+    width: 50%;
+}
+
+form>div>label:nth-child(1)  {
+    width: 25%;
+    text-align: right;
+}
+
+form>label  {
+    width: 25%;
+    text-align: right;
+}
+
+    
+ form div:nth-of-type(4),
+ form div:nth-of-type(5),
+ form div:nth-of-type(6),
+ form div:nth-of-type(7),
+ form div:nth-of-type(8),
+ form div:nth-of-type(9),
+ form div:nth-of-type(10)
+ 
+  {
+    display: inline-block; 
+ }   
+
+ form div:nth-of-type(4),
+ form div:nth-of-type(5),
+ form div:nth-of-type(6)  {
+  width: 20%;
+ }
+
+ form div:nth-of-type(7),
+ form div:nth-of-type(8),
+ form div:nth-of-type(9),
+ form div:nth-of-type(10)  {
+  width: 15%;
+ }
+
+ form div {
+  margin: 15px 0;
+ }
+
+ form input[type="submit"] {
+  width: 100%;
+  min-width: 140px;
+  background-color: #42a43a;
+  color: #fff;
+  border-radius: 15px;
+  border: none;
+  font-size: 1.5rem;
+ }
+
+ form input[type="submit"]:hover  {
+    cursor: grab;
+ }
+
+ form div[class="button"]  {
+  text-align: center;
+  margin: 50px auto 30px;
+  width: 50%;
+ }
+
+ label[for="message"]  {
+  vertical-align: top;
+}
+
+
+textarea, select  {
+  width: 50%;
+}
+
+
+/* @media screen and (max-width="1080px") {
+    
+} */

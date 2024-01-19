@@ -1,0 +1,67 @@
+@mixin Flex($ScreenBP: "1280px") {
+  @media screen and (max-width: $ScreenBP) {
+    @if ($ScreenBP== "1280px") {
+      flex-direction: column;
+      & .card {
+        margin: 10px auto;
+        width: 75%;
+        min-width: 200px;
+      }
+    } @else {
+      margin: 10px auto;
+      width: 100%;
+
+      & h3 {
+        font-size: smaller;
+      }
+      & .box {
+        float: none;
+        margin: 0;
+        & img {
+          display: block;
+          margin: 20px auto;
+        }
+      }
+    }
+  }
+}
+
+@mixin MobFlex($ScreenBP: "680px") {
+  @media screen and (max-width: $ScreenBP) {
+    & #logo {
+      margin: 10px 10px 0 0;
+    }
+    & h1,
+    h2 {
+      font-size: smaller;
+    }
+  }
+}
+
+%cadrNoir {
+  background-color: $black;
+  border-radius: 15px;
+  color: $white;
+  padding: 10px;
+  
+}
+
+%LG {
+  background: linear-gradient(135deg, $LG1, $LG2);
+}
+
+@mixin triangle($orient, $primary-color, $size, $pos) {
+  &::after {
+    content: "";
+    
+    @if ($orient== "down") {
+      border-top: $size solid $primary-color;
+    } @else if ($orient== "up") {
+      border-bottom: $size solid $white;
+    }
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    position: $pos;
+    left: 40px;
+  }
+}

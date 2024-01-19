@@ -1,0 +1,342 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+  .fa-solid {
+  fill: #edaff3;
+ }
+
+header .topbar {
+  background-color: #000;
+  color: #f6d4f5;
+  text-align: center;
+}
+
+header .container {
+  background-color: #f6d4f5;
+}
+
+header .container > nav a:hover {
+  background-color: rgb(53, 50, 50);
+  color: white;
+  transition: all 0.2s ease;
+}
+
+footer #info {
+  background-color: #ebaff1;
+}
+
+.fa-solid {
+  margin-top: 10px;
+}
+
+footer #bottombar {
+  background-color: #f6d4f5;
+}
+
+.right {
+  float: right;
+  margin-right: 5vw;
+}
+
+.left {
+  float: left;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+header .container > a {
+  margin-left: 8vw;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 0px 100px;
+  padding: 10px 50px;
+}
+
+nav a {
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.fa-cart-shopping {
+  padding: 15px;
+}
+
+.left span {
+  font-weight: bold;
+  text-align: right;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-direction: column;
+}
+
+section {
+  margin: 30px 0;
+}
+
+#slider {
+  position: relative;
+  max-width: 80%;
+}
+
+#slider,
+#select,
+#news {
+  margin: 30px;
+}
+
+#slider,
+#select,
+#new,
+#best,
+#crush {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#slider img {
+  width: 100%;
+  max-width: 100%;
+}
+
+#select img {
+  max-width: 100%;
+}
+
+#news img {
+  width: 100%;
+  max-width: 100%;
+}
+
+#slider h2 {
+  position: absolute;
+  background-color: #f6d4f5;
+  opacity: 0.8;
+  padding: 10px;
+  left: 20px;
+  top: 20px;
+}
+
+#slider h2 > span {
+  font-weight: normal;
+}
+
+#select {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  padding: 70px 50px 30px 50px;
+  max-width: 1600px;
+  transition: opacity 0.2s ease;
+  opacity: 1;
+}
+
+#select:hover .escarpin{
+  opacity: 0.5;
+}
+
+#select .escarpin:hover  {
+  opacity: 1;
+}
+
+#select h1 {
+  position: absolute;
+  top: 0;
+  left: 100px;
+}
+
+.escarpin {
+  margin: 20px;
+}
+
+#news {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1600px;
+}
+
+#select h3 {
+  text-align: center;
+  font-family: "Courgette", cursive;
+}
+
+#news h3,
+#news small {
+  display: block;
+  font-family: "Courgette", cursive;
+  text-align: center;
+  margin: 20px;
+}
+
+#news h2 {
+  text-align: center;
+}
+
+#crush,
+#new,
+#best {
+  padding: 10px;
+  margin: 1vw;
+}
+#new h2 {
+  background-color: #ea32c4;
+}
+
+#best h2 {
+  background-color: #92be44;
+}
+
+#crush h2 {
+  background-color: #0099b1;
+}
+
+#new h2,
+#best h2,
+#crush h2 {
+  padding: 5px 0;
+  margin: 0 0 15px 0;
+}
+
+#info {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin: 0;
+}
+
+.fa {
+  display: flex;
+  flex-direction: column;
+}
+
+#bottombar {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  text-align: center;
+  padding: 30px;
+  line-height: 30px;
+}
+
+#bottombar li {
+  list-style: none;
+}
+
+#news article > h2 {
+  transition: color 0.5s ease-in-out;
+}
+
+#news article:hover > h2 {
+  color: white;
+}
+
+#news article:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1500px) and (min-width: 640px) {
+  main.container {
+    width: 75%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  nav,
+  #select,
+  #news,
+  #info,
+  #bottombar {
+    flex-direction: column;
+    font-size: 2.5rem;
+  }
+
+  .topbar small {
+    font-size: 0.8rem;
+  }
+
+  nav a {
+    
+    font-size: 2.5rem;
+  }
+
+  #info,
+  nav {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  #select h1 {
+    top: 5px;
+    left: 15px;
+    font-size: 1.8rem;
+  }
+
+  header .topbar {
+    font-size: 1.8rem;
+  }
+
+  #select,
+  #news {
+    width: 80%;
+  }
+  .clear {
+    display: none;
+  }
+
+  header img {
+    display: block;
+    margin: auto;
+  }
+
+  #crush,
+  #new,
+  #best {
+    width: 100%;
+  }
+
+  #bottombar {
+    line-height: 80px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  
+  
+    nav a {
+    font-size: 1.8rem;
+  }
+  #bottombar {
+    line-height: 60px;
+  }
+
+  #news h2  {
+    font-size: 2rem;
+  }
+
+  #bottombar {
+    font-size: 1.8rem;
+  }
+}

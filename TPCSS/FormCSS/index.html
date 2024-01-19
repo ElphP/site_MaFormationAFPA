@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enquête</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1>Nous lançons une grande enquête sur les anciens stagiaires</h1>
+    <h3>Merci de nous répondre</h3>
+    <br />
+    <form action="index.html" method="get">
+      <fieldset>
+        <legend>Vos coordonnées</legend>
+        <label for="name">Votre nom*</label
+        ><input
+          type="text"
+          name="name"
+          id="name"
+          pattern="[a-zA-Z-]{2,20}"
+          required
+        /><br />
+        <label for="firstname">Votre prénom*</label
+        ><input
+          type="text"
+          name="firstname"
+          id="firstname"
+          pattern="[a-zA-Z-]{2,20}"
+          required
+        /><br />
+        <label for="dateBirth">Votre date de naissance</label
+        ><input
+          type="text"
+          name="dateBirth"
+          id="dateBirth"
+          pattern="[0-9d]{2}\/[0-9m]{2}\/[0-9y]{4}"
+          placeholder="dd/mm/yyyy"
+          required
+        /><br />
+        <label for="adress">Votre adresse</label
+        ><input type="text" name="adress" id="adress" /><br />
+        <label for="city">Votre ville</label
+        ><input type="text" name="city" id="city" /><br />
+        <label for="CP">Cope Postal</label
+        ><input
+          type="number"
+          name="CP"
+          id="CP"
+          pattern="[0-9]{5}"
+          placeholder="xxxxx"
+          required
+        /><br />
+        <label for="mail">Votre email*</label
+        ><input
+          type="mail"
+          name="mail"
+          id="mail"
+          pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+          required
+        />
+        <br />
+        <label for="tel">Votre n° de téléphone</label
+        ><input
+          type="number"
+          name="tel"
+          id="tel"
+          pattern="^[/d]{10}$"
+          placeholder="xxxxxxxxxx"
+          required
+        /><br />
+      </fieldset>
+      <fieldset>
+        <input type="radio" name="sexe" id="H" checked />Vous êtes un
+        homme<input type="radio" name="sexe" id="F" />Vous êtes une femme <br />
+      </fieldset>
+
+      <select name="choix" id="choix">
+        <optgroup label="Informatique">
+          <option value="dev">Développeur</option>
+          <option value="analyste" selected>Analyste</option>
+          <option value="chef">Chef de projet</option>
+        </optgroup>
+        <option value="autre">Autre</option>
+      </select>
+      <br />
+
+      <input type="text" name="autre" id="autre" />Si vous avez répondu "Autre",
+      précisez <br /><br />
+      <select name="choix2" id="choix2">
+        <option value="A">&lt1000€</option>
+        <option value="B">&gt1000€ et &lt1500€</option>
+        <option value="C">&gt1500€ et &lt2000€</option>
+        <option value="D">&gt2000€</option>
+      </select>
+      <br />
+      <input type="text" name="year" id="year" maxlength="4" />En quelle année
+      avez-vous suivi le stage AFPA? <br /><br />
+
+      <textarea
+        name="text"
+        id="text"
+        cols="30"
+        rows="5"
+        placeholder="Vos commentaires"
+        spellcheck="true"
+        lang="fr"
+      ></textarea>
+      <br />
+
+      <h2>Merci d'avoir répondu au questionnaire</h2>
+      <button type="submit">Validez</button>
+      <button type="reset">Annulez</button>
+    </form>
+  </body>
+</html>

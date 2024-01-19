@@ -1,0 +1,77 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h3  {
+    text-align: center;
+    padding: 20px;
+}
+
+form  {
+    margin-left: 100px;
+}
+
+label  {
+    padding: 5px;
+    display: inline-block;
+    width: 200px;
+}
+
+legend  {
+    margin-left: 40px;
+}
+
+fieldset  {
+    width: 800px;
+    padding: 10px;
+}
+
+fieldset, textarea {
+    border-radius: 5px;
+}
+
+textarea  {
+    resize: none;
+    margin: 20px 0;
+}
+
+label:hover  {
+    font-weight: bold;
+}
+
+fieldset:hover  {
+    background-color: #b1d5d6;
+}
+
+button[type="submit"]:hover  {
+    background-color: rgb(41, 184, 41);
+    cursor: pointer;
+}
+
+button[type="reset"]:hover  {
+    background-color: rgb(221, 78, 78);
+    cursor: pointer;
+}
+
+#dateBirth:valid , #CP:valid, #mail:valid, #tel:valid ,#name:valid ,#firstname:valid {
+    border: 1px solid  rgb(41, 184, 41);
+}
+
+#name:invalid, #firstname:invalid, #mail:invalid {
+    border: 1px solid  rgb(221, 78, 78);
+}
+
+input  {
+    text-align: center;
+}
+
+select  {
+    margin: 25px 0 0 0 ;
+}
+
+button  {
+    margin-top: 5px;
+}
+

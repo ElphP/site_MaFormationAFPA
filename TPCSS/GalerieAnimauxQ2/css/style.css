@@ -1,0 +1,38 @@
+:root  {
+  --width: 280px;
+  --height: 280px;
+}
+
+body {
+  max-width: 1200px;
+  margin: auto;
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+}
+
+h1  {
+  color: greenyellow;
+  text-align: center;
+}
+
+.galerie  {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+img  {
+  border: 2px solid white;
+  width: var(--width);
+  height: var(--height);
+  filter: sepia();
+  transition: 1s;
+}
+
+img:hover  {
+  filter: none;
+  transform: scale(1.2);
+  z-index: 1;
+}
+

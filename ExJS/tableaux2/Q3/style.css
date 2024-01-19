@@ -1,0 +1,33 @@
+body  {
+    background-color: rgb(145, 158, 236);
+    color: white;
+}
+h1  {
+    text-align: center;
+}
+label  {
+    margin-left: 50px;
+}
+input  {
+    margin: 15px;
+    width: 50px;
+    text-align: center;
+    
+}
+
+button  {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: grab;
+    border:none;
+    margin: 0 15px;
+}
+.zoneInsert  {
+    padding:10px 50px;
+}
+
+.result  {
+    padding:10px 50px;
+}

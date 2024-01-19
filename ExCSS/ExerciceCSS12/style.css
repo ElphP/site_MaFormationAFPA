@@ -1,0 +1,48 @@
+
+                html{
+            font-size: 150%;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+              
+        main {
+            width: 100vw;
+            height: 100vh;
+            background-color: red;
+           
+        }
+
+        .divRep {
+           width: 50vw;
+            height: 50vh;
+            background-color: blue;
+            font-size: 1.25rem;
+            color: yellow;
+        }
+        .divRep-N2 {
+            width : 25vw;
+            height: 25vh;
+            background-color: yellow;
+            font-size: 1.25rem;
+            color: blue;
+        }
+
+        .divPourC {
+            width: 50%;
+            height: 50%;
+            background-color: blue;
+            font-size: 1.25em;
+            color: yellow;
+        }
+        .divPourc-N2 {
+            width: 50%;
+            height:50%;
+            background-color: yellow;
+            font-size: 1.25em;
+            color: blue;
+        }
+    

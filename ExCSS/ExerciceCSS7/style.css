@@ -1,0 +1,35 @@
+.container1, .container2  {
+    position: relative;
+    display: flex;  
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+
+.box1, .box2, .box4  {
+    background-color: green;
+}
+
+.boxRel,.boxAbs {
+    background-color: blue;
+}
+
+.boxRel  {
+    position: relative;
+    top: -30px;
+    left: 30px;
+}
+.boxAbs  {
+    position: absolute;
+top: -20px;
+left: 60px;
+}
+
+span  {
+    position: relative;
+    top: -12px;
+    left: 10px;
+}

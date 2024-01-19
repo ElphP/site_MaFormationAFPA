@@ -1,0 +1,1 @@
+document.write(prompt("Ecrivez ici la chaîne de caractère que vous voulez afficher!"))

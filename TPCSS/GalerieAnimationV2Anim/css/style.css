@@ -1,0 +1,50 @@
+:root  {
+  --width: 280px;
+  --height: 280px;
+}
+
+body {
+  max-width: 1200px;
+  margin: auto;
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+}
+
+h1  {
+  color: greenyellow;
+  text-align: center;
+}
+
+.galerie  {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+img  {
+  border: 2px solid white;
+  
+  width: var(--width);
+  height: var(--height);
+  filter: sepia();
+}
+
+img:hover  {
+  animation: 1s ease-in forwards Scale;
+}
+
+
+@keyframes Scale  {
+  0%  {
+    z-index: 1;
+  }
+
+  100%  {
+    filter: none;
+    transform: scale(1.2);
+    z-index: 1;
+  
+  }
+}

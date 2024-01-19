@@ -1,0 +1,28 @@
+/*  force tous les éléments de la page (SAUF les pseudo-éléments Before et After )   avec une marge de 0, un padding de 0, (RAZ navigateur) et applique la marge à l'extérieure de l'élément  */
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* cible les éléments paragraphes <p> */
+p  {
+    margin: 15px 0px;
+    background-color: yellow;
+}
+/* cible l'élément qui a l'id "zoneTexte") */
+#zoneTexte  {
+    overflow: hidden;
+    border: 1px solid black;
+}
+/* cible les éléments <span> */
+span  {
+    margin: 15px;
+    display: inline-block;
+}
+/* cible les éléments <img> */
+img  {
+    margin: 15px;
+    padding: 10px;
+    vertical-align: middle;
+    width: 55px;
+}

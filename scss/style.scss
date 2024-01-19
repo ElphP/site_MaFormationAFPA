@@ -1,0 +1,91 @@
+@import "mixin.scss";
+
+*  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@include fontFace(  brawlerBo,  "../fonts/Brawler-Bold.ttf");
+@include fontFace( brawler, "../fonts/Brawler-Regular.ttf");
+@include fontFace( NTR,"../fonts/NTR-Regular.ttf" );
+@include fontFace(  robBl,  "../fonts/RobotoSlab-Black.ttf");
+@include fontFace(  robBo,  "../fonts/Brawler-Bold.ttf");
+@include fontFace(  robExBo,  "../fonts/RobotoSlab-ExtraBold.ttf");
+@include fontFace(  robReg,  "../fonts/RobotSlab-Regular.ttf");
+@include fontFace(  robSBo,  "../fonts/RobotoSlab-SemiBold.ttf");
+
+
+header a  {
+   font-family: "robBl";
+}
+
+h1, h2,h3, h4  {
+    font-family: "robSBo";
+    
+}
+
+.small {
+  font-size: 0.8rem;
+}
+
+h3  {
+  padding-top: 30px;
+}
+
+p  {
+  font-family: "NRT";
+  font-size: 1.2rem;
+}
+
+.pagePrincip  {
+ 
+
+  :nth-child(3)  {
+  text-indent: 3rem;
+}
+}
+
+
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  
+}
+
+
+.present  {
+  background-color: rgba(60, 60, 60, 0.6);
+ perspective: 1px;
+}
+
+ .code  {
+   background-color: rgba(0, 135, 255, 0.2);
+   border: 2px solid lightblue;
+   padding: 1px 3px;
+   border-radius: 5px;
+ }
+
+ .codeJS  {
+     background-color: rgba(129, 60, 255,0.2);
+   border: 2px solid #813cff;
+   padding: 1px 3px;
+   border-radius: 5px;
+
+ }
+
+ .TP img  {
+  margin:0px auto;
+ }
+
+ .jeux img{
+  padding: 10px;
+   height: 150px; 
+   object-fit: contain; 
+}
+
+

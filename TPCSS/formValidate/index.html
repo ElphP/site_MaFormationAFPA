@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation de formulaire API HTML5</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Formulaire HTML</legend>
+        <label for="name">Nom</label> &nbsp;
+        <input   name="name" id="name"  required pattern="[A-Za-z\-éèïàùê]{4,}"/><br /><br />
+        <label for="firstname"  >Prénom</label>&nbsp;<input
+          name="firstname"
+          id="firstname"
+          required
+          pattern="[A-Za-z\-éèïàùê]{4,}"
+        /><br /><br />
+        <label for="mail">E-mail</label>&nbsp;<input
+          type="email"
+          name="mail"
+          id="mail"
+          required
+          pattern="[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[a-z]{2,}$"/>
+          <br /><br />
+        <label for="tel">Téléphone</label>&nbsp;<input
+          name="tel"
+          id="tel"
+          required
+          pattern="[0-9]{10}"
+        /><br /><br />
+        <label for="area">Votre message</label>&nbsp;
+        <textarea
+          name="area"
+          id="area"
+          cols="30"
+          rows="10"
+         
+          required
+          minlength="10"
+          maxlength="250"
+        ></textarea>
+        <br /><br />
+        <button type="submit">Envoyer</button>
+        <button type="reset">Annuler</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

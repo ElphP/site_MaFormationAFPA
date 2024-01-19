@@ -1,0 +1,145 @@
+@import "font.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #4a1507;
+  color: white;
+  font-family: "rob";
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  font-size: 2.5rem;
+
+  margin: 15px 0;
+  h1 {
+    margin: 20px;
+    font-family: "inspir";
+    font-weight: lighter;
+  }
+}
+
+nav > ul {
+  display: inline-flex;
+  background-color: #440b02;
+  width: 100%;
+
+  li {
+    border-right: 1px solid white;
+    list-style: none;
+    padding: 20px;
+    margin: 15px 0;
+    & a {
+      padding: 20px;
+      text-decoration: none;
+      color: white;
+    }
+    &.active {
+      background-color: #4a1507;
+      & a {
+        color: #c23002;
+      }
+    }
+  }
+  li:nth-child(6) {
+    border: none;
+  }
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #78a899;
+}
+main > img {
+  width: 20%;
+  padding: 15px;
+}
+
+.main__present {
+  width: 80%;
+  padding: 20px;
+}
+.main__nav {
+  width: 20%;
+  padding: 20px;
+  & ul {
+    list-style: none;
+  }
+}
+
+.main__nav li {
+  padding: 5px;
+  border-bottom: 1px solid white;
+}
+
+.card {
+  width: 80%;
+  padding: 20px;
+  background-color: #ddd9c6;
+}
+.card__contenu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+.card__tab {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  width: 15%;
+  min-width: 200px;
+  margin: 2%;
+
+  img {
+    height: auto;
+    width: auto;
+  }
+  p {
+    background-color: black;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+}
+
+@media screen and (max-width: 1028px) {
+  nav > ul {
+    flex-direction: column;
+  }
+  main  {
+    flex-direction: column;
+    align-items: center;
+    .main__nav  {width: 100%;}
+    .main__present  {width: 100%;}
+    .card   {width: 100%;}
+    .card__contenu  {justify-content: center;}
+  }
+  main > img {
+    width:200px;
+    height: auto;
+    padding: 15px;
+  }
+  header  {
+    font-size: 1.2rem;
+    &>img  {
+        width: 150px;
+        height: 150px;
+      }
+  }
+  
+  
+}

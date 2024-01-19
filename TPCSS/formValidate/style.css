@@ -1,0 +1,16 @@
+*:focus  {
+  outline: none;
+ }
+
+
+input:focus:invalid  ,textarea:focus:invalid {
+    border: 2px solid red;
+  }
+  
+  input:valid, textarea:valid {
+    border: 2px solid green;
+  }
+
+
+
+  

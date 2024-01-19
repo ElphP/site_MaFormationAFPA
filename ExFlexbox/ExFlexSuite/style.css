@@ -1,0 +1,59 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 40px;
+  justify-content: space-between;
+  color: white;
+  font-family: sans-serif;
+  height: 90vh;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+section {
+  background-color: #ff69b5;
+  width: 78%;
+ 
+}
+section p, h2 {
+  padding-left: 10px;
+}
+
+header {
+  background-color: #1891ff;
+  text-align: center;
+ 
+}
+
+aside {
+  background-color: #ffa600;
+  width: 22%;
+  
+}
+
+footer {
+  background-color: #6b8f1e;
+  text-align: center;
+  
+}
+
+.aside {
+  border-bottom: 1px solid white;
+  padding-left: 20px;
+  margin: 5px;
+}
+
+header, section, aside, footer  {
+margin: 2px;
+border-radius: 10px;
+}
+/* nav {
+  border: 4px solid red;
+  order: -1;
+  width: 30%;
+} */

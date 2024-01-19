@@ -1,0 +1,137 @@
+h2, h3 {
+  background-color: black;
+  border-radius: 15px;
+  color: white;
+  padding: 10px;
+}
+
+@font-face {
+  font-family: "ASO";
+  src: url("/ExSASS/fonts/AlfaSlabOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+body {
+  background-color: #dddddd;
+  font-family: "ASO", sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+body > span {
+  float: right;
+  color: white;
+  background-color: black;
+  margin-right: 5px;
+  padding: 0 5px;
+}
+
+body > hr {
+  clear: right;
+}
+
+#logo {
+  margin: 10px 70px 0 0;
+}
+
+#logo > img {
+  min-width: 100px;
+  max-width: 250px;
+  width: 10vw;
+}
+
+.containerTitle {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 680px) {
+  .containerTitle #logo {
+    margin: 10px 10px 0 0;
+  }
+  .containerTitle h1,
+  .containerTitle h2 {
+    font-size: smaller;
+  }
+}
+
+.container {
+  font-weight: lighter;
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+@media screen and (max-width: 1280px) {
+  .container {
+    flex-direction: column;
+  }
+  .container .card {
+    margin: 10px auto;
+    width: 75%;
+    min-width: 200px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .container {
+    margin: 10px auto;
+    width: 100%;
+  }
+  .container h3 {
+    font-size: smaller;
+  }
+  .container .box {
+    float: none;
+    margin: 0;
+  }
+  .container .box img {
+    display: block;
+    margin: 20px auto;
+  }
+}
+
+.card {
+  width: 30%;
+  min-width: 270px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px #535753 solid;
+}
+
+.card > button {
+  float: right;
+  margin: 10px;
+  background-color: black;
+  border-radius: 15px;
+  color: white;
+  padding: 10px 40px 0px 20px;
+}
+.card > button:hover {
+  background-color: #dd4540;
+}
+.card > button::after {
+  content: "";
+  border-top: 0.8rem solid white;
+  border-left: 0.8rem solid transparent;
+  border-right: 0.8rem solid transparent;
+  position: relative;
+  left: 40px;
+}
+
+h3 {
+  width: 80%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.box {
+  float: left;
+  margin-right: 5px;
+}
+
+.text-box {
+  background-color: #dd4540;
+  color: white;
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+  letter-spacing: normal;
+}/*# sourceMappingURL=style.css.map */

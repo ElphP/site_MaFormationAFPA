@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactez-nous</title>
+    <meta
+    name="description"
+    content="Bienvenue sur la page Contact (formation DWWM) du site de l'AFPA consacré à la formation Développeur Web et Web Mobile"
+  />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="./images/logo.jpeg" alt="" />
+        <ul>
+          <li><a href="index.html">Accueil |</a></li>
+          <li><a href="formation.html"> La formation |</a></li>
+          <li><a href="temoignages.html"> Témoignages |</a></li>
+          <li><a href="references.html"> Nos références |</a></li>
+          <li><a href="contact.html"> Contactez_nous</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Contactez-nous</h1>
+
+      <form action="" method="post">
+        <label for="pren_nom">Prénom Nom: </label
+        ><input type="text" name="pren_nom" id="pren_nom" /><br />
+        <label for="mail">Adresse email: </label
+        ><input type="email" name="mail" id="mail" /><br />
+        <label for="phone">Téléphone: </label
+        ><input type="tel" name="phone" id="phone" /><br />
+
+        <span>Vous êtes: </span>
+        <input
+          type="radio"
+          name="demand_emploi"
+          id="demand_emploi"
+          value="demand_emploi"
+          checked
+        /><label for="demand_emploi">Demandeur d'emploi</label>
+        <input type="radio" name="salarie" id="salarie" value="salarie" /><label
+          for="salarie"
+          >Salarié</label
+        >
+        <input type="radio" name="autre" id="autre" value="autre" /><label
+          for="autre"
+          >Autre</label
+        ><br />
+
+        <span>Vos modalités préférées: </span>
+        <input
+          type="radio"
+          name="present"
+          id="present"
+          value="present"
+          checked
+        /><label for="present">En présentiel</label>
+        <input type="radio" name="fad" id="fad" value="fad" /><label for="fad"
+          >100% à distance</label
+        >
+        <input type="radio" name="altern" id="altern" value="altern" /><label
+          for="altern"
+          >En alternance</label
+        >
+        <input type="radio" name="nopref" id="nopref" value="nopref" /><label
+          for="nopref"
+          >Sans préférence</label
+        ><br />
+
+        <label for="region">Choix de la région : </label>
+        <input id="region" name="region" list="liste" />
+        <datalist id="liste">
+          <option value="Auvergne-Rhone-Alpes"></option>
+          <option value="Bourgogne-Franche-Comté"></option>
+          <option value="Bretagne"></option></datalist
+        ><br />
+        <label for="textarea">Votre message: </label>
+        <textarea
+          name="textarea"
+          id="textarea"
+          cols="30"
+          rows="10"
+          placeholder="Votre message ici"
+        ></textarea
+        ><br />
+
+        <button type="submit">Envoyez</button>
+      </form>
+    </main>
+  </body>
+</html>

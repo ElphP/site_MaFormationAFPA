@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquête</title>
+</head>
+<body>
+    <h1 style="text-align:center">Nous lançons une grande enquête sur les anciens stagiaires</h1>
+    <h3 style="text-align:center">Merci de nous répondre</h3> <br>
+    <form action="index.html" method="get">
+        <input type="text" name="name" id="name">Votre nom <br>
+        <input type="text" name="firstname" id="firstname">Votre prénom <br>
+        <input type="text" name="firstname" id="firstname">Votre prénom <br>
+        <input type="text" name="dateBirth" id="dateBirth">Votre date de naissance <br>
+        <input type="text" name="city" id="city">Votre ville actuelle <br>
+        <input type="number" name="CP" id="CP">Votre code postal <br>
+       
+        <input type="radio" name="sexe" id="H">Vous êtes un homme<input type="radio" name="sexe" id="F">Vous êtes une femme <br>
+        <select name="choix" id="choix">
+            <option value="dev">Développeur</option>
+            <option value="analyste">Analyste</option>
+            <option value="chef">Chef de projet</option>
+            <option value="autre">Autre</option>
+        </select> <br>
+        
+        <input type="text" name="autre" id="autre">Si vous avez répondu "Autre", précisez <br><br>
+        <select name="choix2" id="choix2">
+            <option value="A"> &lt1000€</option>
+            <option value="B">  &gt1000€ et  &lt1500€ </option>
+            <option value="C">&gt1500€ et  &lt2000€</option>
+            <option value="D">&gt2000€</option>
+        </select> <br>
+         <input type="text" name="year" id="year">En quelle année avez-vous suivi le stage AFPA? <br><br>
+         
+         <textarea name="text" id="text" cols="30" rows="5" placeholder="Vos commentaires" spellcheck="true" lang="fr"></textarea>  <br>
+         
+         <h2>Merci d'avoir répondu au questionnaire</h2>
+         <button type="submit">Validez</button>
+         <button type="reset">Annulez</button>
+    </form>
+</body>
+</html>

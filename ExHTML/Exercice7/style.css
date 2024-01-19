@@ -1,0 +1,25 @@
+ h1  {
+    text-align: center;
+ }
+ 
+.tabG  {
+  width: 600px;
+}
+
+ table  {
+        font-size: 1.2rem;
+        margin: auto;   
+    }
+
+.larg{
+    width: 33%; 
+    padding: 15px;
+    vertical-align: top;
+}
+
+tr  {
+    text-align: justify;
+}
+ul  {
+    text-align: initial;
+}
