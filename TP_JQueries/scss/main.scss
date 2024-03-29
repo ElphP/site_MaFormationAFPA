@@ -1,0 +1,161 @@
+@import "./color";
+@import "./typo";
+
+
+*  {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $blue;
+  color: $white;
+  font-family: "Script", serif;
+}
+
+.accueil {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.box {
+  width: 340px;
+  background-color: $orange;
+  border-radius: 20px;
+}
+
+.box > h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.box > img {
+  display: block;
+  width: 300px;
+  height: 170px;
+  border-radius: 20px;
+  margin: 0px auto;
+}
+
+.choixRadio {
+  text-align: center;
+  padding: 15px;
+}
+
+.recap {
+  display: none;
+  font-family: serif;
+  & img {
+    border-radius: 20px;
+    border: 5px solid $white;
+    display: block;
+    margin: auto;
+  }
+  & button {
+    background-color: $orange;
+    box-shadow: 5px 5px $black;
+    display: block;
+    margin: 20px auto;
+    color: $white;
+    font-size: 1.5rem;
+    padding: 5px 15px;
+  }
+}
+
+.recap h2,
+.recap p {
+  font-size: 2rem;
+  text-align: center;
+  & span {
+    color: $orange;
+  }
+}
+
+.jeu .reponses {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px;
+}
+
+.jeu {
+    display: none;
+  & h2 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  & p {
+    text-align: center;
+    font-size: 2rem;
+  }
+  & .anecdote  {
+    padding: 5px 15px;
+  }
+  & button {
+    background-color: $orange;
+    box-shadow: 5px 5px $black;
+    display: block;
+    margin: 20px ;
+    color: $white;
+    font-size: 1.2rem;
+    padding: 5px 15px;
+  }
+  
+  & .depot {  
+    background-color: $white;
+    color: $black;
+    font-family: serif;
+    font-size: 1.8rem;
+    border: 1px dashed $black;
+    width: 350px;
+    height: 120px;
+  }
+
+  & .numeroQuestion  {
+    color: $black;
+    font-family: serif;
+  }
+}
+
+.reponse {
+  background-color: $orange;
+  border-radius: 10px;
+  border: 2px solid $black;
+  width: 200px;
+  height: 80px;
+  font-family: serif;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zoneDepot  {
+    display: flex;
+    justify-content: center;
+}
+
+
+.message  {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  & button {
+    background-color: $orange;
+    box-shadow: 5px 5px $black;
+    display: block;
+    margin: 20px ;
+    color: $white;
+    font-size: 1.2rem;
+    padding: 5px 15px;
+  }
+}

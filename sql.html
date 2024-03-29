@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="noindex, nofollow" />
+        <title>Site MaFormationAFPA | SQL</title>
+
+        <link rel="stylesheet" href="./css/main.min.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/script.js"></script>
+    </head>
+    <body>
+        <header class="bg-violet2 sticky-top">
+            <nav class="navbar navbar-expand-lg fs-4 p-3">
+                <div class="container-fluid">
+                    <a
+                        class="navbar-brand text-gainsboro fs-2 px-4"
+                        href="./index.html"
+                        >MaFormationAFPA</a
+                    >
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarNavDropdown"
+                    >
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active text-gainsboro text-black-50-hover"
+                                    aria-current="page"
+                                    href="./index.html"
+                                    >Accueil</a
+                                >
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle text-gainsboro text-black-50-hover"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    Bases
+                                </a>
+                                <ul
+                                    class="dropdown-menu border-violet2 border-3 bg-gainsboro"
+                                >
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="./bases.html"
+                                            >Algorithmes</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="./bases.html#maquettage"
+                                            >Maquettage</a
+                                        >
+                                    </li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="./bases.html#html"
+                                            >HTML</a
+                                        >
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="./bases.html#css"
+                                            >HTML+CSS</a
+                                        >
+                                    </li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="./bases.html#sass"
+                                            >SASS/SCSS</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="./bases.html#bootstrap"
+                                            >Bootstrap</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle text-gainsboro text-black-50-hover"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    Javascript
+                                </a>
+                                <ul
+                                    class="dropdown-menu border-violet2 border-3 bg-gainsboro"
+                                >
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="./JS.html"
+                                            >Natif</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="./JS.html#framework"
+                                            >Libraries/Framework</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active text-gainsboro text-black-50-hover"
+                                    aria-expanded="false"
+                                    href="./sql.html"
+                                    >SQL</a
+                                >
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle text-gainsboro text-black-50-hover"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    PHP
+                                </a>
+                                <ul
+                                    class="dropdown-menu border-violet2 border-3 bg-gainsboro"
+                                >
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="./php.html"
+                                            >Natif</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="./php.html"
+                                            >Framework</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="bg-gainsboro">
+            <section>
+                <div class="container">
+                    <div class="row" id="SQL">
+                        <h1 class="text-center m-3">Le langage SQL</h1>
+                        <p>
+                            Le langage SQL (Structured Query Language) est un
+                            langage de programmation utilisé pour communiquer
+                            avec les bases de données relationnelles (BDDR) par
+                            l'intermédiaire d'un SGBDR. Il permet de manipuler
+                            les données stockées dans une base de données, en
+                            effectuant des opérations telles que la sélection,
+                            l'insertion, la mise à jour et la suppression de
+                            données (
+                            <span class="codeSQL">CRUD</span> : Create Read
+                            Update Delete). SQL est un langage (presque)
+                            standardisé largement utilisé dans le domaine des
+                            bases de données et offre une syntaxe claire et
+                            concise pour interagir avec les données de manière
+                            efficace et sécurisée.
+                        </p>
+                        <p>
+                            Nous avons étudié l'utilisation du langage SQL dans
+                            le cadre de l'utilisation du SGBD MySQL (et testé
+                            les requêtes dans l'interface PHPMyAdmin). De mon
+                            côté j'ai également pu utiliser SQLite.
+                        </p>
+                    </div>
+                    <div class="row justify-content-center g-3">
+                        <h3 class="mt-5">
+                            Série de 25 requêtes SQL pour bien comprendre les
+                            bases du langage SQL (version MySQL)
+                        </h3>
+                        <div
+                            class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <span class="codeSQL">SELECT</span>,
+                                    <span class="codeSQL">FROM</span>,
+                                    <span class="codeSQL">WHERE</span>
+                                </h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    ----
+                                </h6>
+                                <p class="card-text mt-4">
+                                    <span class="codeSQL">SELECT</span>: ce
+                                    mot-clé permet de sélectionner seulement les
+                                    valeurs du champ (colonne) NUMERO_TICKET
+                                    <br />
+                                    <span class="codeSQL">FROM</span>: indique
+                                    la table dans laquelle chercher les données.
+                                    <br />
+                                    <span class="codeSQL">WHERE</span>: mot-clé
+                                    qui indique une condition pour ne garder que
+                                    certains enregistrements, ici l'ID_ARTICLE
+                                    qui a la valeur 500.
+                                </p>
+                                <a
+                                    href="./img/SQL/code1.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher le code"
+                                    >Code</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <span class="codeSQL">AS</span>,
+                                    <span class="codeSQL">LIKE</span>
+                                </h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    ----
+                                </h6>
+                                <p class="card-text mt-4">
+                                    <span class="codeSQL">AS</span>: créé un
+                                    alias c'est à dire un nom temporaire (en
+                                    général plus simple que l'original) pour un
+                                    champ ou une table, <br />
+                                    <span class="codeSQL">LIKE</span>: ce
+                                    mot-clef permet de créer une condition sous
+                                    la forme d'un pattern et non d'une
+                                    expression exacte (comme avec le signe "="),
+                                    dans lequel: <br />
+                                    <span class="codeSQL">%</span> (signe de
+                                    pourcentage) représente zéro, un ou
+                                    plusieurs caractères. <br />
+                                    <span class="codeSQL">_</span> (souligné) :
+                                    Représente un seul caractère.
+                                </p>
+                                <a
+                                    href="./img/SQL/code2.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher le code"
+                                    >Code</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <span class="codeSQL">BETWEEN</span>
+                                </h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    ----
+                                </h6>
+                                <p class="card-text mt-4">
+                                    ... (<span class="codeSQL">WHERE</span>
+                                    colonne ):
+                                    <span class="italic">option</span>
+                                    <span class="codeSQL">BETWEEN</span> valeur1
+                                    <span class="codeSQL">AND</span> valeur2
+                                    <br /><br />Le mot-clé
+                                    <span class="codeSQL">BETWEEN</span> permet
+                                    de sélectionner une plage de valeurs
+                                    comprises entre valeur1 et valeur2 de
+                                    manière inclusive. <br />
+                                    Ces valeurs peuvent être de différents types
+                                    (numérique, alpha, dates, ect...)
+                                </p>
+                                <a
+                                    href="./img/SQL/code3.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher le code"
+                                    >Code</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-md-6 col-lg-6 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <span class="codeSQL">JOIN</span> +
+                                    Sous-requêtes
+                                </h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    ----
+                                </h6>
+                                <p class="card-text mt-4">
+                                    Notez tout d'abord ici l'utilisation
+                                    nécessaire des
+                                    <span class="code">" "</span> pour
+                                    l'utilisation d'un alias qui comporte
+                                    plusieurs mots... <br />
+                                    En SQL, le mot-clé
+                                    <span class="codeSQL">JOIN</span> permet de
+                                    joindre plusieurs tables ensembles.
+                                    <br />Dans le code1 la jointure se fait à
+                                    l'aide du mot-clé
+                                    <span class="codeSQL">USING</span> sur un
+                                    champ commun nommé ID_ARTICLE. <br />
+                                    Dans le code2 la jointure est réalisée avec
+                                    <span class="codeSQL">ON</span>
+                                    champ1=champ2 .Ici les champs 1&2 sont
+                                    identiques mais ils pourraient tout aussi
+                                    bien avoir des noms diférents...
+                                    <br /><br />
+                                    Enfin dans le code3, la jointure est
+                                    réalisée sans le mot-clé
+                                    <span class="codeSQL">JOIN</span> mais à
+                                    l'aide d'une sous-requête. La sous-requête
+                                    permet ici de ne garder que les valeurs du
+                                    champ NOM_ARTICLE de la table ARTICLE qui
+                                    vérifient la condition d'avoir un ID_ARTICLE
+                                    à la fois dans la table ARTICLE et la table
+                                    VENTE représentée par son alias V dans dans
+                                    la condition... <br /><br />
+                                    Toutes ces jointures sont des jointures
+                                    internes. Il existe par ailleurs les
+                                    jointures externes
+                                    <span class="codeSQL">LEFT JOIN</span> et
+                                    <span class="codeSQL">RIGHT JOIN</span> (qui
+                                    incluent l'ensemble des données de la
+                                    première table pour LEFT et de la seconde
+                                    pour RIGHT), mais aussi la jointure externe
+                                    Complète
+                                    <span class="codeSQL">FULL JOIN</span> qui
+                                    inclue les données complètes des 2 tables...
+                                    Les jointures externes renvoient une valeur
+                                    NULL quand la valeur n'existe pas
+                                    (éventuellement 0 ou une autre valeur par
+                                    défaut si cela est défini par ailleurs...)
+                                </p>
+                                <a
+                                    href="./img/SQL/code4a.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher le code"
+                                    >Code1</a
+                                >
+                                <a
+                                    href="./img/SQL/code4b.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher le code"
+                                    >Code2</a
+                                >
+                                <a
+                                    href="./img/SQL/code4c.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher le code"
+                                    >Code3</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">Question 5</h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    ---
+                                </h6>
+                                <p class="card-text mt-4">
+                                    <span class="italic">
+                                        Quels sont les tickets émis au mois de
+                                        mars 2017 ? Afficher le numéro de ticket
+                                        et la date.
+                                    </span>
+                                    <br />
+                                    Rien de nouveau dans ce code...
+                                </p>
+                                <a
+                                    href="./img/SQL/code5.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher le code"
+                                    >Code</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">Question 6</h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    ---
+                                </h6>
+                                <p class="card-text mt-4">
+                                    <span class="italic">
+                                        Quels sont les tickets émis au deuxième
+                                        trimestre 2017 ? Afficher le numéro de
+                                        ticket et la date.
+                                    </span>
+                                    <br /><br />
+                                    Rien de nouveau dans ce code...
+                                </p>
+                                <a
+                                    href="./img/SQL/code6.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher le code"
+                                    >Code</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">Question 7</h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    ---
+                                </h6>
+                                <p class="card-text mt-4">
+                                    <span class="italic"
+                                        >Quels sont les tickets émis au mois de
+                                        mars et juillet 2017 ? Afficher le
+                                        numéro de ticket et la date.</span
+                                    >
+                                    <br /><br />
+                                    2 solutions différentes avec l'opérateur
+                                    <span class="codeSQL">OR</span>
+                                </p>
+                                <a
+                                    href="./img/SQL/code7.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher le code"
+                                    >Code</a
+                                >
+                                <a
+                                    href="./img/SQL/code7b.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher le code"
+                                    >Code</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Question 8:
+                                    <span class="codeSQL">ORDER BY</span>
+                                </h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    ----
+                                </h6>
+                                <p class="card-text mt-4">
+                                    <span class="codeSQL">ORDER BY</span> permet
+                                    simplement de classer le nom des couleurs de
+                                    bières (dans l'ordre alphabétique ascendant
+                                    par défaut)
+                                </p>
+                                <a
+                                    href="./img/SQL/code8.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher le code"
+                                    >Code</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Question 9:
+                                    <span class="codeSQL">IS NULL</span>
+                                </h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    ----
+                                </h6>
+                                <p class="card-text mt-4">
+                                    <span class="italic">
+                                        Afficher la liste des bières n'ayant pas
+                                        de couleur. (Afficher le code et le nom)
+                                    </span>
+                                    <br />
+                                    <span class="codeSQL">IS NULL</span> permet
+                                    ici de sélectionner les bières qui n'ont pas
+                                    la donnée "couleur de la bière"
+                                </p>
+                                <a
+                                    href="./img/SQL/code9.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher le code"
+                                    >Code</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-md-4 col-lg-4 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">Question 10:</h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    ----
+                                </h6>
+                                <p class="card-text mt-4">
+                                    <span class="italic">
+                                        Donnez la liste des bières de même
+                                        couleur et de même type que la bière
+                                        ayant le code 142. (affichez le code et
+                                        le nom de la bière, le nom de la couleur
+                                        et le nom du type) </span
+                                    ><br />
+                                    Les 2 codes ci-dessous font appel à une
+                                    jointure de 3 tables et font appel à des
+                                    sous-requêtes dans la condition
+                                    <span class="codeSQL">WHERE</span>.
+                                    L'opérateur
+                                    <span class="codeSQL">AND</span> permet de
+                                    bien sélectionner les bières "de même
+                                    couleur <span class="gras">ET</span> de même
+                                    type". La différence des 2 codes se trouve
+                                    dans l'utilisation du mot-clé
+                                    <span class="codeSQL">USING</span> pour les
+                                    jointures...
+                                </p>
+                                <a
+                                    href="./img/SQL/code10.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher le code"
+                                    >Code</a
+                                >
+                                <a
+                                    href="./img/SQL/code10b.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher le code"
+                                    >Code</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-md-5 col-lg-5 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <span class="codeSQL">CONCAT</span>,
+                                    <span class="codeSQL">GROUP BY</span>,
+                                    <span class="codeSQL">SUM</span>
+                                </h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    ----
+                                </h6>
+                                <p class="card-text mt-4">
+                                    <span class="italic"
+                                        >Lister pour chaque ticket la quantité
+                                        totale d'articles vendus. (Classer par
+                                        quantité décroissante)</span
+                                    ><br />
+                                    <span class="codeSQL">CONCAT</span> permet
+                                    de concaténer plusieurs champs. Attention!!
+                                    Ce mot-clé n'est valable qu'avec MySQL (ce
+                                    sera différent pour d'autres SGBDD) <br />
+                                    <span class="codeSQL">GROUP BY</span>:
+                                    clause de regroupement <br />
+                                    <span class="codeSQL">SUM</span>: fonction
+                                    d'agrégation.
+                                    <br />
+                                    <span class="codeSQL">SUM</span> est une
+                                    fonction d'agrégation en SQL utilisée pour
+                                    calculer la somme des valeurs dans une
+                                    colonne spécifiée d'une table, généralement
+                                    dans le cadre d'une requête
+                                    <span class="codeSQL">GROUP BY</span>.
+                                </p>
+                                <a
+                                    href="./img/SQL/code11.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher le code"
+                                    >Code</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-md-5 col-lg-5 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">Question 12:</h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    ----
+                                </h6>
+                                <p class="card-text mt-4">
+                                    <span class="italic"
+                                        >Lister chaque ticket pour lequel la
+                                        quantité totale d'articles vendus est
+                                        inférieure à 50. (Classer par quantité
+                                        croissante)</span
+                                    ><br />
+                                    La clause
+                                    <span class="codeSQL">WHERE</span> ne
+                                    pouvant pas être utilisée après un
+                                    regroupement
+                                    <span class="codeSQL">GROUP BY</span> (qui
+                                    est d'ailleurs effectuée dans ce cas sur
+                                    l'association de 2 champs), nous utilisons
+                                    ici la clause
+                                    <span class="codeSQL">HAVING</span>. <br />
+                                    La clause
+                                    <span class="codeSQL">WHERE</span> filtre
+                                    les lignes de données avant le regroupement,
+                                    tandis que la clause
+                                    <span class="codeSQL">HAVING</span> filtre
+                                    les groupes agrégés après le regroupement!
+                                </p>
+                                <a
+                                    href="./img/SQL/code12.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher le code"
+                                    >Code</a
+                                >
+                            </div>
+                        </div>
+
+                        <div
+                            class="card col-12 col-md-4 col-lg-4 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Question 13: option
+                                    <span class="codeSQL">DESC</span>
+                                </h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    ----
+                                </h6>
+                                <p class="card-text mt-4">
+                                    <span class="italic"
+                                        >Lister chaque ticket pour lequel la
+                                        quantité totale d'articles vendus est
+                                        supérieure à 500. (Classer par quantité
+                                        décroissante)</span
+                                    >
+                                    <br />
+                                    Dans ce code, le
+                                    <span class="codeSQL">ORDER BY</span> est
+                                    effectué de manière décroissante grâce à
+                                    l'option <span class="codeSQL">DESC</span>
+                                    <br />
+                                    La jointure est faite sur la clé primaire de
+                                    la table "Vendre" qui est constituée de 2
+                                    champs: ANNEE et NUMERO_TICKET
+                                </p>
+                                <a
+                                    href="./img/SQL/code13.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher le code"
+                                    >Code</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">Question 14:</h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    ----
+                                </h6>
+                                <p class="card-text mt-4">
+                                    <span class="italic"
+                                        >Lister chaque ticket pour lequel la
+                                        quantité totale d'articles vendus est
+                                        supérieure à 500. On exclura du total,
+                                        les ventes de 50 articles et plus.
+                                        (classer par quantité
+                                        décroissante).</span
+                                    >
+                                </p>
+                                <a
+                                    href="./img/SQL/code14.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher le code"
+                                    >Code</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">Question 15:</h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    ----
+                                </h6>
+                                <p class="card-text mt-4">
+                                    <span class="italic"
+                                        >Lister les bières de type ‘Trappiste'.
+                                        (id, nom de la bière, volume et
+                                        titrage).</span
+                                    >
+                                </p>
+                                <a
+                                    href="./img/SQL/code15.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher le code"
+                                    >Code</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-md-4 col-lg-2 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">Question 16:</h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    ----
+                                </h6>
+                                <p class="card-text mt-4">
+                                    <span class="italic"
+                                        >Lister les marques du continent
+                                        ‘Afrique'. (id et nom de marque, nom du
+                                        continent).</span
+                                    >
+                                </p>
+                                <a
+                                    href="./img/SQL/code16.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher le code"
+                                    >Code</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-md-4 col-lg-3 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">Question 17:</h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    ----
+                                </h6>
+                                <p class="card-text mt-4">
+                                    <span class="italic"
+                                        >Lister les bières du continent
+                                        ‘Afrique'. (ID, Nom et volume)</span
+                                    >
+                                </p>
+                                <a
+                                    href="./img/SQL/code17.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher le code"
+                                    >Code</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-md-4 col-lg-3 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">Question 18 :</h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    ----
+                                </h6>
+                                <p class="card-text mt-4">
+                                    <span class="italic">
+                                        Lister les tickets (année, numéro de
+                                        ticket, montant total à payer). En
+                                        sachant que : on applique un taux de TVA
+                                        de 20% au montant total hors taxe de
+                                        chaque ticket Classer par montant
+                                        décroissant :
+                                    </span>
+                                </p>
+                                <a
+                                    href="./img/SQL/code18.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher le code"
+                                    >Code</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-md-4 col-lg-3 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">Question 19 :</h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    ----
+                                </h6>
+                                <p class="card-text mt-4">
+                                    <span class="italic"
+                                        >Donner le C.A. par année. (Année et
+                                        Total HT).</span
+                                    >
+                                </p>
+                                <a
+                                    href="./img/SQL/code19.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher le code"
+                                    >Code</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-md-4 col-lg-3 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">Question 20 :</h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    ----
+                                </h6>
+                                <p class="card-text mt-4">
+                                    <span class="italic"
+                                        >Lister les quantités vendues de chaque
+                                        article pour l'année 2017. (Id et nom de
+                                        l'article, quantité vendue)</span
+                                    >
+                                </p>
+                                <a
+                                    href="./img/SQL/code20.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher le code"
+                                    >Code</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-md-4 col-lg-3 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">Question 21 :</h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    ----
+                                </h6>
+                                <p class="card-text mt-4">
+                                    <span class="italic"
+                                        >Lister les quantités vendues de chaque
+                                        article pour les années 2014,2015
+                                        ,2016,2017.</span
+                                    >
+                                    <br />
+                                    Dans ce code
+                                    <span class="codeSQL"
+                                        >IFNULL (SUM(Quantite),0)</span
+                                    >
+                                    permet de remplacer les valeurs
+                                    <codeSQL>NULL</codeSQL> par la valeur 0 dans
+                                    le calcul de la somme
+                                    <span class="codeSQL">SUM</span>.
+                                </p>
+                                <a
+                                    href="./img/SQL/code21.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher le code"
+                                    >Code</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-md-4 col-lg-3 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">Question 22 :</h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    ----
+                                </h6>
+                                <p class="card-text mt-4">
+                                    <span class="italic"
+                                        >Lister les tickets sur lesquels
+                                        apparaissent un des articles
+                                        apparaissant aussi sur le ticket
+                                        2017-5123. (Anne et Numéro de
+                                        ticket)</span
+                                    ><br />L'opérateur SQL
+                                    <span class="codeSQL">IN</span> permet
+                                    d'utiliser un ensemble de valeurs. Ici dans
+                                    le cadre d'une clause
+                                    <span class="codeSQL">WHERE</span>
+                                </p>
+                                <a
+                                    href="./img/SQL/code22.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher le code"
+                                    >Code</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-md-12 col-lg-12 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">Question 23 :</h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    ----
+                                </h6>
+                                <p class="card-text mt-4">
+                                    <span class="italic"
+                                        >Donner pour chaque Type de bière, la
+                                        bière la plus vendue en 2017. (Classer
+                                        par quantité décroissante)</span
+                                    ><br />Code 1 : <br />
+                                    Ce code implique une requête SQL un peu
+                                    complexe : <br />
+                                    Pour obtenir les résultats souhaités, nous
+                                    avons d'abord créé une table temporaire
+                                    appelée "tableTemp" (lignes 8 à 21 du Code1
+                                    ). Dans cette table, nous avons rassemblé
+                                    différentes données telles que l'ID du type
+                                    de bière, son nom, l'ID de l'article et son
+                                    nom, ainsi que la somme des quantités
+                                    vendues par article. De plus, nous avons
+                                    attribué un classement à chaque type de
+                                    bière en fonction de la quantité totale
+                                    vendue pour cet article. Cette attribution
+                                    de classement est réalisée grâce à la
+                                    fonction de fenêtre
+                                    <span class="codeSQL">ROWNUMBER()</span>
+                                    <span class="codeSQL">OVER</span> (<span
+                                        class="codeSQL"
+                                        >PARTITION BY</span
+                                    >
+                                    Id_Type
+                                    <span class="codeSQL">ORDER BY</span>
+                                    <span class="codeSQL">SUM</span>(Quantite)
+                                    DESC), qui partitionne les données par ID de
+                                    type de bière et les trie par quantité
+                                    vendue, puis assigne un numéro de
+                                    classement.
+                                    <a
+                                        href="./img/SQL/tableTemp.jpg"
+                                        target="_blank"
+                                        class="card-link"
+                                        title="Cliquez pour afficher le code"
+                                        >Extrait du résultat de tableTemp</a
+                                    ><br /><br />
+                                    La clause
+                                    <span class="codeSQL">WHERE</span> est
+                                    utilisée pour filtrer les données et ne
+                                    garder que celles de l'année 2017. <br />
+                                    <br />
+                                    Ensuite, nous récupérons les champs demandés
+                                    dans cette table temporaire (lignes 2 à 6),
+                                    en nous assurant de sélectionner uniquement
+                                    les données de l'article qui a été classé
+                                    numéro 1 dans son type de bière . Cela est
+                                    réalisé en utilisant la fonction de fenêtre
+                                    <span class="codeSQL">ROWNUMBER()</span> et
+                                    en spécifiant que nous voulons uniquement
+                                    les lignes où le numéro de classement est
+                                    égal à 1. (ligne 22)<br /><br />
+                                    La fonction de fenêtre utilisée ici,
+                                    <span class="codeSQL">ROWNUMBER()</span>,
+                                    permet de calculer des classements pour
+                                    chaque ligne de la table, sans changer la
+                                    structure globale de la requête SQL. Cela
+                                    signifie que toutes les lignes de la table
+                                    temporaire sont conservées, ce qui n'aurait
+                                    pas été le cas si nous avions utilisé une
+                                    clause
+                                    <span class="codeSQL">GROUP BY</span>, qui
+                                    aurait fusionné les lignes lors du calcul.
+                                    la clause
+                                    <span class="codeSQL">OVER</span> spécifie
+                                    comment les résultats doivent être
+                                    partitionnés (avec
+                                    <span class="codeSQL">PARTITION BY</span>
+                                    dans notre cas). <br />
+                                    En résumé, les fonctions de fenêtre offrent
+                                    une flexibilité dans le traitement des
+                                    données en permettant des opérations telles
+                                    que le classement sans altérer la structure
+                                    de la requête principale. <br /><br />
+                                    Dans le code2, seule la fonction de fenêtre
+                                    diffère, nous utilisons ici
+                                    <span class="codeSQL">RANK</span>.
+                                    <span class="codeSQL">ROWNUMBER</span> donne
+                                    un classement unique alors que
+                                    <span class="codeSQL">RANK</span> peut
+                                    déterminer des ex-aequo en cas d'égalité
+                                    (mais le rang suivant sera sauté)
+                                </p>
+                                <a
+                                    href="./img/SQL/code23.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher le code"
+                                    >Code1</a
+                                >
+                                <a
+                                    href="./img/SQL/code23b.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher le code"
+                                    >Code2</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-md-4 col-lg-3 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">Question 24 :</h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    ----
+                                </h6>
+                                <p class="card-text mt-4">
+                                    <span class="italic"
+                                        >Donner la liste des bières qui n'ont
+                                        pas été vendues en 2014 ni en 2015. (Id,
+                                        nom et volume)</span
+                                    ><br />
+                                    <span class="codeSQL">NOT EXISTS</span>
+                                    permet de checker l'absence de
+                                    correspondance pour une sous-requête.
+                                </p>
+                                <a
+                                    href="./img/SQL/code24.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher le code"
+                                    >Code</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-md-4 col-lg-3 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">Question 25 :</h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    ----
+                                </h6>
+                                <p class="card-text mt-4">
+                                    <span class="italic"
+                                        >Donner la liste des bières qui n'ont
+                                        pas été vendues en 2014 mais ont été
+                                        vendues en 2015. (Id, nom et
+                                        volume)</span
+                                    ><br />
+                                    L'opérateur
+                                    <span class="codeSQL">EXISTS</span> permet
+                                    ,quand à lui , de vérifier qu'une
+                                    sous-requête a au moins un résultat.
+                                </p>
+                                <a
+                                    href="./img/SQL/code25.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher le code"
+                                    >Code</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

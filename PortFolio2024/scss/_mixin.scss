@@ -1,0 +1,10 @@
+@mixin responsive($width, $font-size){
+	@media only screen and (max-width: $width){
+		font-size : $font-size;
+	}
+}
+@mixin responsiveWidth($width, $elementWidth){
+	@media only screen and (max-width: $width){
+		width: $elementWidth;
+	}
+}

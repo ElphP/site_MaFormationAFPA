@@ -3,16 +3,17 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="robots" content="noindex, nofollow">
+        <meta name="robots" content="noindex, nofollow" />
         <title>Site MaFormationAFPA</title>
         <link rel="stylesheet" href="./css/main.min.css" />
         <link rel="stylesheet" href="typo.css" />
+        <link rel="stylesheet" href="./css/style.css" />
         <script src="./js/bootstrap.min.js"></script>
     </head>
     <body>
         <header class="bg-violet2 sticky-top">
-            <nav class="navbar navbar-expand-lg fs-4 p-3 ">
-                <div class="container-fluid ">
+            <nav class="navbar navbar-expand-lg fs-4 p-3">
+                <div class="container-fluid">
                     <a
                         class="navbar-brand text-gainsboro fs-2 px-4"
                         href="./index.html"
@@ -55,7 +56,7 @@
                                 <ul
                                     class="dropdown-menu border-violet2 border-3 bg-gainsboro"
                                 >
-                                <li>
+                                    <li>
                                         <a
                                             class="dropdown-item"
                                             href="./bases.html"
@@ -71,24 +72,32 @@
                                     </li>
                                     <li><hr class="dropdown-divider" /></li>
                                     <li>
-                                        <a class="dropdown-item" href="./bases.html#html"
+                                        <a
+                                            class="dropdown-item"
+                                            href="./bases.html#html"
                                             >HTML</a
                                         >
                                     </li>
 
                                     <li>
-                                        <a class="dropdown-item" href="./bases.html#css"
+                                        <a
+                                            class="dropdown-item"
+                                            href="./bases.html#css"
                                             >HTML+CSS</a
                                         >
                                     </li>
                                     <li><hr class="dropdown-divider" /></li>
                                     <li>
-                                        <a class="dropdown-item" href="#"
+                                        <a
+                                            class="dropdown-item"
+                                            href="./bases.html#sass"
                                             >SASS/SCSS</a
                                         >
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#"
+                                        <a
+                                            class="dropdown-item"
+                                            href="./bases.html#bootstrap"
                                             >Bootstrap</a
                                         >
                                     </li>
@@ -108,16 +117,28 @@
                                     class="dropdown-menu border-violet2 border-3 bg-gainsboro"
                                 >
                                     <li>
-                                        <a class="dropdown-item" href="./JS.html"
+                                        <a
+                                            class="dropdown-item"
+                                            href="./JS.html"
                                             >Natif</a
                                         >
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="./JS.html"
+                                        <a
+                                            class="dropdown-item"
+                                            href="./JS.html#framework"
                                             >Libraries/Framework</a
                                         >
                                     </li>
                                 </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active text-gainsboro text-black-50-hover"
+                                    aria-expanded="false"
+                                    href="./sql.html"
+                                    >SQL</a
+                                >
                             </li>
                             <li class="nav-item dropdown">
                                 <a
@@ -133,12 +154,16 @@
                                     class="dropdown-menu border-violet2 border-3 bg-gainsboro"
                                 >
                                     <li>
-                                        <a class="dropdown-item" href="#"
+                                        <a
+                                            class="dropdown-item"
+                                            href="./php.html"
                                             >Natif</a
                                         >
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#"
+                                        <a
+                                            class="dropdown-item"
+                                            href="./php.html"
                                             >Framework</a
                                         >
                                     </li>
@@ -149,5 +174,685 @@
                 </div>
             </nav>
         </header>
+        <main class="bg-gainsboro">
+            <div class="container">
+                <div id="PHP">
+                    <h1 style="text-align: center">Le langage PHP</h1>
+                    <p>Par où commencer avec PHP?</p>
+                    <p>
+                        PHP est un langage de script interprété côté serveur,
+                        souvent désigné comme un langage "back-end". En d'autres
+                        termes, les scripts PHP sont compilés en éléments
+                        lisibles par un navigateur côté client (du HTML).
+                    </p>
+                    <p>
+                        Voici quelques-unes des utilisations principales de PHP
+                        :
+                    </p>
+                    <ul>
+                        <li>Générer des pages avec du contenu dynamique.</li>
+                        <li>
+                            Créer, ouvrir, lire, écrire, effacer et fermer des
+                            fichiers sur le serveur.
+                        </li>
+                        <li>Récupérer les informations d'un formulaire.</li>
+                        <li>Envoyer et recevoir des cookies.</li>
+                        <li>
+                            Effectuer des opérations CRUD (Create, Read, Update,
+                            Delete) sur une base de données : ajouter, lire,
+                            modifier et supprimer des données.
+                        </li>
+                        <li>Contrôler l'accès des utilisateurs.</li>
+                        <li>Chiffrer des données.</li>
+                    </ul>
+                    <p>
+                        Pour commencer à développer en PHP, vous devez d'abord
+                        installer un serveur local sur votre ordinateur pour
+                        compiler le code PHP. À l'AFPA, nous avons utilisé
+                        XAMPP, qui inclut MySQL comme système de gestion de base
+                        de données relationnelles (SGBDR).
+                    </p>
+                    <p>
+                        Il est important de noter que PHP est un langage non
+                        typé. Cela signifie que les variables peuvent être de
+                        différents types et qu'elles n'ont pas besoin d'être
+                        déclarées avant d'être utilisées. <br />
+                        Une variable est indiquée par le signe
+                        <span class="codePHP">$</span>.
+                    </p>
+                    <p>
+                        Pour que le serveur puisse reconnaître le code PHP à
+                        compiler, celui-ci doit être encadré par
+                        <span class="codePHP">&lt;?php</span> et
+                        <span class="codePHP">?></span> (la partie fermante peut
+                        être omise si tout le reste du code est du PHP).
+                    </p>
+                    <p>
+                        Le code peut être écrit sous forme "spaghetti" c'est à
+                        dire que le script peut être "injecté" dans certaines
+                        parties d'un code HTML pour rendre cette page dynamique,
+                        mais attention tout fichier comportant du PHP doit avoir
+                        l'extension <span class="codePHP">.PHP</span> pour
+                        pouvoir être interprété!
+                    </p>
+                    <p>
+                        Enfin, en PHP, la concaténation est possible avec le
+                        <span class="codePHP">.</span>
+                    </p>
+                </div>
+
+                <section>
+                    <div class="row justify-content-center g-3">
+                        <h3 class="mt-5">1ère série d'exercices en PHP:</h3>
+
+                        <div
+                            class="card col-12 col-md-4 col-lg-4 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Afficher un texte en différentes tailles
+                                </h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    ici avec la boucle
+                                    <span class="codePHP">for</span>
+                                </h6>
+                                <p class="card-text mt-4">
+                                    <span class="codePHP">echo</span> est
+                                    l'instruction qui permet d'afficher du texte
+                                    sur le navigateur (entre
+                                    <span class="codePHP">" "</span> ou
+                                    <span class="codePHP">' '</span>) mais
+                                    également le contenu des variables en les
+                                    concaténant directement dans la chaîne de
+                                    caractères à afficher. <br />
+                                    ex:
+                                    <span class="codePHP"
+                                        >&lt?= "Le prix de cet objet est
+                                        $prix"?&gt;</span
+                                    >
+                                    <br />
+                                    <span class="codePHP"
+                                        >&lt?= $name ?&gt</span
+                                    >
+                                    est la version raccourcie de
+                                    <span class="codePHP"
+                                        >&lt?php echo $name ?&gt</span
+                                    >
+                                </p>
+                                <a
+                                    href="./img/PHP/code1.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Code</a
+                                >
+                                <a
+                                    href="./img/PHP/rendu1.jpg"
+                                    target="_blank"
+                                    class="card-link"
+                                    >Affichage</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-md-6 col-lg-6 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Exercice 2 :
+                                    <span class="codePHP">$_SERVER</span>,
+                                    <span class="codePHP">getenv()</span> et
+                                    <span class="codePHP">getDate()</span>
+                                </h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    ---
+                                </h6>
+                                <p class="card-text mt-4">
+                                    Dans ce 2nd exercie, il fallait afficher en
+                                    français, la date et l'heure actuelle (code
+                                    entre les lignes 15 et 27). <br />
+                                    <span class="codePHP"
+                                        >getdate()["mday"]</span
+                                    >,
+                                    <span class="codePHP">getdate()["mon"]</span
+                                    >,
+                                    <span class="codePHP"
+                                        >getdate()["hours"]</span
+                                    >,
+                                    <span class="codePHP"
+                                        >getdate()["minutes"]</span
+                                    >
+                                    permettent de récupérer respectivement:
+                                    <br />
+                                    le jour dans le mois, le chiffre
+                                    correspondant au mois (à partir de 0 pour
+                                    Janvier), l'heure actuelle et les minutes.
+                                    <br />
+                                    Je n'ai finalement pas utilisé le tableau
+                                    <span class="codePHP">$jours</span> mais
+                                    j'aurais pu rajouter le jour de la semaine
+                                    avec
+                                    <span class="codePHP">getDate["wday"]</span>
+                                    <a
+                                        href="https://www.w3schools.com/php/func_date_getdate.asp"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Voir getDate()</a
+                                    >
+                                    Il existe tout un ensemble de méthodes liées
+                                    aux dates...<br /><br />
+                                    Ensuite, il fallait récupérer et afficher
+                                    dans des tableaux le résultat de la méthode
+                                    <span class="codePHP">getenv()</span> puis
+                                    le contenu de la SuperGlobale
+                                    <span class="codePHP">$_SERVER</span> qui
+                                    contient une mine d'informations sur le
+                                    serveur (ici mon ordinateur car je développe
+                                    en local...) <br />
+                                    Informations sur les
+                                    <a
+                                        href="https://www.w3schools.com/php/php_superglobals.asp"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        style="text-decoration: none"
+                                        >SuperGlobales PHP</a
+                                    >
+                                    <br />
+                                    Dans ce code vous pouvez observer entre les
+                                    lignes 15 et 18 un
+                                    <span class="codePHP">var_dump(" ")</span>
+                                    mis en forme avec la balise
+                                    <span class="code">&ltpre&gt&lt/pre&gt</span
+                                    >, qui m'a permis, dans le développement,
+                                    d'afficher la superGlobale et son contenu
+                                    avant de séparer ses données dans un
+                                    tableau.
+                                </p>
+                                <a
+                                    href="./img/PHP/code2.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Code</a
+                                >
+                                <a
+                                    href="./img/PHP/rendu2a.jpg"
+                                    target="_blank"
+                                    class="card-link"
+                                    >Affichage1</a
+                                >
+                                <a
+                                    href="./img/PHP/rendu2b.jpg"
+                                    target="_blank"
+                                    class="card-link"
+                                    >Affichage2</a
+                                >
+                                <a
+                                    href="./img/PHP/rendu2c.jpg"
+                                    target="_blank"
+                                    class="card-link"
+                                    >Affichage3</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-md-5 col-lg-5 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Ecercice 3 :
+                                    <span class="codePHP">$_SESSION</span>,
+                                    <span class="codePHP">POST</span>,
+                                    <span class="codePHP">isset()</span>
+                                </h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    ---
+                                </h6>
+                                <p class="card-text mt-4">
+                                    Dans ce code la méthode
+                                    <span class="codePHP">POST</span> (code1
+                                    ligne 12) permet de passer les données du
+                                    formulaire, lors de la validation, au
+                                    fichier "loginCtrl.php" à l'aide de
+                                    l'attribut <span class="code">action</span>.
+                                    Cette méthode est plus sécurisée que la
+                                    méthode <span class="codePHP">GET</span> qui
+                                    passe les données récupérées dans le
+                                    formulaire par l'intermédiaire de l'URL .
+                                    <br /><br />
+                                    Dans le fichier "loginCtrl" (code2), une
+                                    session PHP est démarrée avec l'instruction
+                                    <span class="codePHP">session_start()</span>
+                                    qui permet d'ouvrir une session PHP et de
+                                    créer des variables de sessions (code2) qui
+                                    pourront être réutilisées dans toutes les
+                                    pages pour lesqueslles la session PHP est
+                                    démarrée (il est conseillé d'utiliser cette
+                                    instruction dès le début du fichier et à
+                                    éviter après du code HTML). <br />
+                                    La variable de session peut donc être
+                                    récupérée dans la page "loginSuite"
+                                    (code3).<br /><span class="codePHP"
+                                        >isset($_SESSION["user"])</span
+                                    >
+                                    prend la valeur
+                                    <span class="codePHP">true</span> si la
+                                    variable de session
+                                    <codePHP>$_SESSION["user"]</codePHP> existe,
+                                    sinon elle prend la valeur
+                                    <codePHP>false</codePHP>. <br />
+                                    Si la session n'existe pas (par exemple si
+                                    l'URL est copiée dans un autre navigateur)
+                                    ou si la session a été fermée, le code
+                                    renvoie à la page "login" (code1) après 5
+                                    secondes (ligne 8 du code3 ) après avoir
+                                    affiché un message d'erreur (lignes 18 à
+                                    20). Sinon, si la variable de SESSION existe
+                                    bien, le code des lignes 23 à 33 est
+                                    exécuté!
+                                </p>
+                                <a
+                                    href="./img/PHP/code3HTML.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Code1</a
+                                >
+                                <a
+                                    href="./img/PHP/code3PHPa.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Code2</a
+                                >
+                                <a
+                                    href="./img/PHP/code3PHPb.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Code3</a
+                                >
+                                <a
+                                    href="./img/PHP/rendu3a.jpg"
+                                    target="_blank"
+                                    class="card-link"
+                                    >Affichage</a
+                                >
+                            </div>
+                        </div>
+
+                        <div
+                            class="card col-12 col-md-5 col-lg-5 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Ecercice 3.1 :
+                                    <span class="codePHP">include</span>,
+                                    <span class="codePHP"
+                                        >$_SERVER["PHP_SELF"]</span
+                                    >,
+                                    <span class="codePHP"
+                                        >preg_match($pattern,$var)</span
+                                    >,
+                                    <span class="codePHP"
+                                        >explode("separator",$var)</span
+                                    >
+                                </h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    POST et Cookie
+                                </h6>
+                                <p class="card-text mt-4">
+                                    Les instructions
+                                    <span class="codePHP"
+                                        >include("URLFichier")</span
+                                    >,
+                                    <span class="codePHP"
+                                        >include_once("URLFichier")</span
+                                    >,
+                                    <span class="codePHP"
+                                        >require("URLFichier")</span
+                                    >
+                                    et
+                                    <span class="codePHP"
+                                        >require_once("URLFichier")</span
+                                    >
+                                    permettent de rendre le PHP très modulaire.
+                                    <span class="codePHP">include()</span>
+                                    permet d'insérer le code d'un autre fichier
+                                    mais n'empêche pas l'exécution du script si
+                                    celui-ci ne peut pas être chargé,
+                                    contrairement à
+                                    <span class="codePHP">require()</span> qui
+                                    provoquera une erreur si le chargement
+                                    échoue.
+                                    <br />
+                                    <span class="codePHP">_once</span> permet
+                                    d'éviter que le script appelé soit chargé
+                                    plusieurs fois. (ce qui peut provoquer des
+                                    erreurs) <br /><br />
+                                    <span class="codePHP"
+                                        >action='$_SERVER["PHP_SELF"]'</span
+                                    >
+                                    dans un formulaire HTML indique que le
+                                    formulaire sera soumis au même fichier PHP
+                                    qui le contient, ce qui est souvent utilisé
+                                    pour le traitement du formulaire.
+                                    <br /><br />
+                                    La fonction
+                                    <span class="codePHP"
+                                        >preg_match($pattern,$var)</span
+                                    >
+                                    renvoie <span class="codePHP">true</span> si
+                                    la variable $var est en concordance avec la
+                                    regex
+                                    <span class="codePHP">$pattern</span> (sinon
+                                    elle renvoie la valeur
+                                    <span class="codePHP">false</span>).
+                                    <br /><br />
+                                    La fonction
+                                    <span class="codePHP"
+                                        >explode("separator",$var)</span
+                                    >
+                                    prend deux arguments : le premier est le
+                                    séparateur utilisé pour diviser la chaîne
+                                    $var, et le deuxième est la chaîne à
+                                    diviser. Elle renvoie un tableau contenant
+                                    les sous-chaînes résultantes après avoir
+                                    divisé la chaîne $var à chaque occurrence du
+                                    séparateur spécifié. Dans notre cas elle
+                                    récupère dans un tableau les différentes
+                                    données de la date entrée sous la forme
+                                    JJ/MM/YYYY:
+                                    <span class="codePHP">[JJ,MM,YYYY]</span>
+                                    <br />
+                                    Enfin, la fonction "algo_verif_date" permet
+                                    de vérifier si la date entrée existe... (en
+                                    tenant compte des années bissextiles!)
+                                </p>
+                                <a
+                                    href="./img/PHP/code3-1b.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Code1</a
+                                >
+                                <a
+                                    href="./img/PHP/code3-1a.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Code2</a
+                                >
+
+                                <a
+                                    href="./img/PHP/rendu3-1.jpg"
+                                    target="_blank"
+                                    class="card-link"
+                                    >Affichage</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-md-5 col-lg-5 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Ecercice 4 :
+                                    <span class="codePHP">method="GET"</span>
+                                </h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    + Fausse requête SQL
+                                </h6>
+                                <p class="card-text mt-4">
+                                    Dans cet exercice, les données du formulaire
+                                    sont transmises à travers la méthode
+                                    <span class="codePHP">GET</span>, ce qui
+                                    signifie que ces données sont exposées en
+                                    clair dans l'URL vers le code de traitement
+                                    (code2).
+                                    <br />
+                                    Les informations du formulaire sont
+                                    récupérées en ciblant l'attribut
+                                    <span class="codePHP">name</span> du champ
+                                    correspondant. Pour les boutons radio, la
+                                    valeur du champ
+                                    <span class="codePHP">value</span> est
+                                    transmise. Pour le nom et l'âge, les valeurs
+                                    sont transmises via la méthode
+                                    <span class="codePHP">GET</span>. Enfin,
+                                    pour les cases à cocher, la présence de
+                                    l'attribut
+                                    <span class="codePHP">name</span> dans la
+                                    requête
+                                    <span class="codePHP">GET</span> indique que
+                                    la case a été cochée (sinon elle ne l'est
+                                    pas).
+                                </p>
+                                <a
+                                    href="./img/PHP/code4a.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Code1</a
+                                >
+                                <a
+                                    href="./img/PHP/code4b.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Code2</a
+                                >
+
+                                <a
+                                    href="./img/PHP/rendu4.jpg"
+                                    target="_blank"
+                                    class="card-link"
+                                    >Affichage</a
+                                >
+                                <a
+                                    href="./img/PHP/rendu4b.jpg"
+                                    target="_blank"
+                                    class="card-link"
+                                    >Affichage</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-md-5 col-lg-5 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">Ecercice 5 :</h5>
+                                <h6
+                                    class="card-subtitle text-body-secondary"
+                                ></h6>
+                                <p class="card-text mt-4">
+                                    1 – Créer un programme PHP mult_html .php
+                                    qui affiche une table de multiplication
+                                    10*10. Efforcez-vous d'utiliser au maximum
+                                    les balises HTML et employez le moins
+                                    possible les balises PHP. <br />
+                                    2 – Écrivez un nouveau programme
+                                    mult_php.php de multiplication mais qui
+                                    n'utilise aucune balise HTML. <br />
+                                    3 – Comparez les deux styles. <br />
+                                    4 – Trouvez un moyen de n'utiliser qu'une
+                                    seule fois l'instruction echo (ou print) à
+                                    partir du second programme
+                                    (mult_sans_echos.php).
+                                </p>
+                                <a
+                                    href="./img/PHP/code5a.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Code1</a
+                                >
+                                <a
+                                    href="./img/PHP/code5b.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Code2</a
+                                >
+                                <a
+                                    href="./img/PHP/code5c.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Code3</a
+                                >
+                                <a
+                                    href="./img/PHP/code5d.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Code4</a
+                                >
+                                <a
+                                    href="./img/PHP/code4e.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Code5</a
+                                >
+
+                                <a
+                                    href="./img/PHP/rendu5.jpg"
+                                    target="_blank"
+                                    class="card-link"
+                                    >Rendu des codes 1,2 et 4</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-md-5 col-lg-5 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Ecercice 6 : exercices sur les tableaux
+                                </h5>
+                                <h6
+                                    class="card-subtitle text-body-secondary"
+                                ></h6>
+                                <p class="card-text mt-4">
+                                    La taille des Tableaux en PHP n'est pas
+                                    définie à leur création, les index peuvent
+                                    être numériques ou alphanumériques, et le
+                                    langage propose de nombreuses façons de les
+                                    exploiter. Seule difficulté notoire, le
+                                    passage d'un tableau à une fonction se fait
+                                    par valeur.
+                                    <br />
+
+                                    1- Trouvez un moyen d'échanger les valeurs
+                                    de deux variables $a et $b en une seule
+                                    instruction, vous pourrez utiliser l'élément
+                                    de langage PHP list (). Créez un script
+                                    tableaux.php pour le tester. <br />
+
+                                    2- Déclarez un tableau $pays indexé par des
+                                    entiers contenant les noms de trois pays.
+                                    <br />
+
+                                    3- Affichez ce tableau à l'aide de
+                                    l'instruction var_dump. <br />
+
+                                    4- Parcourez le tableau à l'aide d'une
+                                    boucle for, vous pourrez utiliser la
+                                    fonction count ().
+                                    <br />
+
+                                    5- Parcourez de nouveau le tableau à l'aide
+                                    d'une boucle foreach. <br />
+
+                                    6- Pour quelle raison n'est-il pas approprié
+                                    d'utiliser une boucle do ... while. <br />
+
+                                    7- Ajoutez des index sous forme de chaînes
+                                    de caractères pour associer les capitales
+                                    aux pays du tableau $pays. <br />
+
+                                    8- Combien vaut l'expression count($pays) ?
+                                    <br />
+
+                                    9- Comment parcourir ce tableau pour
+                                    afficher chaque pays et sa capitale ? <br />
+
+                                    10 - Ajouter au script en cours une fonction
+                                    enumerer($t) qui prend le tableau comme
+                                    paramètre et qui affiche la valeur de chaque
+                                    index alphanumérique. <br />
+
+                                    11 Insérez une valeur $t[« capitale »] = «
+                                    pays » en créant une fonction ajouter($t)
+                                    puis afficher les nouvelles valeurs du
+                                    tableau résultant. <br />
+
+                                    12 Affichez par var_dump le tableau après
+                                    l'exécution de la fonction. Qu'en
+                                    concluez-vous ? <br />
+                                </p>
+                                <a
+                                    href="./img/PHP/code5a.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Code</a
+                                >
+
+                                <a
+                                    href="./img/PHP/rendu6.jpg"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >résultats affichés</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-md-5 col-lg-5 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">Ecercice 7 :</h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    <span class="codePHP">explode()</span> ,
+                                    <span class="codePHP">count()</span>
+                                </h6>
+                                <p class="card-text mt-4">
+                                    Créez un tableau contenant une liste
+                                    d'adresses e-mail. Extrayez le nom de
+                                    serveur de ces données, puis réalisez des
+                                    statistiques sur les occurrences de chaque
+                                    fournisseur d'accès.
+                                </p>
+                                <a
+                                    href="./img/PHP/code7.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Code</a
+                                >
+
+                                <a
+                                    href="./img/PHP/rendu7.jpg"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Affichage</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
     </body>
 </html>

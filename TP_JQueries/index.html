@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizz World</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./jquery-ui-1.13.2.custom/jquery-ui.css">
+<script src="./jquery-ui-1.13.2.custom/external/jquery/jquery.js"></script>
+<script src="./jquery-ui-1.13.2.custom/jquery-ui.js"></script>
+
+
+
+    <script src="script.js" defer></script>
+</head>
+  <body>
+    <header>
+      <h1>Quizz World</h1>
+    </header>
+    <main>
+      <section class="accueil">
+          <div class="box box1">
+            <h2>Application Web</h2>
+            <img src="./img/web.jpg" alt="web" />
+            <div class="choixRadio">
+                <input type="radio" name="choix1" id="deb" /><label for="deb"
+                >Débutant</label
+              ><input type="radio" name="choix1" id="conf" />
+              <label for="conf">Confirmé</label>
+              <input type="radio" name="choix1" id="exp" />
+              <label for="exp">Expert</label>
+            </div>
+          </div>
+          <div class="box box2">
+            <h2>JavaScript</h2>
+            <img src="./img/javascript.png" alt="JavaScript" />
+            <div class="choixRadio">
+                <input type="radio" name="choix2" id="deb" /><label for="deb"
+                >Débutant</label
+              ><input type="radio" name="choix2" id="conf" />
+              <label for="conf">Confirmé</label>
+              <input type="radio" name="choix2" id="exp" />
+              <label for="exp">Expert</label>
+            </div>
+          </div>
+          <div class="box box3">
+            <h2>Le XXème siècle</h2>
+            <img src="./img/dates20.jpg" alt="dates" />
+            <div class="choixRadio">
+                <input type="radio" name="choix3" id="deb" /><label for="deb"
+                >Débutant</label
+              ><input type="radio" name="choix3" id="conf" />
+              <label for="conf">Confirmé</label>
+              <input type="radio" name="choix3" id="exp" />
+              <label for="exp">Expert</label>
+            </div>
+          </div>
+          <div class="box box4">
+            <h2>Nintendo</h2>
+            <img src="./img/nintendo.jpg" alt="nintendo" />
+            <div class="choixRadio">
+                <input type="radio" name="choix4" id="deb" /><label for="deb"
+                >Débutant</label
+              ><input type="radio" name="choix4" id="conf" />
+              <label for="conf">Confirmé</label>
+              <input type="radio" name="choix4" id="exp" />
+              <label for="exp">Expert</label>
+            </div>
+          </div>
+          <div class="box box5">
+            <h2>Trouver le nombre</h2>
+            <img src="./img/nombres.jpg" alt="nombres" />
+            <div class="choixRadio">
+                <input type="radio" name="choix5" id="deb" /><label for="deb"
+                >Débutant</label
+              ><input type="radio" name="choix5" id="conf" />
+              <label for="conf">Confirmé</label>
+              <input type="radio" name="choix5" id="exp" />
+              <label for="exp">Expert</label>
+            </div>
+          </div>
+          <div class="box box6">
+            <h2>Microsoft</h2>
+            <img src="./img/microsoft.jpg" alt="microsoft" />
+            <div class="choixRadio">
+                <input type="radio" name="choix6" id="deb" /><label for="deb"
+                >Débutant</label
+              ><input type="radio" name="choix6" id="conf" />
+              <label for="conf">Confirmé</label>
+              <input type="radio" name="choix6" id="exp" />
+              <label for="exp">Expert</label>
+            </div>
+          </div>
+          <div class="box box7">
+            <h2>PHP</h2>
+            <img src="./img/PHP.jpg" alt="PHP" />
+            <div class="choixRadio">
+                <input type="radio" name="choix7" id="deb" /><label for="deb"
+                >Débutant</label
+              ><input type="radio" name="choix7" id="conf" />
+              <label for="conf">Confirmé</label>
+              <input type="radio" name="choix7" id="exp" />
+              <label for="exp">Expert</label>
+            </div>
+          </div>
+          <div class="box box8">
+            <h2>Les méandres d'internet</h2>
+            <img src="./img/internet.jpg" alt="internet" />
+            <div class="choixRadio">
+              <input type="radio" name="choix8" id="deb" /><label for="deb"
+                >Débutant</label
+              ><input type="radio" name="choix8" id="conf" />
+              <label for="conf">Confirmé</label>
+              <input type="radio" name="choix8" id="exp" />
+              <label for="exp">Expert</label>
+            </div>
+          </div>
+      </section>
+      <section class="recap">
+        <h2></h2>
+        <p></p>
+        <img src="" alt="">
+        <button>Démarrez le quizz</button>
+      </section>
+      <section class="jeu">
+        <h2></h2>
+        <p> <span class="numeroQuestion"></span>: <span class="question"></span></p>
+        <p class="anecdote"></p>
+        <div class="reponses">
+         
+        </div>
+        <div class="zoneDepot">
+          <div class="depot" >Déposez votre réponse ici...</div>
+          <button disabled>Suivant</button>
+        </div>
+      </section>
+      <section class="message"></section>
+    </main>
+  </body>
+</html>

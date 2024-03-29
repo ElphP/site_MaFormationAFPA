@@ -66,7 +66,7 @@ function affichCouleur(ag, per, acc, fid) {
     case 0:
       message.classList = "text-center text-light fs-4 col-12 col-lg-6";
       message.innerHTML =
-        "Désolé, mais vous ne remplissez pas les conditions nécessaires pour que nous puissions vous assuré...  ";
+        "Désolé, mais vous ne remplissez pas les conditions nécessaires pour que nous puissions vous assurer...  ";
 
       break;
 

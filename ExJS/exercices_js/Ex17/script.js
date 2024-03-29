@@ -3,10 +3,10 @@ let chaine="<ul>";
 
 
 for (let i = 0; i < 10; i++) {
- let nbr=Math.round(Math.random() * 10);  
+ let nbr=Math.floor(Math.random() * 11);  
  chaine+= "<li>"+ nbr + "</li>";
- if(nbr===10) {"Le nombre 10 a été tiré au sort"}
+ if(nbr===10) {console.log("Le nombre 10 a été tiré au sort")};
 }
 
-chaine+= "</li>";
+chaine+= "</ul>";
 document.body.innerHTML = chaine;
