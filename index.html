@@ -11,7 +11,7 @@
     </head>
     <body>
         <header class="bg-violet2 sticky-top">
-                 <nav class="navbar navbar-expand-lg fs-4 p-3">
+                 <nav class="navbar navbar-expand-lg fs-4 p-3 navbar-light">
                 <div class="container-fluid">
                     <a
                         class="navbar-brand text-gainsboro fs-2 px-4"
@@ -27,7 +27,7 @@
                         aria-expanded="false"
                         aria-label="Toggle navigation"
                     >
-                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon "></span>
                     </button>
                     <div
                         class="collapse navbar-collapse"
@@ -127,14 +127,36 @@
                                     </li>
                                 </ul>
                             </li>
-                             <li class="nav-item">
+                            <li class="nav-item dropdown">
                                 <a
-                                    class="nav-link active text-gainsboro text-black-50-hover"
+                                    class="nav-link dropdown-toggle text-gainsboro text-black-50-hover"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
                                     aria-expanded="false"
-                                    href="./sql.html"
-                                    >SQL</a
                                 >
+                                    SQL
+                                </a>
+                                <ul
+                                    class="dropdown-menu border-violet2 border-3 bg-gainsboro"
+                                >
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="./sql.html"
+                                            >Conception de la BDD</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="./sql.html#sql"
+                                            >Langage SQL</a
+                                        >
+                                    </li>
+                                </ul>
                             </li>
+                           
                             <li class="nav-item dropdown">
                                 <a
                                     class="nav-link dropdown-toggle text-gainsboro text-black-50-hover"
@@ -154,7 +176,7 @@
                                         >
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="./php.html"
+                                        <a class="dropdown-item" href="./php.html#FW"
                                             >Framework</a
                                         >
                                     </li>
@@ -169,8 +191,8 @@
             <video autoplay muted loop id="myVideo">
                 <source src="./img/fond.mp4" type="video/mp4" />
             </video>
-            <div class="photo container-fluid p-5">
-                <div class="present row text-white rounded-3 p-5">
+            <div class="photo container-fluid p-4">
+                <div class="present row text-white rounded-3 p-4">
                     <article>
                         <h1 class="text-center">
                             Bienvenue sur "MaFormationAFPA"

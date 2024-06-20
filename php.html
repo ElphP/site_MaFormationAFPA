@@ -12,7 +12,7 @@
     </head>
     <body>
         <header class="bg-violet2 sticky-top">
-            <nav class="navbar navbar-expand-lg fs-4 p-3">
+            <nav class="navbar navbar-expand-lg fs-4 p-3 navbar-light">
                 <div class="container-fluid">
                     <a
                         class="navbar-brand text-gainsboro fs-2 px-4"
@@ -132,13 +132,34 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item">
+                             <li class="nav-item dropdown">
                                 <a
-                                    class="nav-link active text-gainsboro text-black-50-hover"
+                                    class="nav-link dropdown-toggle text-gainsboro text-black-50-hover"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
                                     aria-expanded="false"
-                                    href="./sql.html"
-                                    >SQL</a
                                 >
+                                    SQL
+                                </a>
+                                <ul
+                                    class="dropdown-menu border-violet2 border-3 bg-gainsboro"
+                                >
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="./sql.html"
+                                            >Conception de la BDD</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="./sql.html#sql"
+                                            >Langage SQL</a
+                                        >
+                                    </li>
+                                </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a
@@ -163,7 +184,7 @@
                                     <li>
                                         <a
                                             class="dropdown-item"
-                                            href="./php.html"
+                                            href="./php.html#FW"
                                             >Framework</a
                                         >
                                     </li>
@@ -177,6 +198,16 @@
         <main class="bg-gainsboro">
             <div class="container">
                 <div id="PHP">
+                    <br />
+                    <p class="italic">
+                        <span class="gras">Nota bene: </span>pour la plupart des
+                        exercices ci-dessous, pour des raisons de temps (la
+                        formation est assez courte pour un contenu dense), je me
+                        suis contenté d'une version desktop, c'est pourquoi le
+                        rendu des applications peut ne pas être optimisée en
+                        version mobile! (quand elle existe)
+                    </p>
+                    <br /><br />
                     <h1 style="text-align: center">Le langage PHP</h1>
                     <p>Par où commencer avec PHP?</p>
                     <p>
@@ -244,7 +275,6 @@
                 <section>
                     <div class="row justify-content-center g-3">
                         <h3 class="mt-5">1ère série d'exercices en PHP:</h3>
-
                         <div
                             class="card col-12 col-md-4 col-lg-4 m-2 border-3 border-blue2"
                             style="min-width: 18rem"
@@ -378,32 +408,21 @@
                                     >Code</a
                                 >
                                 <a
-                                    href="./img/PHP/rendu2a.jpg"
+                                    href="https://afpa-lfejp-php.000webhostapp.com/PHP/Exercice2/"
                                     target="_blank"
                                     class="card-link"
-                                    >Affichage1</a
+                                    >Affichage</a
                                 >
-                                <a
-                                    href="./img/PHP/rendu2b.jpg"
-                                    target="_blank"
-                                    class="card-link"
-                                    >Affichage2</a
-                                >
-                                <a
-                                    href="./img/PHP/rendu2c.jpg"
-                                    target="_blank"
-                                    class="card-link"
-                                    >Affichage3</a
-                                >
+                                
                             </div>
                         </div>
                         <div
-                            class="card col-12 col-md-5 col-lg-5 m-2 border-3 border-blue2"
+                            class="card col-12 col-md-5 col-lg-4 m-2 border-3 border-blue2"
                             style="min-width: 18rem"
                         >
                             <div class="card-body">
                                 <h5 class="card-title">
-                                    Ecercice 3 :
+                                    Exercice 3 :
                                     <span class="codePHP">$_SESSION</span>,
                                     <span class="codePHP">POST</span>,
                                     <span class="codePHP">isset()</span>
@@ -476,21 +495,20 @@
                                     >Code3</a
                                 >
                                 <a
-                                    href="./img/PHP/rendu3a.jpg"
+                                    href="https://afpa-lfejp-php.000webhostapp.com/PHP/Exercice3/"
                                     target="_blank"
                                     class="card-link"
-                                    >Affichage</a
+                                    >Test</a
                                 >
                             </div>
                         </div>
-
                         <div
-                            class="card col-12 col-md-5 col-lg-5 m-2 border-3 border-blue2"
+                            class="card col-12 col-md-5 col-lg-6 m-2 border-3 border-blue2"
                             style="min-width: 18rem"
                         >
                             <div class="card-body">
                                 <h5 class="card-title">
-                                    Ecercice 3.1 :
+                                    Exercice 3.1 :
                                     <span class="codePHP">include</span>,
                                     <span class="codePHP"
                                         >$_SERVER["PHP_SELF"]</span
@@ -541,7 +559,33 @@
                                     formulaire sera soumis au même fichier PHP
                                     qui le contient, ce qui est souvent utilisé
                                     pour le traitement du formulaire.
-                                    <br /><br />
+                                    <br />
+                                    Il existe une autre superglobale
+                                    <span class="codePHP"
+                                        >$_SERVER['SCRIPT_NAME']</span
+                                    >
+                                    presque similaire à
+                                    <span class="codePHP"
+                                        >$_SERVER["PHP_SELF"]</span
+                                    >, mais elle retourne uniquement le nom du
+                                    script, excluant les variables
+                                    <span class="codePHP">GET</span> et
+                                    <span class="codePHP">POST</span> le cas
+                                    échéant (ce que
+                                    <span class="codePHP"
+                                        >$_SERVER['PHP_SELF']</span
+                                    >
+                                    renvoie). De plus,
+                                    <span class="codePHP"
+                                        >$_SERVER['SCRIPT_NAME']</span
+                                    >
+                                    renvoie le nom du script même s'il est
+                                    inclus dans un autre, tandis que
+                                    <span class="codePHP"
+                                        >$_SERVER['PHP_SELF']</span
+                                    >
+                                    renverra toujours le chemin du script
+                                    appelant. <br /><br />
                                     La fonction
                                     <span class="codePHP"
                                         >preg_match($pattern,$var)</span
@@ -551,8 +595,22 @@
                                     regex
                                     <span class="codePHP">$pattern</span> (sinon
                                     elle renvoie la valeur
-                                    <span class="codePHP">false</span>).
-                                    <br /><br />
+                                    <span class="codePHP">false</span>). <br />
+                                    <a
+                                        href="https://regex101.com/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Découvrir et tester ses REGEX</a
+                                    >
+                                    <br />
+                                    <a
+                                        href="https://www.w3schools.com/php/func_regex_preg_match.asp"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Pour aller plus loin avec la fonction
+                                        preg_match... (options)</a
+                                    ><br />
+                                    <br />
                                     La fonction
                                     <span class="codePHP"
                                         >explode("separator",$var)</span
@@ -571,7 +629,9 @@
                                     <br />
                                     Enfin, la fonction "algo_verif_date" permet
                                     de vérifier si la date entrée existe... (en
-                                    tenant compte des années bissextiles!)
+                                    tenant compte des années bissextiles!). Si
+                                    tout se passe bien (la date est valide),
+                                    vous n'aurez pas de message...
                                 </p>
                                 <a
                                     href="./img/PHP/code3-1b.png"
@@ -587,12 +647,82 @@
                                     title="Cliquez pour afficher l'image"
                                     >Code2</a
                                 >
-
                                 <a
-                                    href="./img/PHP/rendu3-1.jpg"
+                                    href="https://betadev.elphegeproisy.com/Site_MaFormAFPA/Date_php"
                                     target="_blank"
                                     class="card-link"
-                                    >Affichage</a
+                                    >Tester le programme!</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-md-5 col-lg-5 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">Exercice 3.2 :</h5>
+                                <h6
+                                    class="card-subtitle text-body-secondary"
+                                ></h6>
+                                <p class="card-text mt-4">
+                                    <span class="codePHP"
+                                        >$_SERVER['REQUEST_METHOD']</span
+                                    >
+                                    : Cette superglobale contient la méthode de
+                                    requête HTTP utilisée pour accéder à la page
+                                    en cours. Elle est généralement utilisée
+                                    pour déterminer si une page a été demandée
+                                    via une méthode POST ou GET. Les valeurs
+                                    possibles incluent "GET", "POST", "PUT",
+                                    "DELETE", etc. <br />
+                                    <span class="codePHP">setcookie()</span> :
+                                    Cette fonction est utilisée pour définir un
+                                    cookie dans le navigateur du client. Un
+                                    cookie est un petit fichier stocké sur
+                                    l'ordinateur du client qui contient des
+                                    données envoyées par le serveur. La fonction
+                                    setcookie() prend plusieurs paramètres tels
+                                    que le nom du cookie, sa valeur, sa durée de
+                                    vie, le chemin, le domaine, etc. <br />
+                                    <span class="codePHP">$_COOKIE</span> :
+                                    Cette superglobale contient les cookies
+                                    envoyés par le client au serveur dans la
+                                    requête HTTP. Elle est utilisée pour accéder
+                                    aux cookies définis précédemment par le
+                                    serveur ou par le client. Les données de
+                                    cookies sont accessibles via les clés de
+                                    tableau associatives de $_COOKIE. <br />
+                                    <span class="codePHP">header()</span> :
+                                    Cette fonction est utilisée pour envoyer des
+                                    en-têtes HTTP bruts au client. Elle est
+                                    souvent utilisée pour rediriger les
+                                    utilisateurs vers une autre page, définir le
+                                    type de contenu, ou envoyer des en-têtes de
+                                    réponse personnalisés. L'en-tête doit être
+                                    envoyé avant que tout contenu ne soit envoyé
+                                    au navigateur, sinon une erreur sera
+                                    générée.
+                                </p>
+                                <a
+                                    href="./img/PHP/code3-2a.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Code1</a
+                                >
+                                <a
+                                    href="./img/PHP/code3-2b.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Code2</a
+                                >
+                                <a
+                                    href="https:///betadev.elphegeproisy.com/Site_MaFormAFPA/formCookie/form1.php"
+                                    target="_blank"
+                                    class="card-link"
+                                    >Tester le programme! (les identifiants sont
+                                    visibles dans le code...)</a
                                 >
                             </div>
                         </div>
@@ -602,11 +732,11 @@
                         >
                             <div class="card-body">
                                 <h5 class="card-title">
-                                    Ecercice 4 :
+                                    Exercice 4 :
                                     <span class="codePHP">method="GET"</span>
                                 </h5>
                                 <h6 class="card-subtitle text-body-secondary">
-                                    + Fausse requête SQL
+                                    + <span class="gras">Fausse requête SQL</span>
                                 </h6>
                                 <p class="card-text mt-4">
                                     Dans cet exercice, les données du formulaire
@@ -647,27 +777,24 @@
                                     title="Cliquez pour afficher l'image"
                                     >Code2</a
                                 >
-
                                 <a
-                                    href="./img/PHP/rendu4.jpg"
+                                    href="https://afpa-lfejp-php.000webhostapp.com/PHP/Exercice4/"
                                     target="_blank"
                                     class="card-link"
-                                    >Affichage</a
+                                    >Test</a
                                 >
-                                <a
-                                    href="./img/PHP/rendu4b.jpg"
-                                    target="_blank"
-                                    class="card-link"
-                                    >Affichage</a
-                                >
+                                <br>
+                                <p>Correction apportée: <span class="code">value</span> pour célibataire a été corrigé en "celib" au lieu de "célibataire" (ligne 48) pour que le code fonctionne!</p>
+                                <p>J'ai également rajouté une condition qui définit à "Néant" les loisirs  si aucune case n'est cochée... et le lien "retour"</p>
+                               
                             </div>
                         </div>
                         <div
-                            class="card col-12 col-md-5 col-lg-5 m-2 border-3 border-blue2"
+                            class="card col-12 col-md-5 col-lg-3 m-2 border-3 border-blue2"
                             style="min-width: 18rem"
                         >
                             <div class="card-body">
-                                <h5 class="card-title">Ecercice 5 :</h5>
+                                <h5 class="card-title">Exercice 5 :</h5>
                                 <h6
                                     class="card-subtitle text-body-secondary"
                                 ></h6>
@@ -721,7 +848,6 @@
                                     title="Cliquez pour afficher l'image"
                                     >Code5</a
                                 >
-
                                 <a
                                     href="./img/PHP/rendu5.jpg"
                                     target="_blank"
@@ -736,11 +862,22 @@
                         >
                             <div class="card-body">
                                 <h5 class="card-title">
-                                    Ecercice 6 : exercices sur les tableaux
+                                    Exercice 6 : exercices sur les tableaux
                                 </h5>
-                                <h6
-                                    class="card-subtitle text-body-secondary"
-                                ></h6>
+                                <h6 class="card-subtitle text-body-secondary" style="line-height: 1.5rem;">
+                                    <span class="codePHP"
+                                        >foreach($array as $key=>$value)
+                                         {...code}</span
+                                    >
+                                    est utilisée pour itérer facilement sur les
+                                    éléments d'un tableau ou d'un objet. Cette
+                                    syntaxe itère sur chaque élément du tableau
+                                    <span class="codePHP">$array</span>, en utilisant à la fois les clés (<span class="codePHP">$key</span>) et
+                                    les valeurs (<span class="codePHP">$value</span>) des éléments du tableau.
+                                    La variable <span class="codePHP">$key</span> est
+                                    optionnelle (notamment dans le cas des tableaux
+                                    indexés).
+                                </h6>
                                 <p class="card-text mt-4">
                                     La taille des Tableaux en PHP n'est pas
                                     définie à leur création, les index peuvent
@@ -750,84 +887,71 @@
                                     passage d'un tableau à une fonction se fait
                                     par valeur.
                                     <br />
-
                                     1- Trouvez un moyen d'échanger les valeurs
                                     de deux variables $a et $b en une seule
                                     instruction, vous pourrez utiliser l'élément
                                     de langage PHP list (). Créez un script
                                     tableaux.php pour le tester. <br />
-
                                     2- Déclarez un tableau $pays indexé par des
                                     entiers contenant les noms de trois pays.
                                     <br />
-
                                     3- Affichez ce tableau à l'aide de
                                     l'instruction var_dump. <br />
-
                                     4- Parcourez le tableau à l'aide d'une
                                     boucle for, vous pourrez utiliser la
                                     fonction count ().
                                     <br />
-
                                     5- Parcourez de nouveau le tableau à l'aide
                                     d'une boucle foreach. <br />
-
                                     6- Pour quelle raison n'est-il pas approprié
                                     d'utiliser une boucle do ... while. <br />
-
                                     7- Ajoutez des index sous forme de chaînes
                                     de caractères pour associer les capitales
                                     aux pays du tableau $pays. <br />
-
                                     8- Combien vaut l'expression count($pays) ?
                                     <br />
-
                                     9- Comment parcourir ce tableau pour
                                     afficher chaque pays et sa capitale ? <br />
-
                                     10 - Ajouter au script en cours une fonction
                                     enumerer($t) qui prend le tableau comme
                                     paramètre et qui affiche la valeur de chaque
                                     index alphanumérique. <br />
-
                                     11 Insérez une valeur $t[« capitale »] = «
                                     pays » en créant une fonction ajouter($t)
                                     puis afficher les nouvelles valeurs du
                                     tableau résultant. <br />
-
                                     12 Affichez par var_dump le tableau après
                                     l'exécution de la fonction. Qu'en
                                     concluez-vous ? <br />
                                 </p>
                                 <a
-                                    href="./img/PHP/code5a.png"
+                                    href="./img/PHP/code6.png"
                                     target="_blank"
                                     class="card-link"
                                     title="Cliquez pour afficher l'image"
-                                    >Code</a
+                                    >code</a
                                 >
-
                                 <a
                                     href="./img/PHP/rendu6.jpg"
                                     target="_blank"
                                     class="card-link"
                                     title="Cliquez pour afficher l'image"
-                                    >résultats affichés</a
+                                    >Résultats affichés</a
                                 >
                             </div>
                         </div>
                         <div
-                            class="card col-12 col-md-5 col-lg-5 m-2 border-3 border-blue2"
+                            class="card col-12 col-md-5 col-lg-3 m-2 border-3 border-blue2"
                             style="min-width: 18rem"
                         >
                             <div class="card-body">
-                                <h5 class="card-title">Ecercice 7 :</h5>
+                                <h5 class="card-title">Exercice 7 :</h5>
                                 <h6 class="card-subtitle text-body-secondary">
                                     <span class="codePHP">explode()</span> ,
                                     <span class="codePHP">count()</span>
                                 </h6>
                                 <p class="card-text mt-4">
-                                    Créez un tableau contenant une liste
+                                    Enoncé: Créez un tableau contenant une liste
                                     d'adresses e-mail. Extrayez le nom de
                                     serveur de ces données, puis réalisez des
                                     statistiques sur les occurrences de chaque
@@ -840,17 +964,1193 @@
                                     title="Cliquez pour afficher l'image"
                                     >Code</a
                                 >
-
                                 <a
                                     href="./img/PHP/rendu7.jpg"
                                     target="_blank"
                                     class="card-link"
                                     title="Cliquez pour afficher l'image"
-                                    >Affichage</a
+                                    >Résultat affiché</a
                                 >
                             </div>
                         </div>
                     </div>
+                </section>
+                <section>
+                    <div class="row justify-content-center g-3">
+                        <h3>
+                            2 mini-projets personnels: (hors exercices AFPA)
+                        </h3>
+                        <div
+                            class="card col-12 col-md-12 col-lg-4 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">Chiffrement Vigenère</h5>
+                                <h6
+                                    class="card-subtitle text-body-secondary"
+                                ></h6>
+                                <p class="card-text mt-4">
+                                    <span class="codePHP"
+                                        >strlen($string)</span
+                                    >
+                                    Renvoie la longueur d'une chaîne de
+                                    caractères.<br />
+                                    <span class="codePHP"
+                                        >strpos($string , caractère à
+                                        rechercher)</span
+                                    >
+                                    Trouve la position de la première occurrence
+                                    d'une sous-chaîne dans une chaîne. Un offset
+                                    peut être ajouté en 3ème paramètre<br />
+                                    <span class="codePHP">
+                                        strupper($string)</span
+                                    >
+                                    Convertit la chaîne en majuscules<br />
+                                    <span class="codePHP"
+                                        >str_repeat(string $input , int
+                                        $multiplicateur)</span
+                                    >
+                                    Répète une chaîne un certain nombre de
+                                    fois.<br />
+                                    <span class="codePHP"
+                                        >substr($strting, int $start, int
+                                        $length)</span
+                                    >
+                                    Retourne un segment de chaîne. Le 3ème
+                                    paramètre est facultatif. Les chiffres
+                                    peuvent être négatifs pour un comportement
+                                    différent!<br />
+                                    <span class="codePHP"
+                                        >subtr_replace($string,
+                                        $Str_remplacement, $start,
+                                        $length)</span
+                                    >Remplace le texte dans une portion de
+                                    chaîne. Le 4ème paramètre est facultatif
+                                    (toute la fin sera remplacée)<br />
+                                    <span class="codePHP"
+                                        >array_push(array $array, $values)</span
+                                    >Ajoute un ou plusieurs éléments à la fin
+                                    d'un tableau.<br />
+                                    <span class="codePHP"
+                                        >array_search($value,array $array)</span
+                                    >Recherche une valeur dans un tableau et
+                                    renvoie la première clé correspondante si
+                                    elle est trouvée. Sinion renvoie
+                                    <span class="codePHP">false</span>.Un 3ème
+                                    paramètre booléen peut forcer la comparaison
+                                    à être plus stricte.<br />
+                                    <span class="codePHP"
+                                        >count($array/$object)</span
+                                    >
+                                    Compte tous les éléments d'un tableau ou
+                                    quelque chose d'un objet. un second
+                                    paramètre $mode='COUNT_RECURSIVE' peut
+                                    permettre de copter récursivement.<br />
+                                    <span class="codePHP"
+                                        >preg_replace($pattern, $remplacement,
+                                        $string, int $limit, $count)</span
+                                    >
+                                    Effectue une recherche et un remplacement
+                                    par expression rationnelle (RegEx). $limit
+                                    est une option facultative qui définit le
+                                    nombre maximal de remplacements -1 par
+                                    défaut correspond à aucune limite. $count
+                                    est une variable facultative qui permet de
+                                    stocker le nombre de fois que l'occurence a
+                                    été remplacée...<br />
+                                    <span class="codePHP">ceil($float)</span>
+                                    est utilisée pour arrondir un nombre à
+                                    l'entier supérieur le plus proche. <br />
+                                    <span class="codePHP"
+                                        >range( début , fin )</span
+                                    >
+                                    en PHP est utilisée pour créer un tableau
+                                    contenant une plage d'éléments. Vous pouvez
+                                    spécifier les valeurs de début et de fin de
+                                    la plage, ainsi qu'un incrément optionnel.
+                                </p>
+                                <a
+                                    href="./img/PHP/code15a.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Code1</a
+                                >
+                                <a
+                                    href="./img/PHP/code15b.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Code2</a
+                                >
+                                <a
+                                    href="./img/PHP/code15c.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Code3</a
+                                >
+                                <a
+                                    href="https://afpa-lfejp-php.000webhostapp.com/PHP/chiffrement/"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Demo</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-md-12 col-lg-7 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Création de Mots de passe, Licenses
+                                </h5>
+
+                                <p class="card-text mt-4">
+                                    <span class="codePHP">empty()</span> vérifie
+                                    si une variable est vide. <br />
+                                    <span class="codePHP">rand(min,max)</span>
+                                    Génère un nombre entier aléatoire entre min
+                                    et max. (min = 0 par défaut et max =
+                                    getrandmax() )<br />
+                                    <span class="codePHP"
+                                        >array_merge($array1, $array2)</span
+                                    >
+                                    Fusionne un ou plusieurs tableaux.
+                                    <br />
+                                    <span class="codePHP"
+                                        >str_suffle($string)</span
+                                    >
+                                    mélange aléatoirement les caractères d'une
+                                    chaîne. Renvoie la chaîne avec ses
+                                    caractères mélangés de manière aléatoire.
+                                    <br />
+                                    <span class="codePHP"
+                                        >shuffle($array)</span
+                                    >
+                                    mélange les éléments d'un tableau de manière
+                                    aléatoire. Renvoie true en cas de succès,
+                                    false en cas d'échec.
+                                    <br />
+                                </p>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    AJAX
+                                </h6>
+                                <br />
+                                <img
+                                    src="./img/PHP/ajax1.jpg"
+                                    alt="image_code_ajax"
+                                />
+                                <p class="card-text mt-4">
+                                    <span class="codeJS"
+                                        >new XMLHttpRequest()</span
+                                    >
+                                    crée un nouvel objet XMLHttpRequest pour
+                                    faire des requêtes HTTP.<br />
+                                    <span class="codeJS"
+                                        >xhr.open(method, URL , bool async
+                                        )</span
+                                    >
+                                    Initialise une requête HTTP.<br />
+                                    method : La méthode HTTP à utiliser (GET,
+                                    POST, etc.). <br />
+                                    url : L'URL à laquelle la requête est
+                                    envoyée. <br />
+                                    async : Indique si la requête doit être
+                                    asynchrone (true) ou non (false). <br />
+                                    <span class="codeJS"
+                                        >xhr.onreadystatechange = function()
+                                        {...code}</span
+                                    >
+                                    crée un événement qui est déclenché chaque
+                                    fois que l'état de readyState change.<br />
+                                    <span class="codeJS"
+                                        >xhr.readyState == 4 && xhr.status ==
+                                        200</span
+                                    ><br />
+                                    <span class="codePHP">xhr.readyState</span> retourne l'état de la requête
+                                    (0-4) , 2 : requête reçue<br />
+                                    <span class="codePHP">xhr.status</span> retourne le statut de la réponse
+                                    HTTP, 200 : OK <br />
+                                    <a href="https://www.w3schools.com/XML/ajax_xmlhttprequest_response.asp" target="_blank" rel="noopener noreferrer">Toutes les valeurs de readystate et status ici!</a> <br> 
+                                    <span class="codeJS">.responseText</span
+                                    > retourne la réponse de la requête sous forme de chaîne de caractères.<br /><br>
+                                   <span class="codeJS">new Function(script)</span>  permet de créer une fonction dynamiquement à partir d'une chaîne de caractères contenant du code JavaScript <span class="codeJS">new Function()</span> est souvent utilisé pour exécuter du code JavaScript dynamique, par exemple, du code provenant de données entrées par l'utilisateur ou de données récupérées depuis une source externe. <br> Précaution: <br>Il est important de noter que l'utilisation de <span class="codeJS">new Function()</span> avec du code dynamique peut présenter des risques de sécurité, en particulier si le code provient de sources non fiables. Il est recommandé d'utiliser cette fonction avec prudence et de toujours valider et filtrer les données d'entrée lorsque vous utilisez du code dynamique. (dans mon cas l'utilisation est interne donc ça n'est pas le cas).
+                                    <br> <span class="codeJS">xhr.send()</span> permet d'envoyer la requête préalablement définie, au serveur.
+                                </p>
+                                <a
+                                    href="./img/PHP/code16.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Code</a
+                                >
+                                <a
+                                    href="https://afpa-lfejp-php.000webhostapp.com/PHP/genPwdLic/"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Demo</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="row justify-content-center g-3">
+                        <h3>La programmation orientée Objet en PHP</h3>
+                        <div
+                            class="card col-12 col-lg-12 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">Jeu d'échec</h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    POO
+                                </h6>
+                                <p class="card-text mt-4">
+                                    Sujet : Développer la première partie d’une
+                                    application de jeu d’échecs avec les
+                                    différentes pièces d’échecs à créer et les
+                                    méthodes de déplacement et de prise …
+                                    <br /><br />
+                                    Dans ces codes il est important de remarquer
+                                    que les propriétés et fonctions communes à
+                                    toutes les pièces sont définies dans la
+                                    classe "PieceEchec" (définie avec le mot-clé
+                                    <span class="codePHP">class</span>), alors
+                                    que les particularités des pièces sont
+                                    définies dans les autres classes (qui
+                                    héritent de "PieceEchec"avec le mot-clé
+                                    <span class="codePHP">extends</span>).
+                                    <br />Le mot-clé
+                                    <span class="codePHP">new</span> permet
+                                    d'instancier un nouvel objet (ici une pièce
+                                    du jeu d'échec) défini dans les différentes
+                                    classes (entre l14 et l49, je mets
+                                    virtuellement en place les différentes
+                                    pièces sur l'échiquier!). <br />
+                                    <span class="codePHP">$this</span> fait
+                                    référence à l'objet (instance) dans lequel
+                                    il est appelé (ici la pièce d'échec). (alors
+                                    que le mot-clé
+                                    <span class="codePHP">self</span> fait lui
+                                    référence à la classe de manière plus
+                                    générale, même si celle-ci n'est jamais
+                                    instanciée) <br />
+                                    <span class="codePHP"
+                                        >function __construct</span
+                                    >
+                                    est la fconction "constructeur" d'un objet
+                                    en PHP (avec ou sans paramètres) c'est cette
+                                    fonction qui sera appelée avec le mot-clé
+                                    <span class="codePHP">new</span><br /><span
+                                        class="codePHP"
+                                        >parent::__construct</span
+                                    >
+                                    permet de réutiliser (et éventuellement de
+                                    modifier) le constructeur de la classe
+                                    parente pour la classe appelante. <br />
+                                    <span class="gras">Un petit mot sur l'opérateur de résolution de portée</span> <span class="codePHP">::</span> (appelé également <span class="gras">Paamayim Nekudotayim</span>): Cet opérateur est utilisé pour accéder aux membres statiques, constantes et méthodes d'une classe, ainsi que pour faire référence à la classe parente dans le contexte de l'héritage (comme dans notre cas ici). <br>
+                                    Les niveaux d'accès (<span class="codePHP"
+                                        >public</span
+                                    >, <span class="codePHP">protected</span>,
+                                    <span class="codePHP">private</span>) sont
+                                    utilisés pour contrôler la visibilité des
+                                    propriétés et méthodes. Par défaut, une
+                                    propriété ou méthode est publique,
+                                    accessible de n'importe où dans
+                                    l'application (équivaut à
+                                    <span class="codePHP">public</span>). En
+                                    utilisant
+                                    <span class="codePHP">protected</span>,
+                                    l'accès est limité aux classes "filles"
+                                    (définies avec
+                                    <span class="codePHP">extends</span>),
+                                    tandis que
+                                    <span class="codePHP">private</span>
+                                    restreint l'accès à l'intérieur de la classe
+                                    elle-même, assurant une encapsulation
+                                    complète. <br />
+                                    Entre les lignes 254 et 278, je créé les
+                                    images des différentes pièce avec une
+                                    <span class="code">id</span> spécifique pour
+                                    chacune d'elle, ce qui me permet de cibler
+                                    la pièce en JavaScript. (<span
+                                        class="codePHP"
+                                        >$nom</span
+                                    >
+                                    étant le type de pièce défini utilisé pour
+                                    appeler le bon fichier SVG). <br /><br />
+                                    Pour ce TP, j'ai proposé un jeu d'échec
+                                    assez réaliste, mais, pour l'améliorer, il
+                                    faudrait pouvoir empêcher que les pièces
+                                    puissent passer "par-dessus" les autres (à
+                                    l'exception du cavalier). De plus, la prise
+                                    "en passant" et les roques ne sont possibles
+                                    qu'avec la suppression et l'ajout de
+                                    pièces...
+                                    <br />Bon jeu!
+                                </p>
+                                <a
+                                    href="./img/PHP/code9c.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >ClassePieceEchec</a
+                                >
+
+                                <a
+                                    href="./img/PHP/code9f.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >ClasseRoi</a
+                                >
+                                <a
+                                    href="./img/PHP/code9e.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >ClasseReine</a
+                                >
+                                <a
+                                    href="./img/PHP/code9g.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >ClasseTour</a
+                                >
+                                <a
+                                    href="./img/PHP/code9a.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >ClasseCavalier</a
+                                >
+                                <a
+                                    href="./img/PHP/code9b.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >ClasseFou</a
+                                >
+                                <a
+                                    href="./img/PHP/code9d.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >ClassePion</a
+                                >
+                                <a
+                                    href="./img/PHP/code9JS.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >CodeJS</a
+                                >
+                                <a
+                                    href="./img/PHP/code9App.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >CodeApplication</a
+                                >
+                                <a
+                                    href="https://betadev.elphegeproisy.com/Site_MaFormAFPA/JeuEchec/Principale.php"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    ><span
+                                        class="gras text-center"
+                                        style="font-size: 1.5rem"
+                                        >Jouer aux échecs</span
+                                    ></a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-lg-12 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">TP2 "Parc Auto"</h5>
+                                <h6
+                                    class="card-subtitle text-body-secondary"
+                                ></h6>
+                                <p class="card-text mt-4">
+                                    Ce TP permettait d'utiliser les classes
+                                    abstraites Vehicule et VehiculeAMoteur
+                                    définies à l'aide du mot_clé
+                                    <span class="codePHP">abstract</span>.
+                                    <br />
+                                    La fonction PHP
+                                    <span class="codePHP"
+                                        >spl_autoload_register()</span
+                                    >
+                                    permet de charger automatiquement les
+                                    classes nécessaires dans le code. Elle prend
+                                    en paramètre une fonction anonyme qui sera
+                                    appelée chaque fois qu'une classe non
+                                    définie est instanciée. Cette fonction
+                                    anonyme peut être utilisée pour inclure
+                                    dynamiquement le fichier contenant la classe
+                                    manquante, par exemple. Pour en savoir plus
+                                    sur l'autoload, vous pouvez consulter ce
+                                    lien :
+                                    <a
+                                        href="https://www.vincent-vanneste.fr/views/php/co/Autoload.html"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Plus d'infos sur l'autoload</a
+                                    >
+                                    <br />
+
+                                    Enfin, la structure
+                                    <span class="codePHP">try...catch</span> est
+                                    utilisée pour gérer les exceptions en PHP.
+                                    Dans le bloc
+                                    <span class="codePHP">try</span>, le code à
+                                    tester est placé. Si une exception est levée
+                                    pendant l'exécution de ce code, elle est
+                                    attrapée par le bloc
+                                    <span class="codePHP">catch</span>
+                                    correspondant. L'utilisation de
+                                    <span class="codePHP">throw</span> est
+                                    facultative, mais elle permet de spécifier
+                                    explicitement l'exception à lever. Cela peut
+                                    être particulièrement utile lorsque
+                                    plusieurs types d'erreurs peuvent survenir
+                                    dans le même bloc de code. Par exemple,
+                                    <span class="codePHP"
+                                        >throw new nomErreur($message)</span
+                                    >
+                                    lèvera une instance de nomErreur avec le
+                                    message spécifié. <br /><br />Exemple de
+                                    structure de levée d'exception : <br />
+                                    try { // Code à essayer <br />throw new
+                                    nomErreur("Message d'erreur"); } <br />catch
+                                    (nomErreur $e) <br />
+                                    { // Code à exécuter en cas d'erreur avec
+                                    récupération du message echo
+                                    $e->getMessage(); } <br />
+                                    <span class="italic">Nota Bene: </span> Bien
+                                    que déjà un peu avancé, je n'ai pas pu mener
+                                    ce TP au bout... (TP très long)
+                                </p>
+                                <a
+                                    href="./img/PHP/code10d.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >ClasseAbstraiteVechicule</a
+                                >
+                                <a
+                                    href="./img/PHP/code10e.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >ClasseAbstraiteVechiculeAMoteur</a
+                                >
+                                <a
+                                    href="./img/PHP/code10a.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >ClasseMoteur</a
+                                >
+                                <a
+                                    href="./img/PHP/code10f.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >ClasseVoiture</a
+                                >
+                                <a
+                                    href="./img/PHP/code10c.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >ClasseScooter</a
+                                >
+
+                                <a
+                                    href="./img/PHP/code10i.jpg"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Code_AppVoitures</a
+                                >
+                                <a
+                                    href="./img/PHP/renduautotest.jpg"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >renduVoitures</a
+                                >
+
+                                <a
+                                    href="./img/PHP/code10h.jpg"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Code_AppScooter</a
+                                >
+                                <a
+                                    href="./img/PHP/renduScootertest.jpg"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >renduScooter</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-lg-12 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">TP3 Voiture</h5>
+                                <h6
+                                    class="card-subtitle text-body-secondary"
+                                ></h6>
+                                <p class="card-text mt-4">
+                                    Nouveau TP sur les voitures... <br /><br />
+                                    Présentation: <br />
+                                    Il s’agit ici de développer un script PHP
+                                    représentant (de manière simplifiée !) une
+                                    voiture automobile en s’inspirant des
+                                    éléments mentionnés dans les supports
+                                    d’initiation au langage PHP orienté objet.
+                                    L’application minimale envisagée ici se
+                                    limite donc à deux scripts : la définition
+                                    de la classe Voiture d’une part, et un
+                                    script procédural utilisant cette classe.
+                                    Comme on souhaite que cette classe reste
+                                    indépendante de son usage par un script
+                                    particulier, elle n’effectue aucun
+                                    ‘affichage’ direct (pas de echo) ; les
+                                    messages générés seront stockés dans un
+                                    attribut accessible par le getter
+                                    correspondant, et c’est bien le programme
+                                    principal qui saura les récupérer et les
+                                    restituer comme bon lui semble à
+                                    l’utilisateur. <br /><br />
+                                    Celui-ci, plus facile, a été terminé...
+                                </p>
+
+                                <a
+                                    href="./img/PHP/code11a.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Classe Voiture</a
+                                >
+                                <a
+                                    href="./img/PHP/code11b.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Script</a
+                                >
+                                <a
+                                    href="https://betadev.elphegeproisy.com/Site_MaFormAFPA/TP3Voiture/script.php"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Résultat affiché</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="row justify-content-center g-3">
+                        <h3>La classe PDO</h3>
+                        <div
+                            class="card col-12 col-lg-12 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Envoi de mail et enregistrement du mail en
+                                    BDD
+                                </h5>
+                                <h6
+                                    class="card-subtitle text-body-secondary"
+                                ></h6>
+                                <p class="card-text mt-4">
+                                    <span class="codePHP"
+                                        >new PDO($dsn, "root", "",
+                                        $option)</span
+                                    >
+                                    crée un nouvel objet PDO en utilisant le
+                                    constructeur de la classe PDO. Explication
+                                    de chaque paramètre : <br />
+                                    <span class="codePHP">$dsn</span> variable
+                                    sous forme de chaîne de caractères qui
+                                    définit les détails de la connexion à la
+                                    base de données. DSN signifie "Data Source
+                                    Name". Ici, elle contient les informations
+                                    suivantes: l'hôte, le port et le nom de la
+                                    base de données. <br />
+                                    <span class="codePHP">"root"</span> C'est le
+                                    nom d'utilisateur utilisé pour se connecter
+                                    à la base de données. Dans cet exemple, il
+                                    est défini comme "root", qui est un nom
+                                    d'utilisateur par défaut pour la base de
+                                    données MySQL. (à changer lors d'une mise en
+                                    production ) <br />
+                                    <span class="codePHP">""</span> C'est le mot
+                                    de passe associé à l'utilisateur. Dans cet
+                                    exemple, le mot de passe est laissé vide, ce
+                                    qui signifie qu'aucun mot de passe n'est
+                                    utilisé. (à changer lors d'une mise en
+                                    production). <br />
+                                    <span class="codePHP">$option</span> C'est
+                                    un tableau associatif contenant des options
+                                    de configuration supplémentaires pour la
+                                    connexion PDO. Ici, une option qui permet de
+                                    lever les erreurs spécifiques à l'objet PDO
+                                    (<span class="codePHP">PDOException</span>)
+                                    et une autre option qui spécifie l'encodage
+                                    de la base de données (<codePHP
+                                        >UTF-8</codePHP
+                                    >
+                                    dans notre cas). <br /><br />La méthode
+                                    <span class="codePHP"
+                                        >->prepare($requeteSQL)</span
+                                    >
+                                    est utilisée dans le contexte de PDO
+                                    (appliquée à un objet PDO) pour préparer une
+                                    requête SQL destinée à être exécutée
+                                    ultérieurement dans une base de données.
+                                    <br /><br />
+                                    <span class="codePHP"
+                                        >->bindValue(":nom", $nom,
+                                        PDO::PARAM_STR)</span
+                                    >
+                                    Cette ligne de code associe une valeur à un
+                                    paramètre nommé dans une requête SQL
+                                    préparée. Voici ce que chaque partie
+                                    signifie : <br />
+                                    <span class="codePHP">":nom"</span> : C'est
+                                    le nom du paramètre dans la requête SQL
+                                    préparée. Les paramètres peuvent être
+                                    nommés, comme dans cet exemple, ou être des
+                                    marqueurs de position (comme ?). Le préfixe
+                                    : est souvent utilisé pour les paramètres
+                                    nommés. <br />
+                                    <span class="codePHP">$nom</span> C'est la
+                                    valeur à associer au paramètre <span class="codePHP">:nom</span>. Dans
+                                    cet exemple, il semble que $nom contient la
+                                    valeur à insérer dans la base de données
+                                    pour le champ nom. <br />
+                                    <span class="codePHP">PDO::PARAM_STR</span>
+                                    C'est le type de données de la valeur
+                                    associée. Dans ce cas, il s'agit d'une
+                                    chaîne de caractères. Cela indique à PDO
+                                    comment traiter la valeur lors de son
+                                    insertion dans la base de données.
+                                    <span class="codePHP">PDO::PARAM_STR</span>
+                                    est utilisé pour les valeurs de type chaîne
+                                    de caractères. D'autres types de données
+                                    sont également pris en charge, tels que
+                                    <span class="codePHP">PDO::PARAM_INT</span>
+                                    pour les entiers.
+                                    <a
+                                        href="https://www.php.net/manual/fr/pdo.constants.php"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Autres paramètres PDO</a
+                                    ><br /><span class="gras">NB:</span> Cette
+                                    étape est importante pour la sécurité de
+                                    l'application! (cela évite aussi d'avoir à
+                                    échapper les caractères spéciaux... )
+                                    <br /><br /><span class="codePHP"
+                                        >->execute()</span
+                                    >
+                                    est utilisé pour exécuter une requête SQL
+                                    préparée dans PDO (PHP Data Objects). Si la
+                                    requête réussit,
+                                    <span class="codePHP">execute()</span>
+                                    retourne <span class="codePHP">true</span>.
+                                    Sinon, il peut retourner
+                                    <span class="codePHP">false</span> en cas
+                                    d'échec de l'exécution. (mais ici j'utilise
+                                    plutôt le PDOStatement pour les exceptions)
+                                    <br /><br />
+                                    La fonction PHP
+                                    <span class="codePHP"
+                                        >mail($client, $sujet, $message)</span
+                                    >
+                                    est utilisée pour envoyer un e-mail à une
+                                    adresse spécifiée. Voici ce que chaque
+                                    paramètre signifie : <br />
+                                    <span class="codePHP">$client</span> C'est
+                                    l'adresse e-mail du destinataire. <br />
+                                    <span class="codePHP">$sujet</span> C'est le
+                                    sujet de l'e-mail. <br /><span
+                                        class="codePHP"
+                                        >$message</span
+                                    >
+                                    C'est le contenu du message à envoyer.
+                                    <br />
+                                    Cette fonction native en PHP envoie un
+                                    e-mail en utilisant les paramètres fournis.
+                                    Cependant, il est important de noter que la
+                                    fonction mail() de PHP dépend de la
+                                    configuration du serveur pour fonctionner
+                                    correctement. Il est souvent nécessaire de
+                                    configurer correctement le serveur pour
+                                    envoyer des e-mails, par exemple en
+                                    spécifiant un serveur SMTP dans le fichier
+                                    de configuration de PHP. De plus, cette
+                                    fonction peut ne pas fonctionner comme prévu
+                                    sur tous les serveurs, notamment en raison
+                                    de problèmes de sécurité ou de restrictions
+                                    de l'hébergeur. <br /><br />
+                                    N'ayant pu réussir à faire fonctionner ce
+                                    code en localhost à l'AFPA (avec le SMTP d'une
+                                    adresse Gmail), j'ai également essayé
+                                    d'utiliser la bibliothèque
+                                    <span class="codePHP">PHPMailer</span
+                                    >...sans plus de succès. <br> Conclusion: en
+                                    local, il est peut être compliqué d'envoyer des
+                                    mails (alors que cela se fait plus
+                                    facilement à partir d'un serveur dédié). <br>
+                                    <span class="gras">Note additionnelle:</span> La fonction native <span class="codePHP">mail(params)</span> (fonction mail native de PHP) fonctionne bien sur mes portefolios (sur un serveur) et j'ai pu mettre en place (sur un hébergement gratuit) cette application qui fonctionne très bien avec <span class="coePHP">PHPMailer</span> (en enlevant le débug!) 
+                                </p>
+
+                                <a
+                                    href="./img/PHP/code12a.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Connexion PDO</a
+                                >
+                                <a
+                                    href="./img/PHP/code12d.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >function insertMySQL</a
+                                >
+                                <a
+                                    href="./img/PHP/code12c.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Classe Contact</a
+                                >
+                                <a
+                                    href="./img/PHP/code12e.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Code Mail natif</a
+                                >
+                                <a
+                                    href="./img/PHP/code12f.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Code PHPMailer</a
+                                >
+                                <a
+                                    href="./img/PHP/code12b.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Code principal</a
+                                >
+
+                                <a
+                                    href="https://afpa-lfejp-php.000webhostapp.com/PHP/mailPHP_BDD/"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Envoi de mail + BDD</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="row justify-content-center g-3">
+                        <h3>Modèle MVC</h3>
+                        <div
+                            class="card col-12 col-lg-12 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Model View Controller (MVC):
+                                </h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    Liste de stagiaires
+                                </h6>
+                                <p class="card-text mt-4">
+                                    Le modèle MVC (Modèle-Vue-Contrôleur) est un
+                                    patron d'architecture utilisé dans le
+                                    développement logiciel pour organiser une
+                                    application en trois composants principaux :
+                                    le modèle (qui gère les données et la
+                                    logique métier), la vue (qui représente
+                                    l'interface utilisateur) et le contrôleur
+                                    (qui gère les entrées de l'utilisateur et
+                                    gère les interactions entre le Modèle et la
+                                    Vue). Ce modèle est utilisé par de nombreux
+                                    Frameworks PHP (Laravel, Symfony, cakePHP
+                                    etc...) <br /><br />
+                                    Dans cette application, le fichier
+                                    <span class="codePHP">index.php</span> prend
+                                    ici le rôle de
+                                    <span class="codePHP">routeur</span>.
+                                    Suivant la situation, il appelle des
+                                    fonctions du
+                                    <span class="codePHP">contrôleur</span> qui
+                                    lui,(en véritable chef d'orchestre) va faire
+                                    le lien entre le
+                                    <span class="codePHP">modèle</span> (qui
+                                    gère les accès à la BDD) et les différentes
+                                    <span class="codePHP">vues</span>.
+                                    <br /><br />
+                                    <span class="codePHP">baselayout.php</span>
+                                    est un template de base qui évite de répéter
+                                    la structure HTML sur toutes les vues. Les
+                                    variables
+                                    <span class="codePHP">$titre</span> et
+                                    <span class="codePHP">$content</span> de
+                                    chaque vue sont utilisées dans le template
+                                    qui est "injecté" dans le code par
+                                    l'instruction
+                                    <span class="codePHP">include</span>. <br />
+                                    <span class="codePHP">ob_start()</span> et
+                                    <codePHP>ob_get_clean()</codePHP> sont des
+                                    fonctions liées au buffer de PHP (mémoire
+                                    tampon).
+                                    <span class="codePHP">ob_start()</span>
+                                    active la mémoire tampon (qui enregistre
+                                    donc la suite du code) et
+                                    <span class="codePHP">ob_get_clean()</span>
+                                    récupère le contenu de la mémoire tampon
+                                    (sauvegardé ici dans
+                                    <span class="codePHP">$content</span>)et
+                                    vide la mémoire tampon (le buffer). <br>
+                                    <span class="gras">PS:</span> je ne suis pas à l'origine de la liste de stagiaires!! 😉
+                                </p>
+
+                                <a
+                                    href="./img/PHP/code13a.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >index.php</a
+                                >
+                                <a
+                                    href="./img/PHP/code13d.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Controller</a
+                                >
+                                <a
+                                    href="./img/PHP/code13b.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Model</a
+                                >
+                                <a
+                                    href="./img/PHP/code13c.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Connect constants</a
+                                >
+                                <a
+                                    href="./img/PHP/code13e.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >layout view</a
+                                >
+                                <a
+                                    href="./img/PHP/code13f.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >View Stagiaires</a
+                                >
+                                <a
+                                    href="./img/PHP/code13g.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >View Ajout</a
+                                >
+                                <a
+                                    href="./img/PHP/code13h.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >View Modif</a
+                                >
+                                <a
+                                    href="./img/PHP/code13i.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Erreur</a
+                                >
+                                <a
+                                    href="https://afpa-lfejp-php.000webhostapp.com/PHP/MVC_stag/"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Liste de stagiaires BDD</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-lg-12 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Créer un compte - Se connecter
+                                </h5>
+                                <h6
+                                    class="card-subtitle text-body-secondary"
+                                ></h6>
+                                <p class="card-text mt-4">
+                                    <span class="codePHP">strip_tags(data)</span
+                                    >,
+                                    <span class="codePHP"
+                                        >stripslashes(data)</span
+                                    >
+                                    et
+                                    <span class="codePHP"
+                                        >htmlentities(data)</span
+                                    >
+                                    sont 3 fonctions PHP indispensables pour
+                                    nettoyer les entrées de l'utilisateur si
+                                    ceux_ci ne sont pas filtrés par des RegEx
+                                    (afin de bloquer une partie des codes
+                                    malveillants). <br />
+                                    <span class="codePHP"
+                                        >strip_tags(data)</span
+                                    >
+                                    Cette fonction est utilisée pour supprimer
+                                    toutes les balises HTML et PHP d'une chaîne
+                                    de caractères. Elle prend en entrée une
+                                    chaîne de caractères data et retourne une
+                                    nouvelle chaîne de caractères avec toutes
+                                    les balises HTML et PHP supprimées. <br />
+                                    <span class="codePHP"
+                                        >stripslashes(data)</span
+                                    >
+                                    Cette fonction est utilisée pour supprimer
+                                    les backslashes ( \ ) d'une chaîne de
+                                    caractères. <br />
+                                    <span class="codePHP"
+                                        >htmlentities(data)</span
+                                    >
+                                    Cette fonction est utilisée pour convertir
+                                    les caractères spéciaux en entités HTML dans
+                                    une chaîne de caractères. Par exemple, elle
+                                    convertira les symboles tels que < >, &,
+                                    etc., en entités HTML (&lt;, &gt;, &amp;,
+                                    etc.), ce qui permet d'afficher correctement
+                                    du contenu HTML dans un navigateur sans
+                                    risque d'interprétation incorrecte des
+                                    balises HTML. <br />
+                                    <span class="codePHP"
+                                        >htmlspecialchars(data)</span
+                                    >
+                                    (non utilisée ici) est une autre fonction
+                                    pour convertir les caractères spéciaux en
+                                    entités HTML dans une chaîne de caractères,
+                                    tout comme
+                                    <span class="codePHP"
+                                        >htmlentities(data)</span
+                                    >. Cependant, elle ne convertit pas tous les
+                                    caractères spéciaux en entités HTML, mais
+                                    seulement ceux qui sont essentiels pour la
+                                    structure HTML, et est plutôt limitée à
+                                    l'encodage
+                                    <span class="codePHP"
+                                        >Latin1 (ISO-8859-1)
+                                    </span>
+                                    <br /><br />
+                                    <span class="codePHP"
+                                        >password_hash(data,option)</span
+                                    >
+                                    est une fonction PHP utilisée pour générer
+                                    une fonction de hachage sécurisée. <br />
+                                    <span class="codePHP">data</span> représente
+                                    la donnée à hasher (crypter).
+                                    <span class="codePHP">option</span> est un
+                                    paramètre facultatif qui permet de définir
+                                    le type de cryptage utilisé. Par défaut, si
+                                    ce paramètre n'est pas spécifié, PHP utilise
+                                    l'algorithme le plus sécurisé disponible.
+                                    Cependant, vous pouvez spécifier
+                                    explicitement l'algorithme en utilisant des
+                                    constantes comme
+                                    <span class="codePHP">PASSWORD_DEFAULT</span
+                                    >, qui est généralement recommandé pour sa
+                                    sécurité élevée. <br />
+
+                                    La fonction
+                                    <span class="codePHP"
+                                        >password_verify(password, hash)</span
+                                    >
+                                    est utilisée pour confirmer si le mot de
+                                    passe testé (<span class="codePHP"
+                                        >password</span
+                                    >) correspond au hachage précédemment généré
+                                    (<span class="codePHP">hash</span>). Elle
+                                    renvoie <span class="codePHP">true</span> si
+                                    la correspondance est vérifiée, sinon
+                                    <span class="codePHP">false</span>.
+                                </p>
+
+                                <a
+                                    href="./img/PHP/code14a.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Controller</a
+                                >
+                                <a
+                                    href="./img/PHP/code14b.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Constantes</a
+                                >
+                                <a
+                                    href="./img/PHP/code14c.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Model</a
+                                >
+                                <a
+                                    href="./img/PHP/code14e.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Layout</a
+                                >
+                                <a
+                                    href="./img/PHP/code14d.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >View page d'accueil</a
+                                >
+                                <a
+                                    href="./img/PHP/code14f.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Contenu Connection</a
+                                >
+                                <a
+                                    href="https://afpa-lfejp-php.000webhostapp.com/PHP/MVC_connex/Controller"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Création de compte</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-lg-12 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">Projet RoyalTech</h5>
+                                <h6
+                                    class="card-subtitle text-body-secondary"
+                                ></h6>
+                                <p class="card-text mt-4">
+                                    <ul>Dans cette application: <li>requête asynchrone AJAX (au survol de la catégorie dans la "Liste des articles vendus")</li>
+                                    <li>CRUD (Creat-Read-UpDate-Delete)</li>
+                                    <li>utilisation d'une bibliothèque pour créer des PDF</li>
+                                    </ul>
+                                    Accéder aux différentes pages: <br>
+                                    Identifiant-Mot de passe Administrateur : <br> ELPHEGE 020778 <br>
+                                    Identifiant-Mot de passe Editeur: <br> JOJO 300582
+                                </p>
+
+                              
+                                <a
+                                    href="https://afpa-lfejp-php.000webhostapp.com/PHP/royal_tech/"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour lancer l'application"
+                                    >Demo</a
+                                >
+                              
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-lg-12 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">Dépôt de fichiers</h5>
+                                <h6
+                                    class="card-subtitle text-body-secondary"
+                                ></h6>
+                                <p class="card-text mt-4">
+                                  Dans cet exercice, il fallait réaliser du CRUD. Comme il s'agit de l'évaluation, je ne vous donne pas les codes, sauf pour ce que j'ai rajouté et qui n'était pas demandé: <br>
+                                  - une fonctionnalité qui permet de télécharger un fichier ('txt' ou 'PDF' seulement) dans un dossier créé  (si il n'existe pas) (dossier dépôt de fichier nommé "titre-auteur"). Le fichier pouvant être affiché par la suite.
+                                    <br> NB: N'ouvrez que le fichier de mon dépôt (ID1). Pour des dépôts effectués potentiellement par des visiteurs, je ne vous garantis pas leur sécurité! 
+                                </p>
+                                 <a
+                                    href="./img/PHP/code17b.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >logique pour enregistrer le fichier dans un dossier de l'application</a
+                                > <a
+                                    href="./img/PHP/code17a.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >script pour ouvrir le fichier (dans le navigateur)</a
+                                > <a
+                                    href="./img/PHP/code17c.png"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour afficher l'image"
+                                    >Input file dans le formulaire </a
+                                >
+                              
+                                <a
+                                    href="https://afpa-lfejp-php.000webhostapp.com/PHP/ECFUpLoad/"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour lancer l'application"
+                                    >Demo</a
+                                >
+                              
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="FW" class="mt-5">
+                    <h2 >
+                        Framework
+                    </h2>
+                    <p>Malheureusement, la formation a été interrompue pour moi et certains collègues de promotion car elle n'était pas entièrement financée par notre ancien employeur. <br> J'ai donc dû effectuer un stage de 15 jours sur WordPress au lieu de poursuivre la formation. Néanmoins, j'ai pu commencer à utiliser un framework durant mon stage en entreprise ("Nymphéa Studio" à Avignon)  avec le framework <span class="gras"><a href="https://laravel.com/" target="_blank">LARAVEL</a></span> !</p>
                 </section>
             </div>
         </main>

@@ -120,12 +120,12 @@ a {
 }
 
 .SASS,
-.BOOTSTRAP {
-    padding: 40px;
+.BOOTSTRAP,.TP, .html, .css, .flexbox {
+    padding: 2% 2%;
 }
 .SASSContenu,
 .BOOTSTRAPContenu {
-    padding: 2% 5%;
+    padding: 2% 2%;
 }
 
 .card-img-react {
@@ -138,3 +138,4 @@ a {
 .italic {
     font-style: italic;
 }
+

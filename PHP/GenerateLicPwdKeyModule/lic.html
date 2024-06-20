@@ -1,0 +1,86 @@
+<form
+    action=""
+    class="border border-3 border-primary w-50 m-auto p-4"
+    method="GET"
+>
+    <div class="w-100">
+        <h4 class="text-center mt-5">
+            Choisissez le contenu de votre code à générer:
+        </h4>
+        <label class="form-check-label" for="tailleSeg"
+            >Nombre de caractères dans un segment: </label
+        ><br />
+        <input
+            class="form-control ent"
+            type="number"
+            name="tailleSeg"
+            id="tailleSeg"
+            placeholder="Nombre de caractères?"
+            max="20"
+        /><br />
+        <label class="form-check-label" for="nbrSeg">Nombre de segments: </label
+        ><br />
+        <input
+            class="form-control ent"
+            type="number"
+            name="nbrSeg"
+            id="nbrSeg"
+            placeholder="Nombre de segments?"
+            max="15"
+        /><br />
+        <div class="check2">
+            <input
+                type="checkbox"
+                class="form-check-input ent"
+                id="num"
+                name="num"
+            /><label class="form-check-label px-2" for="num">Chiffres</label
+            ><br /><input
+                type="checkbox"
+                class="form-check-input ent"
+                id="min"
+                name="min"
+            /><label class="form-check-label px-2" for="min"
+                >Lettres minuscules</label
+            ><br /><input
+                type="checkbox"
+                class="form-check-input ent"
+                id="maj"
+                name="maj"
+            /><label class="form-check-label px-2" for="maj"
+                >Lettres MAJuscules</label
+            ><br />
+        </div>
+    </div>
+    <div class="button w-25 m-auto text-center">
+        <button
+            type="submit"
+            name="genLic"
+            id="genLic"
+            class="btn btn-primary text-center mt-3 disabled"
+        >
+            Générer le code
+        </button>
+    </div>
+</form>
+<script id="script">
+    document.getElementById("nbrSeg").addEventListener("input", verifEtat2);
+    document.getElementById("tailleSeg").addEventListener("input", verifEtat2);
+    document.querySelector(".check2").addEventListener("change", verifEtat2);
+
+    function verifEtat2() {
+        let inputCheck = document.querySelectorAll("input[type='checkbox']");
+        let inpuNbrSeg = document.getElementById("nbrSeg");
+        let inputTailleSeg = document.getElementById("tailleSeg");
+
+        if (
+            inpuNbrSeg.value != "" &&
+            inputTailleSeg.value != "" &&
+            Array.from(inputCheck).some((checkbox) => checkbox.checked)
+        ) {
+            document.getElementById("genLic").classList.remove("disabled");
+        } else {
+            document.getElementById("genLic").classList.add("disabled");
+        }
+    }
+</script>

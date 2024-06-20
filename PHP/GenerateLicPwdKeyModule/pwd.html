@@ -1,0 +1,95 @@
+<html>
+    <form
+        action=""
+        class="border border-3 border-primary p-4 w-50 m-auto"
+        method="GET"
+    >
+        <div class="w-100">
+            <h4 class="text-center mt-5">
+                Choisissez le contenu de votre code à générer:
+            </h4>
+            <label class="form-check-label" for="taillePwd"
+                >Longueur du mot de passe:</label
+            ><br />
+            <input
+                class="form-control ent"
+                type="number"
+                name="taillePwd"
+                id="taillePwd"
+                placeholder="Nombre de caractères?"
+            /><br />
+            <div class="check1">
+                <input type="checkbox" class="form-check-input ent" id="num" name="num"/>
+                <label class="form-check-label px-2" for="num">Chiffres</label>
+
+                <br /><input
+                    type="checkbox"
+                    class="form-check-input ent"
+                    id="min" name="min"
+                /><label class="form-check-label px-2" for="min"
+                    >Lettres minuscules</label
+                ><br /><input
+                    type="checkbox"
+                    class="form-check-input ent"
+                    id="maj" name="maj"
+                /><label class="form-check-label px-2" for="maj"
+                    >Lettres MAJuscules</label
+                ><br /><input
+                    type="checkbox"
+                    class="form-check-input ent"
+                    id="caract"
+                /><label class="form-check-label px-2 " for="caract"
+                    >Caractères spéciaux</label
+                >  <select name="select" id="select" style="display:none">
+                    <option value="" selected>Choix</option>
+                    <option value="select1">1</option>
+                    <option value="select2">2</option>
+                    <option value="select3">3</option>
+                    <option value="select4">4</option>
+                </select>
+            </div>
+            <br /><br />
+        </div>
+        <div class="button w-25 m-auto text-center">
+            <button
+                type="submit"
+                name="genPwd"
+                id="genPwd"
+                class="btn btn-primary text-center mt-3 disabled"
+            >
+                Générer le code
+            </button>
+        </div>
+    </form>
+    <script id="script">
+        document.querySelector(".check1").addEventListener("change", verifEtat);
+        document
+            .getElementById("taillePwd")
+            .addEventListener("input", verifEtat);
+
+        function verifEtat() {
+            let inputNbr = document.getElementById("taillePwd");
+            let inputCheck = document.querySelectorAll(
+                "input[type='checkbox']"
+            );
+
+            if (
+                Array.from(inputCheck).some((checkbox) => checkbox.checked) &&
+                inputNbr.value != ""
+            ) {
+                document.getElementById("genPwd").classList.remove("disabled");
+            } else {
+                document.getElementById("genPwd").classList.add("disabled");
+            }
+        }
+        document.getElementById("caract").addEventListener("click", ()=>{
+         
+            if(document.getElementById("caract").checked)  {
+                document.getElementById("select").style.display="inline";
+            }
+            else  {
+                 document.getElementById("select").style.display="none";
+            }
+        })
+    </script>
+</html>

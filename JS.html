@@ -12,7 +12,7 @@
     </head>
     <body>
         <header class="bg-violet2 sticky-top">
-            <nav class="navbar navbar-expand-lg fs-4 p-3">
+            <nav class="navbar navbar-expand-lg fs-4 p-3 navbar-light">
                 <div class="container-fluid">
                     <a
                         class="navbar-brand text-gainsboro fs-2 px-4"
@@ -128,13 +128,34 @@
                                     </li>
                                 </ul>
                             </li>
-                             <li class="nav-item">
+                              <li class="nav-item dropdown">
                                 <a
-                                    class="nav-link active text-gainsboro text-black-50-hover"
+                                    class="nav-link dropdown-toggle text-gainsboro text-black-50-hover"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
                                     aria-expanded="false"
-                                    href="./sql.html"
-                                    >SQL</a
                                 >
+                                    SQL
+                                </a>
+                                <ul
+                                    class="dropdown-menu border-violet2 border-3 bg-gainsboro"
+                                >
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="./sql.html"
+                                            >Conception de la BDD</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="./sql.html#sql"
+                                            >Langage SQL</a
+                                        >
+                                    </li>
+                                </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a
@@ -155,7 +176,7 @@
                                         >
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="./php.html"
+                                        <a class="dropdown-item" href="./php.html#FW"
                                             >Framework</a
                                         >
                                     </li>
@@ -1244,7 +1265,7 @@
                                 </div>
                             </div>
                             <div
-                                class="card col-12 col-md-6 col-lg-3 col-xl-2 m-2 border-3 border-blue2"
+                                class="card col-12 col-md-6 col-lg-3 col-xl-3 m-2 border-3 border-blue2"
                                 style="min-width: 18rem"
                             >
                                 <div class="card-body">
@@ -1260,7 +1281,10 @@
                                         l'aide des 2 fonctions : "verifyEntry"
                                         et "verifyIsNumber" qui ont chacune 2
                                         paramètres. <br />
-                                        <br />(plus de détails sur les fonctions
+                                        <br />
+                                        Le mot-clé <span class="codeJS">return</span> dans une fonction permet de retourner une donnée (mais une seule) qui peut être de plusieurs types (boolean, string, int, array, object...). Le mot-clé <span class="codeJS">return</span> fait sortir automatiquement de la fonction (si il y a du code à la suite, celui-là ne sera pas excécuté!!) <br> (ce sera pareil en <span class="codePHP">PHP</span>) <br>
+                                        Il existe également des fonctions qui ne retourne rien (pas de <span class="codeJS">return</span>) que l'on appelle généralement des <span class="codeJS">fonctions de procédure</span>. <br>
+                                        (plus de détails sur les fonctions
                                         ici:
                                         <a
                                             href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Functions"

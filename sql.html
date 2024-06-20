@@ -13,7 +13,7 @@
     </head>
     <body>
         <header class="bg-violet2 sticky-top">
-            <nav class="navbar navbar-expand-lg fs-4 p-3">
+            <nav class="navbar navbar-expand-lg fs-4 p-3 navbar-light">
                 <div class="container-fluid">
                     <a
                         class="navbar-brand text-gainsboro fs-2 px-4"
@@ -133,13 +133,34 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item">
+                             <li class="nav-item dropdown">
                                 <a
-                                    class="nav-link active text-gainsboro text-black-50-hover"
+                                    class="nav-link dropdown-toggle text-gainsboro text-black-50-hover"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
                                     aria-expanded="false"
-                                    href="./sql.html"
-                                    >SQL</a
                                 >
+                                    SQL
+                                </a>
+                                <ul
+                                    class="dropdown-menu border-violet2 border-3 bg-gainsboro"
+                                >
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="./sql.html"
+                                            >Conception de la BDD</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="./sql.html#sql"
+                                            >Langage SQL</a
+                                        >
+                                    </li>
+                                </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a
@@ -164,7 +185,7 @@
                                     <li>
                                         <a
                                             class="dropdown-item"
-                                            href="./php.html"
+                                            href="./php.html#FW"
                                             >Framework</a
                                         >
                                     </li>
@@ -179,7 +200,117 @@
             <section>
                 <div class="container">
                     <div class="row" id="SQL">
-                        <h1 class="text-center m-3">Le langage SQL</h1>
+                        <h1 class="text-center m-3">
+                            Conception d'une base de donnée
+                        </h1>
+
+                        <p>
+                            Avant de se lancer dans l'utilisation d'une Base de
+                            Donnée (BDD Relationnelle), il faut tout d'abord la
+                            concevoir et passer par plusieurs étapes : (Système
+                            "Merise")
+                        </p>
+                        <ul>
+                            <li>
+                                Etablir le dictionnaire de données : définir
+                                l'ensemble des données qui seront nécessaires à
+                                l'application
+                            </li>
+                            <li>
+                                Etablir un MCD (Modèle Conceptuel des Données)
+                                en définissant les entités (objets), et ensuite
+                                les associations et les cardinalités qui les
+                                relient
+                            </li>
+                            <li>
+                                Transformer le MCD en MLD (Modèle Logique
+                                des Données)
+                            </li>
+                            <li>
+                                Enfin nous pouvons créer le MPD (Modèle Physique
+                                des Données)
+                            </li>
+                        </ul>
+                        <h3>Réussir son MCD</h3>
+                        <p>
+                            Pour réussir son MCD il faut d'abord bien choisir
+                            ses entités: celles-ci représentent un objet ou un
+                            concept significatif pour le système. Ensuite lui
+                            associer coorectement ses attributs
+                        </p>
+                        <p>
+                            Ensuite trouver les relations qu'elles ont entre
+                            elles (associaction). Généralement un verbe
+                            d'action. (exemples: produire, vendre...)
+                        </p>
+                        <p>
+                            Enfin déduire les cardinalités entre elles (0,1 -
+                            1,1 - 0,N - 1,N) - Voir les exemples ci-dessous:
+                        </p>
+                        <img
+                            src="./img/merise2.png"
+                            alt="merise2"
+                            class="w-75 p-3 m-auto"
+                        />
+                      
+                        <p class="text-center">
+                            Pour déterminer les bonnes cardinalités, il faut
+                            lire de la manière suivante: <br />
+                            <span class="gras"
+                                >La marque est produite par x à y fabricants
+                            </span>
+                            Dans ce cas: 0 à 1 <br />
+                            <span class="gras"
+                                >Le fabricant produit x à y marques
+                            </span>
+                            Dans notre cas: 1 à N
+                        </p>
+                        <img
+                            src="./img/merise1.png"
+                            alt="merise1"
+                            class="w-75 p-3 m-auto"
+                        />
+                        
+                        <p class="text-center">
+                            <span class="gras"
+                                >La bière est vendue sur x à y tickets
+                            </span>
+                            Dans ce cas: 0 à N <br />
+                            <span class="gras"
+                                >Sur un ticket est vendu x à y bières
+                            </span>
+                            Dans notre cas: 1 à N
+                        </p>
+                        <h4>Pour effectuer le passage au MLD :</h4>
+                        <p>
+                            Les entités deviennent des tables dans lesquelles il faut définir une clé primaire (clé qui doit respecter la règle d'unicité et de non nullité). <br>
+                            Ensuite, , il faut
+                            appliquer des règles pour passer au MLD: <br />
+                            Il ne faut garder que la plus grande valeur des
+                            cardinalités de chaque côté de l'association et on
+                            peut ensuite se retrouver avec des relations de type
+                            0,1 / 1,1  / 1,N / 0,N  / ou encore N,N. <br>
+                        </p>
+                        <ul>
+                            <li class="gras">
+                                Dans le cas d'une relation N,N, il faudra créer
+                                dans le MLD une nouvelle table intermédiaire
+                                (qui peut aussi avoir ses propres attributs)
+                                dans laquelle il faudra avoir les clés primaires
+                                des 2 entités que cette nouvelle table relie! (en général ces 2 clés primaires associées deviennent la clé primaire de cette table associative) (cas exemple 2)
+                            </li>
+                            <li class="gras">Lorsque le relation des maximums est 1,N (ou 0,N) ou N,1 (ou N,0), la clé primaire du côté N est utilisée comme "clé étrangère" dans la table qui porte le 1 (ou le 0). (cas exemple 1)</li>
+                            <li class="gras">Dans une relation (0,1)(1,1), en général c'est la clé primaire de la table (0,1) qui est ajoutée comme clé étrangère dans la table (1,1) </li>
+                            <li class="gras">Dans une relation (0,1)(0,1) il suffit que l'une des clés primaires soit clé étrangère de l'autre table. (au choix)</li>
+                        </ul>
+
+
+
+                        <p class="gras">Votre MLD est prêt, vous pouvez passer au MPD: c'est la création de la base de données! (avec PHPMyAdmin avec MySQL par exemple)</p>
+
+                        <a href="https://perso.univ-lemans.fr/~cpiau/BD/SQL_PAGES/SQL0.html#L4-1" target="_blank">Pour en savoir plus sur la conception d'une base de données</a>
+
+                        <h1 class="text-center m-3" id="sql">Le langage SQL</h1>
                         <p>
                             Le langage SQL (Structured Query Language) est un
                             langage de programmation utilisé pour communiquer
@@ -1067,7 +1198,7 @@
                             </div>
                         </div>
                         <div
-                            class="card col-12 col-md-4 col-lg-3 m-2 border-3 border-blue2"
+                            class="card col-12 col-md-4 col-lg-4 m-2 border-3 border-blue2"
                             style="min-width: 18rem"
                         >
                             <div class="card-body">
@@ -1095,7 +1226,7 @@
                             </div>
                         </div>
                         <div
-                            class="card col-12 col-md-4 col-lg-3 m-2 border-3 border-blue2"
+                            class="card col-12 col-md-4 col-lg-4 m-2 border-3 border-blue2"
                             style="min-width: 18rem"
                         >
                             <div class="card-body">
@@ -1121,6 +1252,74 @@
                                     class="card-link"
                                     title="Cliquez pour afficher le code"
                                     >Code</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-12 col-md-12 col-lg-12 m-2 border-3 border-blue2"
+                            style="min-width: 18rem"
+                        >
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Autres requêtes SQL types :
+                                </h5>
+                                <h6 class="card-subtitle text-body-secondary">
+                                    Autres requêtes SQL du CRUD
+                                </h6>
+                                <p class="card-text mt-4">
+                                    Insert : <br />
+                                    <span class="codeSQL"
+                                        >INSERT INTO
+                                        <span class="italic gras"
+                                            >table
+                                            (nom_colonne1,nom_colonne2,...) </span
+                                        >VALUES
+                                        <span class="italic gras"
+                                            >('valeur 1', 'valeur 2', ...)</span
+                                        >
+                                    </span>
+                                    <br />
+                                    UpDate : <br />
+                                    <span class="codeSQL"
+                                        >UPDATE
+                                        <span class="italic gras">table</span>
+                                        SET
+                                        <span class="italic gras"
+                                            >nom_colonne_1 = 'nouvelle valeur',
+                                            ....</span
+                                        >
+                                        WHERE
+                                        <span class="italic gras"
+                                            >condition</span
+                                        ></span
+                                    >
+                                    <br />
+                                    Delete : <br />
+                                    <span class="codeSQL"
+                                        >DELETE FROM
+                                        <span class="italic gras">table</span>
+                                        WHERE
+                                        <span class="italic gras"
+                                            >condition</span
+                                        ></span
+                                    >
+                                </p>
+                                <h6>
+                                    Pour en savoir plus sur le langage SQL :
+                                </h6>
+                                <a
+                                    href="https://sql.sh/"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour visiter"
+                                    >SQL.sh</a
+                                >
+                                <a
+                                    href="https://www.w3schools.com/sql/"
+                                    target="_blank"
+                                    class="card-link"
+                                    title="Cliquez pour visiter"
+                                    >W3School</a
                                 >
                             </div>
                         </div>

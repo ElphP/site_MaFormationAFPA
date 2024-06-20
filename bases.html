@@ -13,7 +13,7 @@
     </head>
     <body>
         <header class="bg-violet2 sticky-top">
-                 <nav class="navbar navbar-expand-lg fs-4 p-3">
+                 <nav class="navbar navbar-expand-lg fs-4 p-3 navbar-light">
                 <div class="container-fluid">
                     <a
                         class="navbar-brand text-gainsboro fs-2 px-4"
@@ -129,13 +129,34 @@
                                     </li>
                                 </ul>
                             </li>
-                             <li class="nav-item">
+                               <li class="nav-item dropdown">
                                 <a
-                                    class="nav-link active text-gainsboro text-black-50-hover"
+                                    class="nav-link dropdown-toggle text-gainsboro text-black-50-hover"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
                                     aria-expanded="false"
-                                    href="./sql.html"
-                                    >SQL</a
                                 >
+                                    SQL
+                                </a>
+                                <ul
+                                    class="dropdown-menu border-violet2 border-3 bg-gainsboro"
+                                >
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="./sql.html"
+                                            >Conception de la BDD</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="./sql.html#sql"
+                                            >Langage SQL</a
+                                        >
+                                    </li>
+                                </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a
@@ -156,7 +177,7 @@
                                         >
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="./php.html"
+                                        <a class="dropdown-item" href="./php.html#FW"
                                             >Framework</a
                                         >
                                     </li>
@@ -197,7 +218,7 @@
                         id="carouselExampleCaptions"
                         class="carousel slide w-50 border-violet1 border border-2"
                         data-bs-ride
-                        style="height: 420px; overflow: hidden"
+                        style="overflow: hidden"
                     >
                         <button
                             type="button"
